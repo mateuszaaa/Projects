@@ -1,0 +1,183 @@
+#include "robot.h"
+int pwm_left;
+int pwm_right;
+
+void updateRobotState(){
+    updateRobotAnglePosition();
+    updateMotorsPosition();
+    updateSensorsState();
+    
+}
+
+void updateRobotAnglePosition(){
+    int16_t data;
+    uint8_t data_h;
+    uint8_t data_l;
+
+    data_h = SPI2_read(L3GD20_OUT_Z_H) ; 
+    data_h = SPI2_read(L3GD20_OUT_Z_H) ; 
+    data_l = SPI2_read(L3GD20_OUT_Z_L) ; 
+    data_l = SPI2_read(L3GD20_OUT_Z_L) ; 
+
+
+    data = ((data_h << 8) | (data_l & 0b11000000)) +L3GD20_OFFSET;
+    data = (data >> 6);
+
+    measures.angle_speed = data;
+    robot.rotation += measures.angle_speed;
+}
+
+void updateMotorsPosition(){
+    updateRightMotorPosition();
+    updateLeftMotorPosition();
+}
+
+void updateSensorsState(){
+    measures.left_front_ir_sensor = 0;
+    measures.right_front_ir_sensor = 0;
+    measures.left_ir_sensor = getMeasureIR(4);
+    measures.right_ir_sensor = 0;
+}
+
+void updateRightMotorPosition(){
+    //update data
+    int delta;
+    measures.right_motor_last_pos = measures.right_motor_current_pos;
+    measures.right_motor_current_pos = TIM8->CNT;
+    //change pos
+    delta = measures.right_motor_current_pos - measures.right_motor_last_pos;
+    robot.right_motor_pos += delta;
+}
+
+void updateLeftMotorPosition(){
+    //update data
+    int delta;
+    measures.left_motor_last_pos = measures.left_motor_current_pos;
+    measures.left_motor_current_pos =  TIM1->CNT;
+    //change pos
+    delta = measures.left_motor_current_pos - measures.left_motor_last_pos;
+    robot.left_motor_pos += delta;
+}
+
+int limitTranslationPWM(int translation){
+
+    if (translation > MAX_TRANSLATION ) 
+    {
+        return MAX_TRANSLATION;
+    }
+
+    if ( translation < -MAX_TRANSLATION )
+    {
+        return -MAX_TRANSLATION;
+    }
+
+    return translation;
+    
+}
+
+int getMotorTranslationPWMValue(uint8_t side){
+    int pwm=0;
+
+    if (side == LEFT_MOTOR) {
+        pwm = calculatePID(robot.left_motor_pos,robot.left_motor_target,&left_motor_pid,pid_gains_motor);
+    }else{
+        pwm = calculatePID(robot.right_motor_pos,robot.right_motor_target,&right_motor_pid,pid_gains_motor);
+    }
+    pwm = limitTranslationPWM(pwm);
+    return pwm; 
+}
+
+int getRotateInPointPWMValue(){
+    int pwm;
+    pwm = calculatePID(robot.rotation,robot.rotation_target,&gyro_pid,pid_gains_gyro);
+    pwm = limitPWM(pwm);
+    return pwm;
+}
+
+uint8_t inRange(int current,int target,int delta){
+    if ( current - delta >= target )
+        return 1;
+    if (current + delta <= target ){
+        return 1;
+    }
+    return 0;
+}
+
+uint8_t goForward(){
+    int left_motor_translation;
+    int right_motor_translation;
+    int rotation; 
+
+    left_motor_translation = getMotorTranslationPWMValue(LEFT_MOTOR); 
+    right_motor_translation = getMotorTranslationPWMValue(RIGHT_MOTOR); 
+
+//    rotation = getRotationFromEncoders();
+    rotation = getRotationFromGyro();
+//    rotation = getRotationFromSensors();
+
+    if( (inRange(left_motor_translation,0 ,10)) && \
+        (inRange(right_motor_translation,0,10)) && \
+        (inRange(left_motor_pid.last_error,0,10)) && \
+        (inRange(right_motor_pid.last_error,0,10)) ){
+
+        if (rotation < 0 ){
+            setRightMotorSigned( right_motor_translation - rotation);
+            setLeftMotorSigned ( left_motor_translation  + rotation);
+        }else{
+            setRightMotorSigned( right_motor_translation - rotation  );
+            setLeftMotorSigned ( left_motor_translation  + rotation );
+        }
+        return 0;
+
+    }else{
+        setLeftMotorSigned(0);
+        setRightMotorSigned(0);
+        return 1;
+    }
+
+}
+
+int limitRotation(int rotation){
+
+    if (rotation > MAX_ROTATION ){
+        return MAX_ROTATION;
+    }
+
+    if (rotation < - MAX_ROTATION){
+        return -MAX_ROTATION;
+    }
+
+    return rotation;
+}
+
+int getRotationFromEncoders( ){
+    int motors_diff;
+    motors_diff = measures.right_motor_current_pos -  measures.left_motor_current_pos;     
+    motors_diff = limitRotation(motors_diff/2);
+    return motors_diff;
+}
+
+int getRotationFromGyro( ){
+    int rotation;
+    rotation = - robot.rotation;
+    rotation = limitRotation(rotation/2);       
+    return rotation; 
+}
+
+int getRotationFromSensors(){
+    int rotation;
+    rotation = robot.left_ir_sensor_target - measures.left_ir_sensor;
+    rotation = limitRotation(rotation/2);
+    return rotation;
+}
+
+int getRotationFromIRSensors( ){
+    return 0;
+}
+
+
+void moveRobot(){
+    
+  goForward();
+
+}

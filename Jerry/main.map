@@ -1,0 +1,858 @@
+Archive member included because of file (symbol)
+
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_addsubsf3.o)
+                              obj/pid.o (__aeabi_fsub)
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+                              obj/pid.o (__aeabi_fmul)
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_cmpsf2.o)
+                              obj/pid.o (__aeabi_fcmplt)
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_fixsfsi.o)
+                              obj/pid.o (__aeabi_f2iz)
+/usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                              ./obj/startup_stm32f4xx.o (__libc_init_array)
+
+Allocating common symbols
+Common symbol       size              file
+
+gains_rot_ir        0xc               obj/robot.o
+gains_rotation_in_point
+                    0xc               obj/robot.o
+right_translation   0x14              obj/robot.o
+usart_data          0x1               obj/main.o
+robot_queue         0x58              obj/stack.o
+rotation_encoders   0x14              obj/robot.o
+gains_rot_encoders  0xc               obj/robot.o
+rotation_in_point   0x14              obj/robot.o
+gains_rot_gyro      0xc               obj/robot.o
+robot               0x20              obj/robot.o
+pwm_right           0x4               obj/robot.o
+left_translation    0x14              obj/robot.o
+rotation_gyro       0x14              obj/robot.o
+rotation_ir         0x14              obj/robot.o
+buf                 0xa               obj/robot.o
+gains_translation   0xc               obj/robot.o
+flags               0x5               obj/robot.o
+pwm_left            0x4               obj/robot.o
+measures            0x28              obj/robot.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00100000         xr
+RAM              0x20000000         0x00020000         xrw
+MEMORY_B1        0x60000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+LOAD obj/robot.o
+LOAD obj/gyro.o
+LOAD obj/stack.o
+LOAD obj/pid.o
+LOAD obj/move.o
+LOAD obj/encoder.o
+LOAD obj/pwm.o
+LOAD obj/itoa.o
+LOAD obj/system_stm32f4xx.o
+LOAD obj/steering.o
+LOAD obj/main.o
+LOAD obj/delay.o
+LOAD obj/stm32f4xx_it.o
+LOAD obj/led.o
+LOAD obj/timer.o
+LOAD obj/spi.o
+LOAD obj/buttons.o
+LOAD obj/motors.o
+LOAD obj/ir_sensors.o
+LOAD obj/i2c.o
+LOAD obj/usart.o
+LOAD obj/adc.o
+LOAD ./obj/startup_stm32f4xx.o
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+                0x20020000                _estack = 0x20020000
+                0x00000000                _Min_Heap_Size = 0x0
+                0x00000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x188
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 ./obj/startup_stm32f4xx.o
+                0x08000000                g_pfnVectors
+                0x08000188                . = ALIGN (0x4)
+
+.text           0x08000188     0x2860
+                0x08000188                . = ALIGN (0x4)
+ *(.text)
+ .text          0x08000188        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .text          0x08000188       0xc8 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .text          0x08000250      0x1b8 obj/robot.o
+                0x08000250                updateRobotAnglePosition
+                0x080002d8                updateMotorsPosition
+                0x080002e8                updateSensorsState
+                0x08000318                updateRightMotorPosition
+                0x08000368                updateLeftMotorPosition
+                0x080003b8                updateRobotState
+                0x080003cc                inRange
+ .text          0x08000408        0x0 obj/gyro.o
+ .text          0x08000408      0x124 obj/stack.o
+                0x08000408                initQueue
+                0x0800042c                createElement
+                0x08000460                switchToNextMove
+                0x08000480                addMove
+                0x080004c4                getElement
+                0x08000500                allMovesDone
+ .text          0x0800052c      0x200 obj/pid.o
+                0x0800052c                calculatePID
+                0x080005f4                limitPWM
+                0x08000630                limitI
+                0x08000670                initPIDStructures
+ .text          0x0800072c      0x220 obj/move.o
+                0x0800072c                moveRobot
+                0x08000798                nextMove
+                0x080007ec                goForward
+                0x0800089c                rotateInPoint
+ .text          0x0800094c      0x194 obj/encoder.o
+                0x0800094c                initEncoders
+                0x0800095c                initLeftEncoder
+                0x08000a0c                initRightEncoder
+                0x08000abc                resetEncoders
+ .text          0x08000ae0      0x1c0 obj/pwm.o
+                0x08000ae0                initPWM1
+                0x08000b80                setPWM1Period
+                0x08000ba0                setPWM1Duty
+                0x08000bc0                initPWM2
+                0x08000c60                setPWM2Period
+                0x08000c80                setPWM2Duty
+ .text          0x08000ca0       0xf4 obj/itoa.o
+                0x08000ca0                itoa
+                0x08000d50                __reverse
+ .text          0x08000d94      0x26c obj/system_stm32f4xx.o
+                0x08000d94                SystemInit
+                0x08000df0                SystemCoreClockUpdate
+ .text          0x08001000      0x268 obj/steering.o
+                0x08001000                limitRotation
+                0x08001030                getRotationInPoint
+                0x0800107c                getRotationFromEncoders
+                0x080010c8                getRotationFromGyro
+                0x0800110c                getRotationFromSensors
+                0x08001170                getRotation
+                0x080011b0                limitTranslation
+                0x080011e4                getTranslation
+ .text          0x08001268      0x340 obj/main.o
+                0x08001314                isBatteryWeak
+                0x08001338                blinkLed
+                0x0800136c                main
+                0x080014c0                TIM3_IRQHandler
+                0x08001520                USART3_IRQHandler
+                0x08001588                TIM1_UP_TIM10_IRQHandler
+ .text          0x080015a8       0x74 obj/delay.o
+                0x080015a8                waitUs
+                0x080015d0                waitMs
+                0x08001600                decrementDelayValue
+ .text          0x0800161c       0x5c obj/stm32f4xx_it.o
+                0x0800161c                NMI_Handler
+                0x08001628                HardFault_Handler
+                0x08001630                MemManage_Handler
+                0x08001638                BusFault_Handler
+                0x08001640                UsageFault_Handler
+                0x08001648                SVC_Handler
+                0x08001654                DebugMon_Handler
+                0x08001660                PendSV_Handler
+                0x0800166c                SysTick_Handler
+ .text          0x08001678       0x38 obj/led.o
+                0x08001678                initLED
+ .text          0x080016b0       0x90 obj/timer.o
+                0x080016e4                initTimer3
+ .text          0x08001740      0x26c obj/spi.o
+                0x08001740                initSPI2
+                0x080018a0                SPI2_read
+                0x08001918                SPI2_write
+                0x0800198c                waitForFreeBusSPI2
+ .text          0x080019ac       0x2c obj/buttons.o
+                0x080019ac                initButtons
+ .text          0x080019d8      0x288 obj/motors.o
+                0x080019d8                initHBridgePins
+                0x08001a20                initMotors
+                0x08001a34                setRightMotor
+                0x08001a90                setMotorSigned
+                0x08001ab8                setLeftMotorSigned
+                0x08001af0                setRightMotorSigned
+                0x08001b28                setLeftMotor
+                0x08001b84                stopMotors
+                0x08001bd4                rotateSigned
+                0x08001c08                turnRight
+                0x08001c34                turnLeft
+ .text          0x08001c60       0xa8 obj/ir_sensors.o
+                0x08001c60                initIRSensors
+                0x08001cb8                getMeasureIR
+ .text          0x08001d08      0x338 obj/i2c.o
+                0x08001d08                initI2C1
+                0x08001e10                waitForFreeBusI2C1
+                0x08001e30                getRegisterByI2C1
+                0x08001f68                setRegisterByI2C1
+ .text          0x08002040      0x17c obj/usart.o
+                0x08002074                initUsart3
+                0x080020fc                enableUSART3RXNEInterrupt
+                0x08002120                USART3_transmitByte
+                0x08002150                USART3_transmitString
+                0x0800218c                USART3_reciveByte
+ .text          0x080021bc      0x128 obj/adc.o
+                0x080021bc                initADC
+                0x0800228c                ADC1PrepareSingleMeasure
+                0x080022b4                ADC1SingleMeasure
+ .text          0x080022e4       0x14 ./obj/startup_stm32f4xx.o
+ .text          0x080022f8      0x21c /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_addsubsf3.o)
+                0x080022f8                __aeabi_frsub
+                0x08002300                __subsf3
+                0x08002300                __aeabi_fsub
+                0x08002304                __aeabi_fadd
+                0x08002304                __addsf3
+                0x08002464                __aeabi_ui2f
+                0x08002464                __floatunsisf
+                0x0800246c                __aeabi_i2f
+                0x0800246c                __floatsisf
+                0x08002488                __floatundisf
+                0x08002488                __aeabi_ul2f
+                0x08002498                __floatdisf
+                0x08002498                __aeabi_l2f
+ .text          0x08002514      0x2a0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+                0x08002514                __mulsf3
+                0x08002514                __aeabi_fmul
+                0x0800267c                __divsf3
+                0x0800267c                __aeabi_fdiv
+ .text          0x080027b4       0xec /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_cmpsf2.o)
+                0x080027b4                __gtsf2
+                0x080027b4                __gesf2
+                0x080027bc                __lesf2
+                0x080027bc                __ltsf2
+                0x080027c4                __nesf2
+                0x080027c4                __eqsf2
+                0x080027c4                __cmpsf2
+                0x08002824                __aeabi_cfrcmple
+                0x0800282c                __aeabi_cfcmple
+                0x0800282c                __aeabi_cfcmpeq
+                0x0800283c                __aeabi_fcmpeq
+                0x08002850                __aeabi_fcmplt
+                0x08002864                __aeabi_fcmple
+                0x08002878                __aeabi_fcmpge
+                0x0800288c                __aeabi_fcmpgt
+ .text          0x080028a0       0x4c /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_fixsfsi.o)
+                0x080028a0                __fixsfsi
+                0x080028a0                __aeabi_f2iz
+ .text          0x080028ec       0x58 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                0x080028ec                __libc_init_array
+ .text          0x08002944        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .text          0x08002944        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ *(.text*)
+ .text.Reset_Handler
+                0x08002944       0x60 ./obj/startup_stm32f4xx.o
+                0x08002944                Reset_Handler
+ .text.Default_Handler
+                0x080029a4        0x4 ./obj/startup_stm32f4xx.o
+                0x080029a4                RTC_Alarm_IRQHandler
+                0x080029a4                HASH_RNG_IRQHandler
+                0x080029a4                EXTI2_IRQHandler
+                0x080029a4                TIM8_CC_IRQHandler
+                0x080029a4                TIM1_CC_IRQHandler
+                0x080029a4                DMA2_Stream5_IRQHandler
+                0x080029a4                DMA1_Stream5_IRQHandler
+                0x080029a4                PVD_IRQHandler
+                0x080029a4                SDIO_IRQHandler
+                0x080029a4                TAMP_STAMP_IRQHandler
+                0x080029a4                CAN2_RX1_IRQHandler
+                0x080029a4                EXTI3_IRQHandler
+                0x080029a4                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080029a4                TIM8_UP_TIM13_IRQHandler
+                0x080029a4                I2C3_ER_IRQHandler
+                0x080029a4                EXTI0_IRQHandler
+                0x080029a4                I2C2_EV_IRQHandler
+                0x080029a4                DMA1_Stream2_IRQHandler
+                0x080029a4                CAN1_RX0_IRQHandler
+                0x080029a4                FPU_IRQHandler
+                0x080029a4                OTG_HS_WKUP_IRQHandler
+                0x080029a4                CAN2_SCE_IRQHandler
+                0x080029a4                DMA2_Stream2_IRQHandler
+                0x080029a4                SPI1_IRQHandler
+                0x080029a4                TIM6_DAC_IRQHandler
+                0x080029a4                TIM1_BRK_TIM9_IRQHandler
+                0x080029a4                DCMI_IRQHandler
+                0x080029a4                CAN2_RX0_IRQHandler
+                0x080029a4                DMA2_Stream3_IRQHandler
+                0x080029a4                USART6_IRQHandler
+                0x080029a4                CRYP_IRQHandler
+                0x080029a4                CAN1_RX1_IRQHandler
+                0x080029a4                UART5_IRQHandler
+                0x080029a4                DMA2_Stream0_IRQHandler
+                0x080029a4                TIM4_IRQHandler
+                0x080029a4                I2C1_EV_IRQHandler
+                0x080029a4                DMA1_Stream6_IRQHandler
+                0x080029a4                DMA1_Stream1_IRQHandler
+                0x080029a4                UART4_IRQHandler
+                0x080029a4                RCC_IRQHandler
+                0x080029a4                TIM8_BRK_TIM12_IRQHandler
+                0x080029a4                Default_Handler
+                0x080029a4                EXTI15_10_IRQHandler
+                0x080029a4                ADC_IRQHandler
+                0x080029a4                DMA1_Stream7_IRQHandler
+                0x080029a4                TIM7_IRQHandler
+                0x080029a4                CAN2_TX_IRQHandler
+                0x080029a4                TIM5_IRQHandler
+                0x080029a4                DMA2_Stream7_IRQHandler
+                0x080029a4                I2C3_EV_IRQHandler
+                0x080029a4                EXTI9_5_IRQHandler
+                0x080029a4                RTC_WKUP_IRQHandler
+                0x080029a4                ETH_WKUP_IRQHandler
+                0x080029a4                SPI2_IRQHandler
+                0x080029a4                OTG_HS_EP1_IN_IRQHandler
+                0x080029a4                DMA1_Stream0_IRQHandler
+                0x080029a4                CAN1_TX_IRQHandler
+                0x080029a4                EXTI4_IRQHandler
+                0x080029a4                FSMC_IRQHandler
+                0x080029a4                ETH_IRQHandler
+                0x080029a4                OTG_HS_EP1_OUT_IRQHandler
+                0x080029a4                WWDG_IRQHandler
+                0x080029a4                TIM2_IRQHandler
+                0x080029a4                OTG_FS_WKUP_IRQHandler
+                0x080029a4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x080029a4                OTG_HS_IRQHandler
+                0x080029a4                EXTI1_IRQHandler
+                0x080029a4                USART2_IRQHandler
+                0x080029a4                I2C2_ER_IRQHandler
+                0x080029a4                DMA2_Stream1_IRQHandler
+                0x080029a4                CAN1_SCE_IRQHandler
+                0x080029a4                FLASH_IRQHandler
+                0x080029a4                DMA2_Stream4_IRQHandler
+                0x080029a4                USART1_IRQHandler
+                0x080029a4                OTG_FS_IRQHandler
+                0x080029a4                SPI3_IRQHandler
+                0x080029a4                DMA1_Stream4_IRQHandler
+                0x080029a4                I2C1_ER_IRQHandler
+                0x080029a4                DMA2_Stream6_IRQHandler
+                0x080029a4                DMA1_Stream3_IRQHandler
+ *(.rodata)
+ .rodata        0x080029a8        0x8 obj/move.o
+ .rodata        0x080029b0       0x14 obj/itoa.o
+ .rodata        0x080029c4        0x8 obj/main.o
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x080029cc        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .eh_frame      0x080029cc        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ *(.init)
+ .init          0x080029d0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+                0x080029d0                _init
+ .init          0x080029d4        0x8 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ *(.fini)
+ .fini          0x080029dc        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+                0x080029dc                _fini
+ .fini          0x080029e0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+                0x080029e8                . = ALIGN (0x4)
+                0x080029e8                _etext = .
+
+.vfp11_veneer   0x080029e8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080029e8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080029e8        0x0
+ .iplt          0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+
+.rel.dyn        0x080029e8        0x0
+ .rel.iplt      0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x080029e8        0x0
+                0x080029e8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x080029e8                __exidx_end = .
+
+.preinit_array  0x080029e8        0x0
+                0x080029e8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x080029e8                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x080029e8        0x4
+                0x080029e8                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+ .init_array    0x080029e8        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x080029ec                PROVIDE (__init_array_end, .)
+
+.fini_array     0x080029ec        0x4
+                0x080029ec                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ .fini_array    0x080029ec        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x080029f0                PROVIDE (__fini_array_end, .)
+                0x080029f0                _sidata = .
+
+.data           0x20000000       0x1c load address 0x080029f0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .data          0x20000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x20000000                __dso_handle
+ .data          0x20000004        0x0 obj/robot.o
+ .data          0x20000004        0x0 obj/gyro.o
+ .data          0x20000004        0x0 obj/stack.o
+ .data          0x20000004        0x0 obj/pid.o
+ .data          0x20000004        0x0 obj/move.o
+ .data          0x20000004        0x0 obj/encoder.o
+ .data          0x20000004        0x0 obj/pwm.o
+ .data          0x20000004        0x0 obj/itoa.o
+ .data          0x20000004       0x14 obj/system_stm32f4xx.o
+                0x20000004                SystemCoreClock
+                0x20000008                AHBPrescTable
+ .data          0x20000018        0x0 obj/steering.o
+ .data          0x20000018        0x1 obj/main.o
+ .data          0x20000019        0x0 obj/delay.o
+ .data          0x20000019        0x0 obj/stm32f4xx_it.o
+ .data          0x20000019        0x0 obj/led.o
+ .data          0x20000019        0x0 obj/timer.o
+ .data          0x20000019        0x0 obj/spi.o
+ .data          0x20000019        0x0 obj/buttons.o
+ .data          0x20000019        0x0 obj/motors.o
+ .data          0x20000019        0x0 obj/ir_sensors.o
+ .data          0x20000019        0x0 obj/i2c.o
+ .data          0x20000019        0x0 obj/usart.o
+ .data          0x20000019        0x0 obj/adc.o
+ .data          0x20000019        0x0 ./obj/startup_stm32f4xx.o
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_addsubsf3.o)
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_cmpsf2.o)
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_fixsfsi.o)
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .data          0x20000019        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ *(.data*)
+                0x2000001c                . = ALIGN (0x4)
+ *fill*         0x20000019        0x3 
+                0x2000001c                _edata = .
+
+.jcr            0x2000001c        0x4 load address 0x08002a0c
+ .jcr           0x2000001c        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .jcr           0x2000001c        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+
+.tm_clone_table
+                0x20000020        0x0 load address 0x08002a10
+ .tm_clone_table
+                0x20000020        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .tm_clone_table
+                0x20000020        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+
+.igot.plt       0x20000020        0x0 load address 0x08002a10
+ .igot.plt      0x00000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+                0x20000020                . = ALIGN (0x4)
+
+.bss            0x20000020      0x1d8 load address 0x08002a10
+                0x20000020                _sbss = .
+                0x20000020                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x20000020        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .bss           0x20000020       0x1c /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .bss           0x2000003c        0x4 obj/robot.o
+ .bss           0x20000040        0x4 obj/gyro.o
+ .bss           0x20000044        0x4 obj/stack.o
+ .bss           0x20000048        0x4 obj/pid.o
+ .bss           0x2000004c        0x4 obj/move.o
+ .bss           0x20000050        0x4 obj/encoder.o
+ .bss           0x20000054        0x0 obj/pwm.o
+ .bss           0x20000054        0x0 obj/itoa.o
+ .bss           0x20000054        0x0 obj/system_stm32f4xx.o
+ .bss           0x20000054        0x4 obj/steering.o
+ .bss           0x20000058        0x8 obj/main.o
+ .bss           0x20000060        0x4 obj/delay.o
+ .bss           0x20000064        0x4 obj/stm32f4xx_it.o
+ .bss           0x20000068        0x0 obj/led.o
+ .bss           0x20000068        0x4 obj/timer.o
+ .bss           0x2000006c        0x4 obj/spi.o
+ .bss           0x20000070        0x0 obj/buttons.o
+ .bss           0x20000070        0x4 obj/motors.o
+ .bss           0x20000074        0x4 obj/ir_sensors.o
+ .bss           0x20000078        0x4 obj/i2c.o
+ .bss           0x2000007c        0x4 obj/usart.o
+ .bss           0x20000080        0x4 obj/adc.o
+ .bss           0x20000084        0x0 ./obj/startup_stm32f4xx.o
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_addsubsf3.o)
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_cmpsf2.o)
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_fixsfsi.o)
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .bss           0x20000084        0x0 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x20000084      0x118 obj/robot.o
+                0x20000084                gains_rot_ir
+                0x20000090                gains_rotation_in_point
+                0x2000009c                right_translation
+                0x200000b0                rotation_encoders
+                0x200000c4                gains_rot_encoders
+                0x200000d0                rotation_in_point
+                0x200000e4                gains_rot_gyro
+                0x200000f0                robot
+                0x20000110                pwm_right
+                0x20000114                left_translation
+                0x20000128                rotation_gyro
+                0x2000013c                rotation_ir
+                0x20000150                buf
+                0x2000015c                gains_translation
+                0x20000168                flags
+                0x20000170                pwm_left
+                0x20000174                measures
+ COMMON         0x2000019c       0x58 obj/stack.o
+                0x2000019c                robot_queue
+ COMMON         0x200001f4        0x1 obj/main.o
+                0x200001f4                usart_data
+                0x200001f8                . = ALIGN (0x4)
+ *fill*         0x200001f5        0x3 
+                0x200001f8                _ebss = .
+                0x200001f8                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x200001f8      0x400 load address 0x08002a10
+                0x200001f8                . = ALIGN (0x4)
+                0x200001f8                PROVIDE (end, .)
+                0x200001f8                PROVIDE (_end, .)
+                0x200001f8                . = (. + _Min_Heap_Size)
+                0x200005f8                . = (. + _Min_Stack_Size)
+ *fill*         0x200001f8      0x400 
+                0x200005f8                . = ALIGN (0x4)
+
+.memory_b1_text
+ *(.mb1text)
+ *(.mb1text*)
+ *(.mb1rodata)
+ *(.mb1rodata*)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x2f
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x29 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x33 obj/robot.o
+ .ARM.attributes
+                0x00000075       0x33 obj/gyro.o
+ .ARM.attributes
+                0x000000a8       0x33 obj/stack.o
+ .ARM.attributes
+                0x000000db       0x33 obj/pid.o
+ .ARM.attributes
+                0x0000010e       0x33 obj/move.o
+ .ARM.attributes
+                0x00000141       0x33 obj/encoder.o
+ .ARM.attributes
+                0x00000174       0x33 obj/pwm.o
+ .ARM.attributes
+                0x000001a7       0x33 obj/itoa.o
+ .ARM.attributes
+                0x000001da       0x33 obj/system_stm32f4xx.o
+ .ARM.attributes
+                0x0000020d       0x33 obj/steering.o
+ .ARM.attributes
+                0x00000240       0x33 obj/main.o
+ .ARM.attributes
+                0x00000273       0x33 obj/delay.o
+ .ARM.attributes
+                0x000002a6       0x33 obj/stm32f4xx_it.o
+ .ARM.attributes
+                0x000002d9       0x33 obj/led.o
+ .ARM.attributes
+                0x0000030c       0x33 obj/timer.o
+ .ARM.attributes
+                0x0000033f       0x33 obj/spi.o
+ .ARM.attributes
+                0x00000372       0x33 obj/buttons.o
+ .ARM.attributes
+                0x000003a5       0x33 obj/motors.o
+ .ARM.attributes
+                0x000003d8       0x33 obj/ir_sensors.o
+ .ARM.attributes
+                0x0000040b       0x33 obj/i2c.o
+ .ARM.attributes
+                0x0000043e       0x33 obj/usart.o
+ .ARM.attributes
+                0x00000471       0x33 obj/adc.o
+ .ARM.attributes
+                0x000004a4       0x21 ./obj/startup_stm32f4xx.o
+ .ARM.attributes
+                0x000004c5       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x000004de       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x000004f7       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000510       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/libgcc.a(_arm_fixsfsi.o)
+ .ARM.attributes
+                0x00000529       0x29 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000552       0x29 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtend.o
+ .ARM.attributes
+                0x0000057b       0x19 /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/thumb2/crtn.o
+OUTPUT(main.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x9de8
+ .debug_info    0x00000000      0x7a4 obj/robot.o
+ .debug_info    0x000007a4      0x41c obj/gyro.o
+ .debug_info    0x00000bc0      0x63d obj/stack.o
+ .debug_info    0x000011fd      0x51a obj/pid.o
+ .debug_info    0x00001717      0x6ea obj/move.o
+ .debug_info    0x00001e01      0x952 obj/encoder.o
+ .debug_info    0x00002753      0x649 obj/pwm.o
+ .debug_info    0x00002d9c      0x173 obj/itoa.o
+ .debug_info    0x00002f0f      0x5ef obj/system_stm32f4xx.o
+ .debug_info    0x000034fe      0x625 obj/steering.o
+ .debug_info    0x00003b23      0xfe6 obj/main.o
+ .debug_info    0x00004b09      0x48b obj/delay.o
+ .debug_info    0x00004f94      0x4ea obj/stm32f4xx_it.o
+ .debug_info    0x0000547e      0x360 obj/led.o
+ .debug_info    0x000057de      0xc39 obj/timer.o
+ .debug_info    0x00006417      0x89a obj/spi.o
+ .debug_info    0x00006cb1      0x360 obj/buttons.o
+ .debug_info    0x00007011      0x8bb obj/motors.o
+ .debug_info    0x000078cc      0x71e obj/ir_sensors.o
+ .debug_info    0x00007fea      0x8d3 obj/i2c.o
+ .debug_info    0x000088bd      0xc31 obj/usart.o
+ .debug_info    0x000094ee      0x8a8 obj/adc.o
+ .debug_info    0x00009d96       0x52 ./obj/startup_stm32f4xx.o
+
+.debug_abbrev   0x00000000     0x1be1
+ .debug_abbrev  0x00000000      0x175 obj/robot.o
+ .debug_abbrev  0x00000175       0xc8 obj/gyro.o
+ .debug_abbrev  0x0000023d      0x130 obj/stack.o
+ .debug_abbrev  0x0000036d      0x150 obj/pid.o
+ .debug_abbrev  0x000004bd      0x177 obj/move.o
+ .debug_abbrev  0x00000634      0x130 obj/encoder.o
+ .debug_abbrev  0x00000764       0xd8 obj/pwm.o
+ .debug_abbrev  0x0000083c       0xc9 obj/itoa.o
+ .debug_abbrev  0x00000905      0x147 obj/system_stm32f4xx.o
+ .debug_abbrev  0x00000a4c      0x152 obj/steering.o
+ .debug_abbrev  0x00000b9e      0x240 obj/main.o
+ .debug_abbrev  0x00000dde      0x10b obj/delay.o
+ .debug_abbrev  0x00000ee9       0xfc obj/stm32f4xx_it.o
+ .debug_abbrev  0x00000fe5       0xaf obj/led.o
+ .debug_abbrev  0x00001094      0x182 obj/timer.o
+ .debug_abbrev  0x00001216      0x175 obj/spi.o
+ .debug_abbrev  0x0000138b       0xaf obj/buttons.o
+ .debug_abbrev  0x0000143a      0x18d obj/motors.o
+ .debug_abbrev  0x000015c7      0x154 obj/ir_sensors.o
+ .debug_abbrev  0x0000171b      0x15f obj/i2c.o
+ .debug_abbrev  0x0000187a      0x1fa obj/usart.o
+ .debug_abbrev  0x00001a74      0x15b obj/adc.o
+ .debug_abbrev  0x00001bcf       0x12 ./obj/startup_stm32f4xx.o
+
+.debug_loc      0x00000000     0x13a8
+ .debug_loc     0x00000000      0x164 obj/robot.o
+ .debug_loc     0x00000164      0x150 obj/stack.o
+ .debug_loc     0x000002b4       0xe0 obj/pid.o
+ .debug_loc     0x00000394       0xe0 obj/move.o
+ .debug_loc     0x00000474       0xb0 obj/encoder.o
+ .debug_loc     0x00000524      0x138 obj/pwm.o
+ .debug_loc     0x0000065c       0x70 obj/itoa.o
+ .debug_loc     0x000006cc       0x9c obj/system_stm32f4xx.o
+ .debug_loc     0x00000768      0x1c0 obj/steering.o
+ .debug_loc     0x00000928      0x190 obj/main.o
+ .debug_loc     0x00000ab8       0x9c obj/delay.o
+ .debug_loc     0x00000b54      0x18c obj/stm32f4xx_it.o
+ .debug_loc     0x00000ce0       0x2c obj/led.o
+ .debug_loc     0x00000d0c       0x70 obj/timer.o
+ .debug_loc     0x00000d7c       0xc8 obj/spi.o
+ .debug_loc     0x00000e44       0x2c obj/buttons.o
+ .debug_loc     0x00000e70      0x244 obj/motors.o
+ .debug_loc     0x000010b4       0x64 obj/ir_sensors.o
+ .debug_loc     0x00001118       0xc8 obj/i2c.o
+ .debug_loc     0x000011e0      0x138 obj/usart.o
+ .debug_loc     0x00001318       0x90 obj/adc.o
+
+.debug_aranges  0x00000000      0x2e0
+ .debug_aranges
+                0x00000000       0x20 obj/robot.o
+ .debug_aranges
+                0x00000020       0x18 obj/gyro.o
+ .debug_aranges
+                0x00000038       0x20 obj/stack.o
+ .debug_aranges
+                0x00000058       0x20 obj/pid.o
+ .debug_aranges
+                0x00000078       0x20 obj/move.o
+ .debug_aranges
+                0x00000098       0x20 obj/encoder.o
+ .debug_aranges
+                0x000000b8       0x20 obj/pwm.o
+ .debug_aranges
+                0x000000d8       0x20 obj/itoa.o
+ .debug_aranges
+                0x000000f8       0x20 obj/system_stm32f4xx.o
+ .debug_aranges
+                0x00000118       0x20 obj/steering.o
+ .debug_aranges
+                0x00000138       0x20 obj/main.o
+ .debug_aranges
+                0x00000158       0x20 obj/delay.o
+ .debug_aranges
+                0x00000178       0x20 obj/stm32f4xx_it.o
+ .debug_aranges
+                0x00000198       0x20 obj/led.o
+ .debug_aranges
+                0x000001b8       0x20 obj/timer.o
+ .debug_aranges
+                0x000001d8       0x20 obj/spi.o
+ .debug_aranges
+                0x000001f8       0x20 obj/buttons.o
+ .debug_aranges
+                0x00000218       0x20 obj/motors.o
+ .debug_aranges
+                0x00000238       0x20 obj/ir_sensors.o
+ .debug_aranges
+                0x00000258       0x20 obj/i2c.o
+ .debug_aranges
+                0x00000278       0x20 obj/usart.o
+ .debug_aranges
+                0x00000298       0x20 obj/adc.o
+ .debug_aranges
+                0x000002b8       0x28 ./obj/startup_stm32f4xx.o
+
+.debug_line     0x00000000     0x18c8
+ .debug_line    0x00000000      0x128 obj/robot.o
+ .debug_line    0x00000128       0xaa obj/gyro.o
+ .debug_line    0x000001d2       0xeb obj/stack.o
+ .debug_line    0x000002bd       0xf2 obj/pid.o
+ .debug_line    0x000003af      0x16d obj/move.o
+ .debug_line    0x0000051c      0x11d obj/encoder.o
+ .debug_line    0x00000639      0x10a obj/pwm.o
+ .debug_line    0x00000743       0xc6 obj/itoa.o
+ .debug_line    0x00000809      0x14a obj/system_stm32f4xx.o
+ .debug_line    0x00000953      0x11c obj/steering.o
+ .debug_line    0x00000a6f      0x185 obj/main.o
+ .debug_line    0x00000bf4       0xde obj/delay.o
+ .debug_line    0x00000cd2       0xf9 obj/stm32f4xx_it.o
+ .debug_line    0x00000dcb       0xe9 obj/led.o
+ .debug_line    0x00000eb4      0x10a obj/timer.o
+ .debug_line    0x00000fbe      0x14a obj/spi.o
+ .debug_line    0x00001108       0xec obj/buttons.o
+ .debug_line    0x000011f4      0x147 obj/motors.o
+ .debug_line    0x0000133b      0x10c obj/ir_sensors.o
+ .debug_line    0x00001447      0x1c2 obj/i2c.o
+ .debug_line    0x00001609      0x130 obj/usart.o
+ .debug_line    0x00001739      0x116 obj/adc.o
+ .debug_line    0x0000184f       0x79 ./obj/startup_stm32f4xx.o
+
+.debug_str      0x00000000     0x1491
+ .debug_str     0x00000000      0x4d9 obj/robot.o
+                                0x586 (size before relaxing)
+ .debug_str     0x000004d9        0xb obj/gyro.o
+                                0x3d6 (size before relaxing)
+ .debug_str     0x000004e4       0xac obj/stack.o
+                                0x492 (size before relaxing)
+ .debug_str     0x00000590       0x55 obj/pid.o
+                                0x427 (size before relaxing)
+ .debug_str     0x000005e5       0xef obj/move.o
+                                0x535 (size before relaxing)
+ .debug_str     0x000006d4       0xfb obj/encoder.o
+                                0x5ed (size before relaxing)
+ .debug_str     0x000007cf       0x50 obj/pwm.o
+                                0x2f4 (size before relaxing)
+ .debug_str     0x0000081f       0x4e obj/itoa.o
+                                0x10f (size before relaxing)
+ .debug_str     0x0000086d      0x118 obj/system_stm32f4xx.o
+                                0x2f6 (size before relaxing)
+ .debug_str     0x00000985       0xd6 obj/steering.o
+                                0x4f4 (size before relaxing)
+ .debug_str     0x00000a5b      0x620 obj/main.o
+                                0xbdf (size before relaxing)
+ .debug_str     0x0000107b       0x2e obj/delay.o
+                                0x3f9 (size before relaxing)
+ .debug_str     0x000010a9       0xa3 obj/stm32f4xx_it.o
+                                0x46e (size before relaxing)
+ .debug_str     0x0000114c       0x12 obj/led.o
+                                0x21c (size before relaxing)
+ .debug_str     0x0000115e       0x26 obj/timer.o
+                                0xacd (size before relaxing)
+ .debug_str     0x00001184       0x79 obj/spi.o
+                                0x5a3 (size before relaxing)
+ .debug_str     0x000011fd       0x1a obj/buttons.o
+                                0x224 (size before relaxing)
+ .debug_str     0x00001217       0xa4 obj/motors.o
+                                0x5da (size before relaxing)
+ .debug_str     0x000012bb       0x2c obj/ir_sensors.o
+                                0x53c (size before relaxing)
+ .debug_str     0x000012e7       0x8d obj/i2c.o
+                                0x5c2 (size before relaxing)
+ .debug_str     0x00001374       0x6d obj/usart.o
+                                0xada (size before relaxing)
+ .debug_str     0x000013e1       0xb0 obj/adc.o
+                                0x5b9 (size before relaxing)
+
+.comment        0x00000000       0x30
+ .comment       0x00000000       0x30 obj/robot.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 obj/gyro.o
+ .comment       0x00000000       0x31 obj/stack.o
+ .comment       0x00000000       0x31 obj/pid.o
+ .comment       0x00000000       0x31 obj/move.o
+ .comment       0x00000000       0x31 obj/encoder.o
+ .comment       0x00000000       0x31 obj/pwm.o
+ .comment       0x00000000       0x31 obj/itoa.o
+ .comment       0x00000000       0x31 obj/system_stm32f4xx.o
+ .comment       0x00000000       0x31 obj/steering.o
+ .comment       0x00000000       0x31 obj/main.o
+ .comment       0x00000000       0x31 obj/delay.o
+ .comment       0x00000000       0x31 obj/stm32f4xx_it.o
+ .comment       0x00000000       0x31 obj/led.o
+ .comment       0x00000000       0x31 obj/timer.o
+ .comment       0x00000000       0x31 obj/spi.o
+ .comment       0x00000000       0x31 obj/buttons.o
+ .comment       0x00000000       0x31 obj/motors.o
+ .comment       0x00000000       0x31 obj/ir_sensors.o
+ .comment       0x00000000       0x31 obj/i2c.o
+ .comment       0x00000000       0x31 obj/usart.o
+ .comment       0x00000000       0x31 obj/adc.o
+
+.debug_frame    0x00000000      0xc4c
+ .debug_frame   0x00000000       0xd8 obj/robot.o
+ .debug_frame   0x000000d8       0xb8 obj/stack.o
+ .debug_frame   0x00000190       0x88 obj/pid.o
+ .debug_frame   0x00000218       0x90 obj/move.o
+ .debug_frame   0x000002a8       0x74 obj/encoder.o
+ .debug_frame   0x0000031c       0xb0 obj/pwm.o
+ .debug_frame   0x000003cc       0x4c obj/itoa.o
+ .debug_frame   0x00000418       0x64 obj/system_stm32f4xx.o
+ .debug_frame   0x0000047c      0x114 obj/steering.o
+ .debug_frame   0x00000590       0xf0 obj/main.o
+ .debug_frame   0x00000680       0x60 obj/delay.o
+ .debug_frame   0x000006e0       0xec obj/stm32f4xx_it.o
+ .debug_frame   0x000007cc       0x28 obj/led.o
+ .debug_frame   0x000007f4       0x4c obj/timer.o
+ .debug_frame   0x00000840       0x84 obj/spi.o
+ .debug_frame   0x000008c4       0x28 obj/buttons.o
+ .debug_frame   0x000008ec      0x160 obj/motors.o
+ .debug_frame   0x00000a4c       0x48 obj/ir_sensors.o
+ .debug_frame   0x00000a94       0x78 obj/i2c.o
+ .debug_frame   0x00000b0c       0xb8 obj/usart.o
+ .debug_frame   0x00000bc4       0x5c obj/adc.o
+ .debug_frame   0x00000c20       0x2c /usr/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+
+.debug_ranges   0x00000000       0x20
+ .debug_ranges  0x00000000       0x20 ./obj/startup_stm32f4xx.o

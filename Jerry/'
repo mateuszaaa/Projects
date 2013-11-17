@@ -1,0 +1,25 @@
+#ifndef STACK_H
+#define STACK_H
+#include "defines.h"
+#include <stdio.h> 
+typedef enum{
+FORWARD,
+ROTATE
+}move_type;
+
+typedef struct s_element{
+    int16_t value;
+    move_type type
+}element;
+
+typedef struct s_stack{
+    element tab[50];
+    uint8_t index;
+
+}stack;
+
+void movePointerToNextNode(stack* );
+void setNodeValue(stack* ,element );
+element getNodeValue();
+
+#endif

@@ -1,0 +1,3 @@
+set key autotitle columnhead
+plot  'plot.dat' using 1:2 with lines title 'lewe_kolo_pozycja', 'plot.dat' using 1:3 with lines title 'lewe_kolo_cel', 'plot.dat' using 1:4 with lines title 'lewe_kolo_diff', 'plot.dat' using 1:5 with lines title 'lewe_kolo_pwm_T', 'plot.dat' using 1:6 with lines title 'prawe_kolo_pozycja', 'plot.dat' using 1:7 with lines title 'prawe_kolo_cel', 'plot.dat' using 1:8 with lines title 'prawe_kolo_diff', 'plot.dat' using 1:9 with lines title 'prawe_kolo_pwm_T'
+reread;

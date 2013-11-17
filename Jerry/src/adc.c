@@ -1,0 +1,49 @@
+#include "adc.h"
+// PB0 - BATTRY VOLTAGE  
+// PA4 - IR SENSOR ADC1 channel 4
+// PA5 - IR SENSOR ADC1 channel 5 
+// PA6 - IR SENSOR ADC1 channel 6 
+// PA7 - IR SENSOR ADC1 channel 7 
+void initADC(){
+
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN | RCC_AHB1ENR_GPIOBEN;
+    RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+
+    GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR4_1; //50MHz
+    GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR5_1; //50MHz
+    GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR6_1; //50MHz
+    GPIOA->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR7_1; //50MHz
+    GPIOB->OSPEEDR |= GPIO_OSPEEDER_OSPEEDR0_1; //50MHz
+
+    GPIOA->MODER |= GPIO_MODER_MODER4_0 | GPIO_MODER_MODER4_1; //ANALOG MODE
+    GPIOA->MODER |= GPIO_MODER_MODER5_0 | GPIO_MODER_MODER5_1; //ANALOG MODE
+    GPIOA->MODER |= GPIO_MODER_MODER6_0 | GPIO_MODER_MODER6_1; //ANALOG MODE
+    GPIOA->MODER |= GPIO_MODER_MODER7_0 | GPIO_MODER_MODER7_1; //ANALOG MODE
+
+    GPIOB->MODER |= GPIO_MODER_MODER0_0 | GPIO_MODER_MODER0_1; //ANALOG MODE
+
+    //sample rate
+    ADC1->SMPR2 = ADC_SMPR2_SMP4_2;
+
+    //prescaler = 4 168MHz/APB2_DIV_2/ADC_PRESC_DIV4 = 21MHz
+    ADC->CCR |=  ADC_CCR_ADCPRE_0; 
+    //turns on adc
+    ADC1->CR2 |=  ADC_CR2_ADON ;
+}
+
+
+
+void ADC1PrepareSingleMeasure(uint8_t channel){
+    //number of channels to measure
+    ADC1->SQR1 = 0; 
+    //channels on which measure will be prefeormed
+    ADC1->SQR3 = channel; 
+}
+
+int ADC1SingleMeasure(){
+    ADC1->CR2 |= ADC_CR2_SWSTART;    
+    while( ! (ADC1->SR & ADC_SR_EOC) );
+    return ADC1->DR;
+}
+
+
