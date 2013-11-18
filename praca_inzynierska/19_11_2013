@@ -1,0 +1,35 @@
+wstep przy kinametyce napisac o tym ze zawrabuae w miejscu i przemiszczenie moga zachodzic osobno i przy robotach klasy20 jestmozliwe. o
+robot musi wiedziec gdzie jest opcje :
+lokalna (wzgledem pocztau ruchui wzgledem robota) - my bedziemy korzystac z wiedzy lokalnej
+glbalna na przyklad kamera
+
+dwie strategie :
+	jechac po woli ale dokladnie w pierwszym 
+
+1.3.3 czujniki odleglosci sa uniezlaenione od przeszlosci daja informacje bezposrednia inne daja posrednia  syroskop i akcelerometr male ledu ktore sie calkuja pomiar odleglosci od scian ma spore bledy ale stale
+
+
+zeby poriszac sie w labiryncie sa informacje dwojakiego rodzaju bezposrednie. zyro i akceler daja info wzgledna wzgledem startu (infor o przmieszczeniu bazuja na histori)  a czujniki odelglosci daja info wzgledna wzgledem aktualnej pozycji. JAkie info potrzebujemy i jakie mozemy dostac 
+
+ 
+realizacja labiryntu najlepiej miec ciagla krzywizne zeby nie musiec sie zatrzymywac i jest to trudne zaanie a my dekomponujemy na ruchy elementarne i wybieramy 2 opcje
+
+1.5.0mozliwa jest zmiana orientacji w punkcie i zmieniac swoja orinetacje w kierunku ... skad wiadomo ze mozna kazdy ruch o
+rucho po prostej jak oba kola maja taka sama wartosc i ten sma kierunek lub ta sama wartosc i przeciwny kierunek napisac gdy bede pisal jak reliazuje ruchy elementarne
+
+w 1.5 opisac te dwa tryby sterowania i co wazne(utryzmywnaie orientacji i brak poslizgów) i wykoryztsne do tegosa regulatory predkosci i polozenia poprawic 2 regulator
+
+przy diagramach naisac ze sa dwie mozliwosci
+
+napisac ze silniki sie roznia i ze kompensacja mechanixczna nie wystracza y  potrzeba regulatora
+
+zyroskop -im wiekszy zakres tym mneijsza dokladnosc jawnie napisac ze posredni pomiar o zakresie napisac pozniej (tylko napisac ze mozna wybrac zakres i od czego uzalezniony -max speed)
+
+sa czumy wiec filtrujemy
+
+mierymy na kilka sposobow fuzje
+jakie sygnaly sa dostepne i jaka robimy fuzje TUTAJ napisac o bledach - zyro dokladne i blad sie kumuluje z czasem z czujnikow odelglosci  i napisac jak czesto korygowac
+
+
+
+
