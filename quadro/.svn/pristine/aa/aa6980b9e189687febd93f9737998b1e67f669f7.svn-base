@@ -1,0 +1,694 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Add2List	inc/list.hh	/^   void Add2List(Command *pCmd);$/;"	p	class:CommandsList	access:public	signature:(Command *pCmd)
+Add2List	src/list.cpp	/^void CommandsList::Add2List(Command *cmd)$/;"	f	class:CommandsList	signature:(Command *cmd)
+AddLib	inc/set4libinterfaces.hh	/^  bool AddLib(const char* sLibName);$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sLibName)
+AddLib	src/set4libinterfaces.cpp	/^bool Set4LibInterfaces::AddLib(const char*  lib_name)$/;"	f	class:Set4LibInterfaces	signature:(const char* lib_name)
+AddLib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  bool AddLib(const char* sLibName);$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sLibName)
+AddLib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^bool Set4LibInterfaces::AddLib(const char*  sLibName)$/;"	f	class:Set4LibInterfaces	signature:(const char* sLibName)
+BudujPreambulePoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  void BudujPreambulePoleceniaRysowania(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+BudujPreambulePoleceniaRysowania	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+BudujPreambule_2D	inc/lacze_do_gnuplota.hh	/^  void BudujPreambule_2D(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+BudujPreambule_2D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_2D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+BudujPreambule_3D	inc/lacze_do_gnuplota.hh	/^  void BudujPreambule_3D(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+BudujPreambule_3D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_3D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+CC	makefile	/^CC = g++$/;"	m
+CC	plugins/makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS  = -g -Wall $/;"	m
+CFLAGS	plugins/makefile	/^CFLAGS  = -g -Wall -shared -fPIC$/;"	m
+COMMAND4FLY_HH	plugins/inc/command4fly.hh	2;"	d
+COMMAND4FLY_HH	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	2;"	d
+COMMAND4FLY_HH	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	2;"	d
+COMMAND4ROTATE_HH	plugins/inc/command4rotate.hh	3;"	d
+COMMAND_HH	inc/command.hh	2;"	d
+COMMAND_HH	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	2;"	d
+CPPFLAGS	zad2/biblioteki_dynamiczne/map-interface-wskaznik/Makefile	/^CPPFLAGS=-Wall -g -pedantic -Iinc$/;"	m
+CPPFLAGS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/Makefile	/^CPPFLAGS=-Wall -pedantic -Iinc$/;"	m
+CPPFLAGS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/Makefile	/^CPPFLAGS=-Wall -fPIC -pedantic -Iinc -I..\/inc$/;"	m
+CPPFLAGS	zad2/xml_parser/Makefile	/^CPPFLAGS=-Wall -g -pedantic -Iinc$/;"	m
+Clear	inc/list.hh	/^   void Clear();$/;"	p	class:CommandsList	access:public	signature:()
+Clear	src/list.cpp	/^void CommandsList::Clear()$/;"	f	class:CommandsList	signature:()
+Command	inc/command.hh	/^ class Command {$/;"	c
+Command	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^ class Command {$/;"	c
+Command4Fly	plugins/inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly	plugins/inc/command4fly.hh	/^class Command4Fly: public Command {$/;"	c	inherits:Command
+Command4Fly	plugins/src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^class Command4Fly: public Command {$/;"	c	inherits:Command
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^class Command4Fly: public Command {$/;"	c	inherits:Command
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^Command4Fly::Command4Fly(): _Speed_Hor_mS(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^Command4Fly::Command4Fly(): _Speed_Hor_mS(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::Command4Fly	plugins/inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::Command4Fly	plugins/src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^Command4Fly::Command4Fly(): _Speed_Hor_mS(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::Command4Fly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^Command4Fly::Command4Fly(): _Speed_Hor_mS(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::CreateCmd	plugins/inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::CreateCmd	plugins/src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::ExecCmd	plugins/inc/command4fly.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Fly::ExecCmd	plugins/src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+Command4Fly::ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Fly::ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Fly::ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &RobPose, std::ostream& Strm_Out) const$/;"	f	class:Command4Fly	signature:(RobotPose &RobPose, std::ostream& Strm_Out) const
+Command4Fly::ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^int Command4Fly::ExecCmd(RobotPose &RobPose, std::ostream& Strm_Out) const$/;"	f	class:Command4Fly	signature:(RobotPose &RobPose, std::ostream& Strm_Out) const
+Command4Fly::GetCmdName	plugins/inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+Command4Fly::GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^const char* Command4Fly::GetCmdName() $/;"	f	class:Command4Fly	signature:()
+Command4Fly::GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^const char* Command4Fly::GetCmdName() $/;"	f	class:Command4Fly	signature:()
+Command4Fly::PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual void PrintCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+Command4Fly::PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual void PrintCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+Command4Fly::PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^void Command4Fly::PrintCmd() const$/;"	f	class:Command4Fly	signature:() const
+Command4Fly::PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^void Command4Fly::PrintCmd() const$/;"	f	class:Command4Fly	signature:() const
+Command4Fly::PrintSyntax	plugins/inc/command4fly.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::PrintSyntax	plugins/src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::ReadParams	plugins/inc/command4fly.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+Command4Fly::ReadParams	plugins/src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+Command4Fly::ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+Command4Fly::ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+Command4Fly::ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& Strm_CmdsList)$/;"	f	class:Command4Fly	signature:(std::istream& Strm_CmdsList)
+Command4Fly::ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^bool Command4Fly::ReadParams(std::istream& Strm_CmdsList)$/;"	f	class:Command4Fly	signature:(std::istream& Strm_CmdsList)
+Command4Fly::_Speed_Hor_mS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  double  _Speed_Hor_mS;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_Speed_Hor_mS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  double  _Speed_Hor_mS;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_length	plugins/inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_horizontal	plugins/inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_vertical	plugins/inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+Command4Fly::printCmd	plugins/inc/command4fly.hh	/^  virtual void printCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+Command4Fly::printCmd	plugins/src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const
+Command4Rotate	plugins/inc/command4rotate.hh	/^  Command4Rotate();  $/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate	plugins/inc/command4rotate.hh	/^class Command4Rotate: public Command {$/;"	c	inherits:Command
+Command4Rotate	plugins/src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::Command4Rotate	plugins/inc/command4rotate.hh	/^  Command4Rotate();  $/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::Command4Rotate	plugins/src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::CreateCmd	plugins/inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::CreateCmd	plugins/src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::ExecCmd	plugins/inc/command4rotate.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Rotate	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Rotate::ExecCmd	plugins/src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+Command4Rotate::GetCmdName	plugins/inc/command4rotate.hh	/^  static const char* GetCmdName() { return "Rotate"; }$/;"	f	class:Command4Rotate	access:public	signature:()
+Command4Rotate::PrintSyntax	plugins/inc/command4rotate.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::PrintSyntax	plugins/src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::ReadParams	plugins/inc/command4rotate.hh	/^  bool ReadParams(std::istream& );$/;"	p	class:Command4Rotate	access:public	signature:(std::istream& )
+Command4Rotate::ReadParams	plugins/src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+Command4Rotate::_angle	plugins/inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::_angle_speed	plugins/inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::printCmd	plugins/inc/command4rotate.hh	/^  virtual void printCmd() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+Command4Rotate::printCmd	plugins/src/command4rotate.cpp	/^void Command4Rotate::printCmd() const$/;"	f	class:Command4Rotate	signature:() const
+Command::ExecCmd	inc/command.hh	/^   virtual int ExecCmd(   RobotPose       &RobPose, $/;"	p	class:Command	access:public	signature:( RobotPose &RobPose, std::ostream &Strm_Out ) const
+Command::ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual int ExecCmd(   RobotPose       &RobPose, $/;"	p	class:Command	access:public	signature:( RobotPose &RobPose, std::ostream &Strm_Out ) const
+Command::PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual void PrintCmd() const = 0;$/;"	p	class:Command	access:public	signature:() const
+Command::ReadParams	inc/command.hh	/^   virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;$/;"	p	class:Command	access:public	signature:(std::istream& Strm_CmdsList)
+Command::ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;$/;"	p	class:Command	access:public	signature:(std::istream& Strm_CmdsList)
+Command::printCmd	inc/command.hh	/^   virtual void printCmd() const = 0;$/;"	p	class:Command	access:public	signature:() const
+Command::~Command	inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+Command::~Command	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+CommandParamsError	inc/exception.hh	/^class CommandParamsError: public std::exception{$/;"	c	inherits:std::exception
+CommandParamsError::what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:CommandParamsError	access:private	signature:() const
+CommandsList	inc/list.hh	/^class CommandsList: public std::list<Command*> {$/;"	c	inherits:std::list
+CommandsList::Add2List	inc/list.hh	/^   void Add2List(Command *pCmd);$/;"	p	class:CommandsList	access:public	signature:(Command *pCmd)
+CommandsList::Add2List	src/list.cpp	/^void CommandsList::Add2List(Command *cmd)$/;"	f	class:CommandsList	signature:(Command *cmd)
+CommandsList::Clear	inc/list.hh	/^   void Clear();$/;"	p	class:CommandsList	access:public	signature:()
+CommandsList::Clear	src/list.cpp	/^void CommandsList::Clear()$/;"	f	class:CommandsList	signature:()
+CommandsList::~CommandsList	inc/list.hh	/^   ~CommandsList();$/;"	p	class:CommandsList	access:public	signature:()
+CommandsList::~CommandsList	src/list.cpp	/^CommandsList::~CommandsList()$/;"	f	class:CommandsList	signature:()
+CommandsParser	inc/parser.hh	/^class CommandsParser {$/;"	c
+CommandsParser::ReadCmd	inc/parser.hh	/^  bool ReadCmd(LibInterface *, istream &, CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(LibInterface *, istream &, CommandsList &)
+CommandsParser::ReadCmd	src/parser.cpp	/^bool CommandsParser::ReadCmd(LibInterface *interface, istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:(LibInterface *interface, istream &IStrm, CommandsList &cmds_list)
+CommandsParser::ReadCmdsList	inc/parser.hh	/^  bool ReadCmdsList( ifstream &, CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:( ifstream &, CommandsList &)
+CommandsParser::ReadCmdsList	src/parser.cpp	/^bool CommandsParser::ReadCmdsList( ifstream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( ifstream &IStrm, CommandsList &cmds_list)
+CommandsParser::_libs_set	inc/parser.hh	/^  Set4LibInterfaces _libs_set;$/;"	m	class:CommandsParser	access:private
+CommandsParser::execCmdsList	inc/parser.hh	/^  void execCmdsList(ofstream & ,RobotPose&,CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(ofstream & ,RobotPose&,CommandsList &)
+CommandsParser::execCmdsList	src/parser.cpp	/^  void CommandsParser::execCmdsList(ofstream & file,RobotPose &robot,CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(ofstream & file,RobotPose &robot,CommandsList &cmds_list)
+CommandsParser::loadLib	inc/parser.hh	/^  bool loadLib(const char* lib_name);$/;"	p	class:CommandsParser	access:public	signature:(const char* lib_name)
+CommandsParser::loadLib	src/parser.cpp	/^bool CommandsParser::loadLib(const char* lib_name){$/;"	f	class:CommandsParser	signature:(const char* lib_name)
+CommandsParser::showCmdsList	inc/parser.hh	/^  void showCmdsList(CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(CommandsList &)
+CommandsParser::showCmdsList	src/parser.cpp	/^  void CommandsParser::showCmdsList(CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(CommandsList &cmds_list)
+CommandsParser::unloadLib	inc/parser.hh	/^  bool unloadLib(const char* lib_name);$/;"	p	class:CommandsParser	access:public	signature:(const char* lib_name)
+CommandsParser::unloadLib	src/parser.cpp	/^bool CommandsParser::unloadLib(const char* lib_name){$/;"	f	class:CommandsParser	signature:(const char* lib_name)
+CreateCmd	inc/libinterface.hh	/^    Command * CreateCmd(){$/;"	f	class:LibInterface	access:public	signature:()
+CreateCmd	plugins/inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+CreateCmd	plugins/inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Rotate	access:public	signature:()
+CreateCmd	plugins/src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+CreateCmd	plugins/src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^  Command* CreateCmd(void);$/;"	p	file:	signature:(void)
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^Command* CreateCmd()$/;"	f	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^  Command* CreateCmd(void);$/;"	p	file:	signature:(void)
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+CreateCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^Command* CreateCmd()$/;"	f	signature:()
+CzyJestPlik	src/lacze_do_gnuplota.cpp	/^ bool CzyJestPlik(char const *NazwaPliku)$/;"	f	namespace:PzG	signature:(char const *NazwaPliku)
+CzyPolaczenieJestZainicjowane	inc/lacze_do_gnuplota.hh	/^    bool CzyPolaczenieJestZainicjowane() const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+CzyPolaczenieJestZainicjowane	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+CzyWyswietlacKomunikaty	inc/lacze_do_gnuplota.hh	/^  bool CzyWyswietlacKomunikaty() const { return _WyswietlajKomunikatyOBledach;}$/;"	f	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+DOCNAME	zad2/biblioteki_dynamiczne/map-interface-wskaznik/dox/Makefile	/^DOCNAME=xmlinterpreter$/;"	m
+DOCNAME	zad2/xml_parser/doc/Makefile	/^DOCNAME=xmlinterpreter$/;"	m
+Detach	inc/libinterface.hh	/^    void Detach() ;$/;"	p	class:LibInterface	access:public	signature:()
+Detach	src/libinterface.cpp	/^void LibInterface::Detach() $/;"	f	class:LibInterface	signature:()
+Detach	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    void Detach() { _pLibHandle = NULL; }$/;"	f	class:LibInterface	access:public	signature:()
+DodajNazwePliku	inc/lacze_do_gnuplota.hh	/^   bool DodajNazwePliku( const char       * NazwaPliku, $/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( const char * NazwaPliku, RodzajRysowania RodzRys = RR_Ciagly, int Szerokosc = 1 )
+DodajNazwePliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DodajNazwePliku( const char      * NazwaPliku,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( const char * NazwaPliku, RodzajRysowania RodzRys, int Szerokosc )
+DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  bool LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania( std::string &,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &, char const ** )
+DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  virtual bool DopiszPlikiDoPoleceniaRysowania( std::string &Polecenie, char const **Sep );$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:( std::string &Polecenie, char const **Sep )
+DopiszRysowanieZPlikow	inc/lacze_do_gnuplota.hh	/^    bool DopiszRysowanieZPlikow( std::string &Polecenie, char const **Sep );$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( std::string &Polecenie, char const **Sep )
+DopiszRysowanieZPlikow	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie, $/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &Polecenie, char const **Sep )
+EXCEPTIONS_HH	inc/exception.hh	2;"	d
+ExecCmd	inc/command.hh	/^   virtual int ExecCmd(   RobotPose       &RobPose, $/;"	p	class:Command	access:public	signature:( RobotPose &RobPose, std::ostream &Strm_Out ) const
+ExecCmd	plugins/inc/command4fly.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	plugins/inc/command4rotate.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Rotate	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	plugins/src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+ExecCmd	plugins/src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual int ExecCmd(   RobotPose       &RobPose, $/;"	p	class:Command	access:public	signature:( RobotPose &RobPose, std::ostream &Strm_Out ) const
+ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &RobPose, std::ostream& Strm_Out) const$/;"	f	class:Command4Fly	signature:(RobotPose &RobPose, std::ostream& Strm_Out) const
+ExecCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^int Command4Fly::ExecCmd(RobotPose &RobPose, std::ostream& Strm_Out) const$/;"	f	class:Command4Fly	signature:(RobotPose &RobPose, std::ostream& Strm_Out) const
+FileOpenProblem	inc/exception.hh	/^class FileOpenProblem: public std::exception{$/;"	c	inherits:std::exception
+FileOpenProblem::what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:FileOpenProblem	access:private	signature:() const
+FindLib4Cmd	inc/set4libinterfaces.hh	/^  const LibInterface* FindLib4Cmd(const char*  sCmdName) const;$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sCmdName) const
+FindLib4Cmd	src/set4libinterfaces.cpp	/^const LibInterface* Set4LibInterfaces::FindLib4Cmd(const char*  sCmdName) const$/;"	f	class:Set4LibInterfaces	signature:(const char* sCmdName) const
+FindLib4Cmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  const LibInterface* FindLib4Cmd(const char*  sCmdName) const;$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sCmdName) const
+FindLib4Cmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^const LibInterface* Set4LibInterfaces::FindLib4Cmd(const char*  sCmdName) const$/;"	f	class:Set4LibInterfaces	signature:(const char* sCmdName) const
+GetCmdName	inc/libinterface.hh	/^    const char * GetCmdName(){$/;"	f	class:LibInterface	access:public	signature:()
+GetCmdName	plugins/inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+GetCmdName	plugins/inc/command4rotate.hh	/^  static const char* GetCmdName() { return "Rotate"; }$/;"	f	class:Command4Rotate	access:public	signature:()
+GetCmdName	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    const char*  GetCmdName() const { return _pFun_GetCmdName(); }$/;"	f	class:LibInterface	access:public	signature:() const
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Fly	access:public	signature:()
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Fly	access:public	signature:()
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^  const char* GetCmdName(void);$/;"	p	file:	signature:(void)
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^const char* Command4Fly::GetCmdName() $/;"	f	class:Command4Fly	signature:()
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^const char* GetCmdName(void)$/;"	f	signature:(void)
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^  const char* GetCmdName(void);$/;"	p	file:	signature:(void)
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^const char* Command4Fly::GetCmdName() $/;"	f	class:Command4Fly	signature:()
+GetCmdName	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^const char* GetCmdName(void)$/;"	f	signature:(void)
+GetName_FlyCmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/libinterface.cpp	/^const char* GetName_FlyCmd() $/;"	f	signature:()
+GetName_RotateCmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/libinterface.cpp	/^const char* GetName_RotateCmd() $/;"	f	signature:()
+InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^      InfoPlikuDoRysowania(const char* NazwaPliku, RodzajRysowania  RodzRys, int Szerokosc)$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const char* NazwaPliku, RodzajRysowania RodzRys, int Szerokosc)
+InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^  class InfoPlikuDoRysowania {$/;"	c	namespace:PzG
+Inicjalizuj	inc/lacze_do_gnuplota.hh	/^  bool Inicjalizuj();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+Inicjalizuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Inicjalizuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+Init4Lib	inc/libinterface.hh	/^    bool Init4Lib(const char* sLibName);$/;"	p	class:LibInterface	access:public	signature:(const char* sLibName)
+Init4Lib	src/libinterface.cpp	/^bool LibInterface::Init4Lib(const char* sLibName){$/;"	f	class:LibInterface	signature:(const char* sLibName)
+Init4Lib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    bool Init4Lib(const char* sLibName);$/;"	p	class:LibInterface	access:public	signature:(const char* sLibName)
+Init4Lib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/libinterface.cpp	/^bool LibInterface::Init4Lib(const char* sLibName)$/;"	f	class:LibInterface	signature:(const char* sLibName)
+KomunikatBledu	inc/lacze_do_gnuplota.hh	/^  void KomunikatBledu(const char *Komunikat) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(const char *Komunikat) const
+KomunikatBledu	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::KomunikatBledu(const char *Komunikat) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat) const
+LACZE_DO_GNUPLOTA_HH	inc/lacze_do_gnuplota.hh	3;"	d
+LDFLAGS	makefile	/^LDFLAGS = -L lib -lcommand4fly -lcommand4rotate -ldl$/;"	m
+LDFLAGS	plugins/makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	zad2/biblioteki_dynamiczne/map-interface-wskaznik/Makefile	/^LDFLAGS=-Wall$/;"	m
+LDFLAGS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/Makefile	/^LDFLAGS=-Wall$/;"	m
+LDFLAGS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/Makefile	/^LDFLAGS=-Wall -shared$/;"	m
+LDFLAGS	zad2/xml_parser/Makefile	/^LDFLAGS=-Wall$/;"	m
+LD_LIBRARY_PATH	zad2/biblioteki_dynamiczne/zalazek_podstawowy/Makefile	/^	export LD_LIBRARY_PATH=".\/libs"; .\/interp$/;"	m
+LIBINTERFACE_HH	inc/libinterface.hh	2;"	d
+LIBINTERFACE_HH	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	2;"	d
+LIST_HH	inc/list.hh	2;"	d
+LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  LaczeDoGNUPlota();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^class LaczeDoGNUPlota {$/;"	c	namespace:PzG
+LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ LaczeDoGNUPlota::LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+LibInterface	inc/libinterface.hh	/^    LibInterface();$/;"	p	class:LibInterface	access:public	signature:()
+LibInterface	inc/libinterface.hh	/^class LibInterface {$/;"	c
+LibInterface	src/libinterface.cpp	/^LibInterface::LibInterface(): _lib_handler(NULL), _getCmdName(NULL), _createCommand(NULL) {};$/;"	f	class:LibInterface	signature:()
+LibInterface	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    LibInterface(): _pLibHandle(NULL), _pFun_GetCmdName(NULL) {}$/;"	f	class:LibInterface	access:public	signature:()
+LibInterface	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^class LibInterface {$/;"	c
+LibInterface::CreateCmd	inc/libinterface.hh	/^    Command * CreateCmd(){$/;"	f	class:LibInterface	access:public	signature:()
+LibInterface::Detach	inc/libinterface.hh	/^    void Detach() ;$/;"	p	class:LibInterface	access:public	signature:()
+LibInterface::Detach	src/libinterface.cpp	/^void LibInterface::Detach() $/;"	f	class:LibInterface	signature:()
+LibInterface::Detach	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    void Detach() { _pLibHandle = NULL; }$/;"	f	class:LibInterface	access:public	signature:()
+LibInterface::GetCmdName	inc/libinterface.hh	/^    const char * GetCmdName(){$/;"	f	class:LibInterface	access:public	signature:()
+LibInterface::GetCmdName	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    const char*  GetCmdName() const { return _pFun_GetCmdName(); }$/;"	f	class:LibInterface	access:public	signature:() const
+LibInterface::Init4Lib	inc/libinterface.hh	/^    bool Init4Lib(const char* sLibName);$/;"	p	class:LibInterface	access:public	signature:(const char* sLibName)
+LibInterface::Init4Lib	src/libinterface.cpp	/^bool LibInterface::Init4Lib(const char* sLibName){$/;"	f	class:LibInterface	signature:(const char* sLibName)
+LibInterface::Init4Lib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    bool Init4Lib(const char* sLibName);$/;"	p	class:LibInterface	access:public	signature:(const char* sLibName)
+LibInterface::Init4Lib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/libinterface.cpp	/^bool LibInterface::Init4Lib(const char* sLibName)$/;"	f	class:LibInterface	signature:(const char* sLibName)
+LibInterface::LibInterface	inc/libinterface.hh	/^    LibInterface();$/;"	p	class:LibInterface	access:public	signature:()
+LibInterface::LibInterface	src/libinterface.cpp	/^LibInterface::LibInterface(): _lib_handler(NULL), _getCmdName(NULL), _createCommand(NULL) {};$/;"	f	class:LibInterface	signature:()
+LibInterface::LibInterface	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    LibInterface(): _pLibHandle(NULL), _pFun_GetCmdName(NULL) {}$/;"	f	class:LibInterface	access:public	signature:()
+LibInterface::_createCommand	inc/libinterface.hh	/^    Command  *(*_createCommand)(void);$/;"	m	class:LibInterface	access:private
+LibInterface::_getCmdName	inc/libinterface.hh	/^    const char* (*_getCmdName)(void);$/;"	m	class:LibInterface	access:private
+LibInterface::_lib_handler	inc/libinterface.hh	/^    void  *_lib_handler; $/;"	m	class:LibInterface	access:private
+LibInterface::_pFun_GetCmdName	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    const char* (*_pFun_GetCmdName)();$/;"	m	class:LibInterface	access:private
+LibInterface::_pLibHandle	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    void  *_pLibHandle; $/;"	m	class:LibInterface	access:private
+LibInterface::~LibInterface	inc/libinterface.hh	/^    ~LibInterface() ;$/;"	p	class:LibInterface	access:public	signature:()
+LibInterface::~LibInterface	src/libinterface.cpp	/^LibInterface::~LibInterface() { $/;"	f	class:LibInterface	signature:()
+LibInterface::~LibInterface	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    ~LibInterface() { if (_pLibHandle) dlclose(_pLibHandle); }$/;"	f	class:LibInterface	access:public	signature:()
+MENU_HH	inc/menu.hh	2;"	d
+Menu	inc/menu.hh	/^    Menu(CommandsParser &,CommandsList &,RobotPose &); $/;"	p	class:Menu	access:public	signature:(CommandsParser &,CommandsList &,RobotPose &)
+Menu	inc/menu.hh	/^class Menu{$/;"	c
+Menu::Menu	inc/menu.hh	/^    Menu(CommandsParser &,CommandsList &,RobotPose &); $/;"	p	class:Menu	access:public	signature:(CommandsParser &,CommandsList &,RobotPose &)
+Menu::_input_file_name	inc/menu.hh	/^    std::string _input_file_name;$/;"	m	class:Menu	access:private
+Menu::_list	inc/menu.hh	/^    CommandsList _list;$/;"	m	class:Menu	access:private
+Menu::_output_file_name	inc/menu.hh	/^    std::string _output_file_name;$/;"	m	class:Menu	access:private
+Menu::_parser	inc/menu.hh	/^    CommandsParser _parser;$/;"	m	class:Menu	access:private
+Menu::_robot	inc/menu.hh	/^    RobotPose _robot;$/;"	m	class:Menu	access:private
+Menu::decision	inc/menu.hh	/^    bool decision(char); $/;"	p	class:Menu	access:private	signature:(char)
+Menu::decision	src/menu.cpp	/^bool Menu::decision(char option){$/;"	f	class:Menu	signature:(char option)
+Menu::execCommands	inc/menu.hh	/^    void execCommands(); $/;"	p	class:Menu	access:private	signature:()
+Menu::execCommands	src/menu.cpp	/^void Menu::execCommands(){$/;"	f	class:Menu	signature:()
+Menu::help	inc/menu.hh	/^    void help(); $/;"	p	class:Menu	access:private	signature:()
+Menu::help	src/menu.cpp	/^void Menu::help(){$/;"	f	class:Menu	signature:()
+Menu::menu	inc/menu.hh	/^    void menu();$/;"	p	class:Menu	access:public	signature:()
+Menu::menu	src/menu.cpp	/^void Menu::menu(){$/;"	f	class:Menu	signature:()
+Menu::readCommands	inc/menu.hh	/^    void readCommands(); $/;"	p	class:Menu	access:private	signature:()
+Menu::readCommands	src/menu.cpp	/^void Menu::readCommands(){$/;"	f	class:Menu	signature:()
+Menu::setInputFile	inc/menu.hh	/^    void setInputFile(std::string); $/;"	p	class:Menu	access:private	signature:(std::string)
+Menu::setInputFile	src/menu.cpp	/^void Menu::setInputFile(std::string file_name){$/;"	f	class:Menu	signature:(std::string file_name)
+Menu::setOutputFile	inc/menu.hh	/^    void setOutputFile(std::string); $/;"	p	class:Menu	access:private	signature:(std::string)
+Menu::setOutputFile	src/menu.cpp	/^void Menu::setOutputFile(std::string file_name){$/;"	f	class:Menu	signature:(std::string file_name)
+Menu::showCommands	inc/menu.hh	/^    void showCommands(); $/;"	p	class:Menu	access:private	signature:()
+Menu::showCommands	src/menu.cpp	/^void Menu::showCommands(){$/;"	f	class:Menu	signature:()
+PARSER_HH	inc/parser.hh	2;"	d
+PI	inc/command.hh	7;"	d
+PROJ_NAME	makefile	/^PROJ_NAME = main$/;"	m
+PROJ_NAME	plugins/makefile	/^PROJ_NAME = main$/;"	m
+PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OX() const { return _PokazOs_OX; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OX(bool Pokaz) { _PokazOs_OX = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OY() const { return _PokazOs_OY; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OY(bool Pokaz) { _PokazOs_OY = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual void PrintCmd() const = 0;$/;"	p	class:Command	access:public	signature:() const
+PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual void PrintCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual void PrintCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^void Command4Fly::PrintCmd() const$/;"	f	class:Command4Fly	signature:() const
+PrintCmd	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^void Command4Fly::PrintCmd() const$/;"	f	class:Command4Fly	signature:() const
+PrintSyntax	plugins/inc/command4fly.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+PrintSyntax	plugins/inc/command4rotate.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Rotate	access:public	signature:()
+PrintSyntax	plugins/src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+PrintSyntax	plugins/src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax()$/;"	f	class:Command4Rotate	signature:()
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  static void PrintSyntax();$/;"	p	class:Command4Fly	access:public	signature:()
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^  void PrintSyntax(void);$/;"	p	file:	signature:(void)
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^void PrintSyntax(void)$/;"	f	signature:(void)
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^  void PrintSyntax(void);$/;"	p	file:	signature:(void)
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+PrintSyntax	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^void PrintSyntax(void)$/;"	f	signature:(void)
+PrzeslijDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  bool PrzeslijDoGNUPlota(const char *Polecenie);$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(const char *Polecenie)
+PrzeslijDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::PrzeslijDoGNUPlota(const char *Komunikat)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat)
+PzG	inc/lacze_do_gnuplota.hh	/^namespace PzG {$/;"	n
+PzG	src/lacze_do_gnuplota.cpp	/^namespace PzG {$/;"	n	file:
+PzG::CzyJestPlik	src/lacze_do_gnuplota.cpp	/^ bool CzyJestPlik(char const *NazwaPliku)$/;"	f	namespace:PzG	signature:(char const *NazwaPliku)
+PzG::InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^  class InfoPlikuDoRysowania {$/;"	c	namespace:PzG
+PzG::InfoPlikuDoRysowania::InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^      InfoPlikuDoRysowania(const char* NazwaPliku, RodzajRysowania  RodzRys, int Szerokosc)$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const char* NazwaPliku, RodzajRysowania RodzRys, int Szerokosc)
+PzG::InfoPlikuDoRysowania::WezNazwePliku	inc/lacze_do_gnuplota.hh	/^      const std::string WezNazwePliku() const { return _NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::WezRodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania WezRodzRys() const { return _RodzRys; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::WezSzerokosc	inc/lacze_do_gnuplota.hh	/^      int WezSzerokosc() const { return _Szerokosc; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::ZmienNazwePliku	inc/lacze_do_gnuplota.hh	/^      void ZmienNazwePliku(const std::string& NazwaPliku) { _NazwaPliku = NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const std::string& NazwaPliku)
+PzG::InfoPlikuDoRysowania::_NazwaPliku	inc/lacze_do_gnuplota.hh	/^      std::string  _NazwaPliku;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::InfoPlikuDoRysowania::_RodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania  _RodzRys;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::InfoPlikuDoRysowania::_Szerokosc	inc/lacze_do_gnuplota.hh	/^      int  _Szerokosc;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^class LaczeDoGNUPlota {$/;"	c	namespace:PzG
+PzG::LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  void BudujPreambulePoleceniaRysowania(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_2D	inc/lacze_do_gnuplota.hh	/^  void BudujPreambule_2D(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_2D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_2D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_3D	inc/lacze_do_gnuplota.hh	/^  void BudujPreambule_3D(std::string &Preambula) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_3D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_3D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane	inc/lacze_do_gnuplota.hh	/^    bool CzyPolaczenieJestZainicjowane() const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+PzG::LaczeDoGNUPlota::CzyWyswietlacKomunikaty	inc/lacze_do_gnuplota.hh	/^  bool CzyWyswietlacKomunikaty() const { return _WyswietlajKomunikatyOBledach;}$/;"	f	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+PzG::LaczeDoGNUPlota::DodajNazwePliku	inc/lacze_do_gnuplota.hh	/^   bool DodajNazwePliku( const char       * NazwaPliku, $/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( const char * NazwaPliku, RodzajRysowania RodzRys = RR_Ciagly, int Szerokosc = 1 )
+PzG::LaczeDoGNUPlota::DodajNazwePliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DodajNazwePliku( const char      * NazwaPliku,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( const char * NazwaPliku, RodzajRysowania RodzRys, int Szerokosc )
+PzG::LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  bool LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania( std::string &,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &, char const ** )
+PzG::LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  virtual bool DopiszPlikiDoPoleceniaRysowania( std::string &Polecenie, char const **Sep );$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:( std::string &Polecenie, char const **Sep )
+PzG::LaczeDoGNUPlota::DopiszRysowanieZPlikow	inc/lacze_do_gnuplota.hh	/^    bool DopiszRysowanieZPlikow( std::string &Polecenie, char const **Sep );$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( std::string &Polecenie, char const **Sep )
+PzG::LaczeDoGNUPlota::DopiszRysowanieZPlikow	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie, $/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &Polecenie, char const **Sep )
+PzG::LaczeDoGNUPlota::Inicjalizuj	inc/lacze_do_gnuplota.hh	/^  bool Inicjalizuj();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::Inicjalizuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Inicjalizuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::KomunikatBledu	inc/lacze_do_gnuplota.hh	/^  void KomunikatBledu(const char *Komunikat) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(const char *Komunikat) const
+PzG::LaczeDoGNUPlota::KomunikatBledu	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::KomunikatBledu(const char *Komunikat) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat) const
+PzG::LaczeDoGNUPlota::LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  LaczeDoGNUPlota();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ LaczeDoGNUPlota::LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OX() const { return _PokazOs_OX; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OX(bool Pokaz) { _PokazOs_OX = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PzG::LaczeDoGNUPlota::PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OY() const { return _PokazOs_OY; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OY(bool Pokaz) { _PokazOs_OY = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PzG::LaczeDoGNUPlota::PrzeslijDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  bool PrzeslijDoGNUPlota(const char *Polecenie);$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(const char *Polecenie)
+PzG::LaczeDoGNUPlota::PrzeslijDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::PrzeslijDoGNUPlota(const char *Komunikat)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat)
+PzG::LaczeDoGNUPlota::RotacjaX	inc/lacze_do_gnuplota.hh	/^  float RotacjaX() const { return _Xrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::RotacjaZ	inc/lacze_do_gnuplota.hh	/^  float RotacjaZ() const { return _Zrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Rysuj	inc/lacze_do_gnuplota.hh	/^  bool Rysuj();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::Rysuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Rysuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::RysujDoPliku	inc/lacze_do_gnuplota.hh	/^  bool RysujDoPliku(const char *NazwaPliku);$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:(const char *NazwaPliku)
+PzG::LaczeDoGNUPlota::RysujDoPliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::RysujDoPliku(const char *NazwaPliku)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *NazwaPliku)
+PzG::LaczeDoGNUPlota::SkalaX	inc/lacze_do_gnuplota.hh	/^  float SkalaX() const { return _Xskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::SkalaZ	inc/lacze_do_gnuplota.hh	/^  float SkalaZ() const { return _Zskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::UstawRotacjeX	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeX( float kat_x ) { _Xrotacja = kat_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x )
+PzG::LaczeDoGNUPlota::UstawRotacjeXZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeXZ( float kat_x, float kat_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x, float kat_z )
+PzG::LaczeDoGNUPlota::UstawRotacjeZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeZ( float kat_z ) { _Zrotacja = kat_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_z )
+PzG::LaczeDoGNUPlota::UstawSkaleX	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleX( float skala_x ) { _Xskala = skala_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x )
+PzG::LaczeDoGNUPlota::UstawSkaleXZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleXZ( float skala_x, float skala_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x, float skala_z )
+PzG::LaczeDoGNUPlota::UstawSkaleZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleZ( float skala_z ) { _Zskala = skala_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_z )
+PzG::LaczeDoGNUPlota::UstawZakresX	inc/lacze_do_gnuplota.hh	/^  void UstawZakresX(float Xo, float Xn) { _Xmin = Xo;  _Xmax = Xn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Xo, float Xn)
+PzG::LaczeDoGNUPlota::UstawZakresY	inc/lacze_do_gnuplota.hh	/^  void UstawZakresY(float Yo, float Yn) { _Ymin = Yo;  _Ymax = Yn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Yo, float Yn)
+PzG::LaczeDoGNUPlota::UstawZakresZ	inc/lacze_do_gnuplota.hh	/^  void UstawZakresZ(float Zo, float Zn) { _Zmin = Zo;  _Zmax = Zn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Zo, float Zn)
+PzG::LaczeDoGNUPlota::UsunOstatniaNazwe	inc/lacze_do_gnuplota.hh	/^  void UsunOstatniaNazwe();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::UsunOstatniaNazwe	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunOstatniaNazwe()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::UsunWszystkieNazwyPlikow	inc/lacze_do_gnuplota.hh	/^  void UsunWszystkieNazwyPlikow();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::UsunWszystkieNazwyPlikow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunWszystkieNazwyPlikow()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::UtworzProcesPotomny	inc/lacze_do_gnuplota.hh	/^  bool UtworzProcesPotomny();$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:()
+PzG::LaczeDoGNUPlota::UtworzProcesPotomny	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::UtworzProcesPotomny()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::WezTrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania WezTrybRys() const { return _TrybRys; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::WyswietlajKomunikatyBledow	inc/lacze_do_gnuplota.hh	/^  void WyswietlajKomunikatyBledow( bool Tryb = true );$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( bool Tryb = true )
+PzG::LaczeDoGNUPlota::WyswietlajKomunikatyBledow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::WyswietlajKomunikatyBledow( bool Tryb )$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( bool Tryb )
+PzG::LaczeDoGNUPlota::Xmax	inc/lacze_do_gnuplota.hh	/^  float Xmax() const { return _Xmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Xmin	inc/lacze_do_gnuplota.hh	/^  float Xmin() const { return _Xmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Ymax	inc/lacze_do_gnuplota.hh	/^  float Ymax() const { return _Ymax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Ymin	inc/lacze_do_gnuplota.hh	/^  float Ymin() const { return _Ymin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali	inc/lacze_do_gnuplota.hh	/^  std::string ZapiszUstawienieRotacjiISkali() const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieZakresu	inc/lacze_do_gnuplota.hh	/^  std::string ZapiszUstawienieZakresu(char Os) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(char Os) const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieZakresu	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieZakresu(char Os) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(char Os) const
+PzG::LaczeDoGNUPlota::Zmax	inc/lacze_do_gnuplota.hh	/^  float Zmax() const { return _Zmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::ZmienTrybRys	inc/lacze_do_gnuplota.hh	/^  void ZmienTrybRys(TrybRysowania  Tryb) { _TrybRys = Tryb; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(TrybRysowania Tryb)
+PzG::LaczeDoGNUPlota::Zmin	inc/lacze_do_gnuplota.hh	/^  float Zmin() const { return _Zmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::_InfoPlikow	inc/lacze_do_gnuplota.hh	/^  static std::list<InfoPlikuDoRysowania>  _InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_InfoPlikow	src/lacze_do_gnuplota.cpp	/^ std::list<InfoPlikuDoRysowania>  LaczeDoGNUPlota::_InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	file:
+PzG::LaczeDoGNUPlota::_PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OX;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OY;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_TrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania  _TrybRys;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Wejscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wejscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Wyjscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wyjscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_WyswietlajKomunikatyOBledach	inc/lacze_do_gnuplota.hh	/^  bool          _WyswietlajKomunikatyOBledach;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xmax	inc/lacze_do_gnuplota.hh	/^  float  _Xmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xmin	inc/lacze_do_gnuplota.hh	/^  float  _Xmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Xrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xskala	inc/lacze_do_gnuplota.hh	/^  float  _Xskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Ymax	inc/lacze_do_gnuplota.hh	/^  float  _Ymax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Ymin	inc/lacze_do_gnuplota.hh	/^  float  _Ymin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zmax	inc/lacze_do_gnuplota.hh	/^  float  _Zmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zmin	inc/lacze_do_gnuplota.hh	/^  float  _Zmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Zrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zskala	inc/lacze_do_gnuplota.hh	/^  float  _Zskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::~LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  virtual ~LaczeDoGNUPlota();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+PzG::LaczeDoGNUPlota::~LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^  LaczeDoGNUPlota::~LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::RR_Ciagly	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	e	enum:PzG::RodzajRysowania
+PzG::RR_Punktowy	inc/lacze_do_gnuplota.hh	/^                         RR_Punktowy \/*! Linia ma być rysowana ciągłą kreską *\/$/;"	e	enum:PzG::RodzajRysowania
+PzG::RodzajRysowania	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	g	namespace:PzG
+PzG::TR_2D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+PzG::TR_3D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+PzG::TrybRysowania	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	g	namespace:PzG
+ROBOTPOSE_HH	inc/robotpose.hh	2;"	d
+ROBOTPOSE_HH	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	2;"	d
+ROZ_LINII	src/lacze_do_gnuplota.cpp	123;"	d	file:
+RR_Ciagly	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	e	enum:PzG::RodzajRysowania
+RR_Punktowy	inc/lacze_do_gnuplota.hh	/^                         RR_Punktowy \/*! Linia ma być rysowana ciągłą kreską *\/$/;"	e	enum:PzG::RodzajRysowania
+ReadCmd	inc/parser.hh	/^  bool ReadCmd(LibInterface *, istream &, CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(LibInterface *, istream &, CommandsList &)
+ReadCmd	src/parser.cpp	/^bool CommandsParser::ReadCmd(LibInterface *interface, istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:(LibInterface *interface, istream &IStrm, CommandsList &cmds_list)
+ReadCmdsList	inc/parser.hh	/^  bool ReadCmdsList( ifstream &, CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:( ifstream &, CommandsList &)
+ReadCmdsList	src/parser.cpp	/^bool CommandsParser::ReadCmdsList( ifstream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( ifstream &IStrm, CommandsList &cmds_list)
+ReadFile	zad2/xml_parser/src/main.cpp	/^bool ReadFile(const char* sFileName, Scene& Scn)$/;"	f	signature:(const char* sFileName, Scene& Scn)
+ReadParams	inc/command.hh	/^   virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;$/;"	p	class:Command	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	plugins/inc/command4fly.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	plugins/inc/command4rotate.hh	/^  bool ReadParams(std::istream& );$/;"	p	class:Command4Rotate	access:public	signature:(std::istream& )
+ReadParams	plugins/src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+ReadParams	plugins/src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;$/;"	p	class:Command	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  virtual bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& Strm_CmdsList)$/;"	f	class:Command4Fly	signature:(std::istream& Strm_CmdsList)
+ReadParams	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/src/command4rotate.cpp	/^bool Command4Fly::ReadParams(std::istream& Strm_CmdsList)$/;"	f	class:Command4Fly	signature:(std::istream& Strm_CmdsList)
+RobotPose	inc/robotpose.hh	/^struct RobotPose {$/;"	s
+RobotPose	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^struct RobotPose {$/;"	s
+RobotPose::alpha_deg	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::alpha_deg	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::x_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::x_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::y_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::y_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::z_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::z_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RodzajRysowania	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	g	namespace:PzG
+RotacjaX	inc/lacze_do_gnuplota.hh	/^  float RotacjaX() const { return _Xrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+RotacjaZ	inc/lacze_do_gnuplota.hh	/^  float RotacjaZ() const { return _Zrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Rysuj	inc/lacze_do_gnuplota.hh	/^  bool Rysuj();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+Rysuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Rysuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+RysujDoPliku	inc/lacze_do_gnuplota.hh	/^  bool RysujDoPliku(const char *NazwaPliku);$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:(const char *NazwaPliku)
+RysujDoPliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::RysujDoPliku(const char *NazwaPliku)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *NazwaPliku)
+SCENE_HH	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/scene.hh	2;"	d
+SCENE_HH	zad2/xml_parser/inc/scene.hh	2;"	d
+SET4LIBINTERFACES_HH	inc/set4libinterfaces.hh	2;"	d
+SET4LIBINTERFACES_HH	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	2;"	d
+SRC	makefile	/^SRC = $(wildcard src\/*.cpp)$/;"	m
+SRC	plugins/makefile	/^SRC = $(wildcard src\/*.cpp)$/;"	m
+STDIN	src/lacze_do_gnuplota.cpp	20;"	d	file:
+STDOUT	src/lacze_do_gnuplota.cpp	21;"	d	file:
+Scene	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/scene.hh	/^class Scene {$/;"	c
+Scene	zad2/xml_parser/inc/scene.hh	/^class Scene {$/;"	c
+SearchBox	src/html/search/search.js	/^function SearchBox(name, resultsPath, inFrame, label)$/;"	c
+SearchBox.Activate	src/html/search/search.js	/^  this.Activate = function(isActive)$/;"	m
+SearchBox.CloseResultsWindow	src/html/search/search.js	/^  this.CloseResultsWindow = function()$/;"	m
+SearchBox.CloseSelectionWindow	src/html/search/search.js	/^  this.CloseSelectionWindow = function()$/;"	m
+SearchBox.DOMPopupSearchResults	src/html/search/search.js	/^  this.DOMPopupSearchResults = function()$/;"	m
+SearchBox.DOMPopupSearchResultsWindow	src/html/search/search.js	/^  this.DOMPopupSearchResultsWindow = function()$/;"	m
+SearchBox.DOMSearchBox	src/html/search/search.js	/^  this.DOMSearchBox = function()$/;"	m
+SearchBox.DOMSearchClose	src/html/search/search.js	/^  this.DOMSearchClose = function()$/;"	m
+SearchBox.DOMSearchField	src/html/search/search.js	/^  this.DOMSearchField = function()$/;"	m
+SearchBox.DOMSearchSelect	src/html/search/search.js	/^  this.DOMSearchSelect = function()$/;"	m
+SearchBox.DOMSearchSelectWindow	src/html/search/search.js	/^  this.DOMSearchSelectWindow = function()$/;"	m
+SearchBox.OnSearchFieldChange	src/html/search/search.js	/^  this.OnSearchFieldChange = function(evt)$/;"	m
+SearchBox.OnSearchFieldFocus	src/html/search/search.js	/^  this.OnSearchFieldFocus = function(isActive)$/;"	m
+SearchBox.OnSearchSelectHide	src/html/search/search.js	/^  this.OnSearchSelectHide = function()$/;"	m
+SearchBox.OnSearchSelectKey	src/html/search/search.js	/^  this.OnSearchSelectKey = function(evt)$/;"	m
+SearchBox.OnSearchSelectShow	src/html/search/search.js	/^  this.OnSearchSelectShow = function()$/;"	m
+SearchBox.OnSelectItem	src/html/search/search.js	/^  this.OnSelectItem = function(id)$/;"	m
+SearchBox.Search	src/html/search/search.js	/^  this.Search = function()$/;"	m
+SearchBox.SelectItemCount	src/html/search/search.js	/^  this.SelectItemCount = function(id)$/;"	m
+SearchBox.SelectItemSet	src/html/search/search.js	/^  this.SelectItemSet = function(id)$/;"	m
+SearchResults	src/html/search/search.js	/^function SearchResults(name)$/;"	c
+SearchResults.FindChildElement	src/html/search/search.js	/^    this.FindChildElement = function(id)$/;"	m
+SearchResults.Nav	src/html/search/search.js	/^    this.Nav = function(evt,itemIndex) $/;"	m
+SearchResults.NavChild	src/html/search/search.js	/^    this.NavChild = function(evt,itemIndex,childIndex)$/;"	m
+SearchResults.NavNext	src/html/search/search.js	/^    this.NavNext = function(index)$/;"	m
+SearchResults.NavPrev	src/html/search/search.js	/^    this.NavPrev = function(index)$/;"	m
+SearchResults.ProcessKeys	src/html/search/search.js	/^    this.ProcessKeys = function(e)$/;"	m
+SearchResults.Search	src/html/search/search.js	/^    this.Search = function(search)$/;"	m
+SearchResults.Toggle	src/html/search/search.js	/^    this.Toggle = function(id)$/;"	m
+Set4LibInterfaces	inc/set4libinterfaces.hh	/^class Set4LibInterfaces: public std::map<std::string,LibInterface*> {$/;"	c	inherits:std::map
+Set4LibInterfaces	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^class Set4LibInterfaces: public std::map<std::string,LibInterface*> {$/;"	c	inherits:std::map
+Set4LibInterfaces::AddLib	inc/set4libinterfaces.hh	/^  bool AddLib(const char* sLibName);$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sLibName)
+Set4LibInterfaces::AddLib	src/set4libinterfaces.cpp	/^bool Set4LibInterfaces::AddLib(const char*  lib_name)$/;"	f	class:Set4LibInterfaces	signature:(const char* lib_name)
+Set4LibInterfaces::AddLib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  bool AddLib(const char* sLibName);$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sLibName)
+Set4LibInterfaces::AddLib	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^bool Set4LibInterfaces::AddLib(const char*  sLibName)$/;"	f	class:Set4LibInterfaces	signature:(const char* sLibName)
+Set4LibInterfaces::FindLib4Cmd	inc/set4libinterfaces.hh	/^  const LibInterface* FindLib4Cmd(const char*  sCmdName) const;$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sCmdName) const
+Set4LibInterfaces::FindLib4Cmd	src/set4libinterfaces.cpp	/^const LibInterface* Set4LibInterfaces::FindLib4Cmd(const char*  sCmdName) const$/;"	f	class:Set4LibInterfaces	signature:(const char* sCmdName) const
+Set4LibInterfaces::FindLib4Cmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  const LibInterface* FindLib4Cmd(const char*  sCmdName) const;$/;"	p	class:Set4LibInterfaces	access:public	signature:(const char* sCmdName) const
+Set4LibInterfaces::FindLib4Cmd	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^const LibInterface* Set4LibInterfaces::FindLib4Cmd(const char*  sCmdName) const$/;"	f	class:Set4LibInterfaces	signature:(const char* sCmdName) const
+Set4LibInterfaces::find	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^   void find(const char*) {}$/;"	f	class:Set4LibInterfaces	access:private	signature:(const char*)
+Set4LibInterfaces::~Set4LibInterfaces	inc/set4libinterfaces.hh	/^  ~Set4LibInterfaces();$/;"	p	class:Set4LibInterfaces	access:public	signature:()
+Set4LibInterfaces::~Set4LibInterfaces	src/set4libinterfaces.cpp	/^Set4LibInterfaces::~Set4LibInterfaces()$/;"	f	class:Set4LibInterfaces	signature:()
+Set4LibInterfaces::~Set4LibInterfaces	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  ~Set4LibInterfaces();$/;"	p	class:Set4LibInterfaces	access:public	signature:()
+Set4LibInterfaces::~Set4LibInterfaces	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^Set4LibInterfaces::~Set4LibInterfaces()$/;"	f	class:Set4LibInterfaces	signature:()
+SkalaX	inc/lacze_do_gnuplota.hh	/^  float SkalaX() const { return _Xskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+SkalaZ	inc/lacze_do_gnuplota.hh	/^  float SkalaZ() const { return _Zskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+TR_2D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+TR_3D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+TrybRysowania	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	g	namespace:PzG
+UstawRotacjeX	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeX( float kat_x ) { _Xrotacja = kat_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x )
+UstawRotacjeXZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeXZ( float kat_x, float kat_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x, float kat_z )
+UstawRotacjeZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeZ( float kat_z ) { _Zrotacja = kat_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_z )
+UstawSkaleX	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleX( float skala_x ) { _Xskala = skala_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x )
+UstawSkaleXZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleXZ( float skala_x, float skala_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x, float skala_z )
+UstawSkaleZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleZ( float skala_z ) { _Zskala = skala_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_z )
+UstawZakresX	inc/lacze_do_gnuplota.hh	/^  void UstawZakresX(float Xo, float Xn) { _Xmin = Xo;  _Xmax = Xn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Xo, float Xn)
+UstawZakresY	inc/lacze_do_gnuplota.hh	/^  void UstawZakresY(float Yo, float Yn) { _Ymin = Yo;  _Ymax = Yn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Yo, float Yn)
+UstawZakresZ	inc/lacze_do_gnuplota.hh	/^  void UstawZakresZ(float Zo, float Zn) { _Zmin = Zo;  _Zmax = Zn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Zo, float Zn)
+UsunOstatniaNazwe	inc/lacze_do_gnuplota.hh	/^  void UsunOstatniaNazwe();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+UsunOstatniaNazwe	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunOstatniaNazwe()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+UsunWszystkieNazwyPlikow	inc/lacze_do_gnuplota.hh	/^  void UsunWszystkieNazwyPlikow();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+UsunWszystkieNazwyPlikow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunWszystkieNazwyPlikow()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+UtworzProcesPotomny	inc/lacze_do_gnuplota.hh	/^  bool UtworzProcesPotomny();$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:()
+UtworzProcesPotomny	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::UtworzProcesPotomny()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+WezNazwePliku	inc/lacze_do_gnuplota.hh	/^      const std::string WezNazwePliku() const { return _NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezRodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania WezRodzRys() const { return _RodzRys; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezSzerokosc	inc/lacze_do_gnuplota.hh	/^      int WezSzerokosc() const { return _Szerokosc; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezTrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania WezTrybRys() const { return _TrybRys; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+WhenEndElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void WhenEndElement(const std::string& ElemName);$/;"	p	class:XMLParser4Scene	access:public	signature:(const std::string& ElemName)
+WhenEndElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::WhenEndElement(const std::string& ElemName)$/;"	f	class:XMLParser4Scene	signature:(const std::string& ElemName)
+WhenStartElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void WhenStartElement( const std::string&             ElemName,$/;"	p	class:XMLParser4Scene	access:public	signature:( const std::string& ElemName, const xercesc::Attributes& Attrs )
+WhenStartElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::WhenStartElement( const std::string       &ElemName,$/;"	f	class:XMLParser4Scene	signature:( const std::string &ElemName, const xercesc::Attributes &Attrs )
+WrongLibraryName	inc/exception.hh	/^class WrongLibraryName: public std::exception{$/;"	c	inherits:std::exception
+WrongLibraryName::what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:WrongLibraryName	access:private	signature:() const
+WyswietlajKomunikatyBledow	inc/lacze_do_gnuplota.hh	/^  void WyswietlajKomunikatyBledow( bool Tryb = true );$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:( bool Tryb = true )
+WyswietlajKomunikatyBledow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::WyswietlajKomunikatyBledow( bool Tryb )$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( bool Tryb )
+XMLPARSER4SCENE_HH	zad2/xml_parser/inc/xmlparser4scene.hh	2;"	d
+XMLParser4Scene	zad2/xml_parser/inc/xmlparser4scene.hh	/^  XMLParser4Scene(Scene &Scn);$/;"	p	class:XMLParser4Scene	access:public	signature:(Scene &Scn)
+XMLParser4Scene	zad2/xml_parser/inc/xmlparser4scene.hh	/^class XMLParser4Scene : public xercesc::DefaultHandler {$/;"	c	inherits:xercesc::DefaultHandler
+XMLParser4Scene	zad2/xml_parser/src/xmlparser4scene.cpp	/^XMLParser4Scene::XMLParser4Scene(Scene &Scn)$/;"	f	class:XMLParser4Scene	signature:(Scene &Scn)
+XMLParser4Scene::WhenEndElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void WhenEndElement(const std::string& ElemName);$/;"	p	class:XMLParser4Scene	access:public	signature:(const std::string& ElemName)
+XMLParser4Scene::WhenEndElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::WhenEndElement(const std::string& ElemName)$/;"	f	class:XMLParser4Scene	signature:(const std::string& ElemName)
+XMLParser4Scene::WhenStartElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void WhenStartElement( const std::string&             ElemName,$/;"	p	class:XMLParser4Scene	access:public	signature:( const std::string& ElemName, const xercesc::Attributes& Attrs )
+XMLParser4Scene::WhenStartElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::WhenStartElement( const std::string       &ElemName,$/;"	f	class:XMLParser4Scene	signature:( const std::string &ElemName, const xercesc::Attributes &Attrs )
+XMLParser4Scene::XMLParser4Scene	zad2/xml_parser/inc/xmlparser4scene.hh	/^  XMLParser4Scene(Scene &Scn);$/;"	p	class:XMLParser4Scene	access:public	signature:(Scene &Scn)
+XMLParser4Scene::XMLParser4Scene	zad2/xml_parser/src/xmlparser4scene.cpp	/^XMLParser4Scene::XMLParser4Scene(Scene &Scn)$/;"	f	class:XMLParser4Scene	signature:(Scene &Scn)
+XMLParser4Scene::_pScn	zad2/xml_parser/inc/xmlparser4scene.hh	/^   Scene  *_pScn;$/;"	m	class:XMLParser4Scene	access:private
+XMLParser4Scene::endDocument	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void endDocument();$/;"	p	class:XMLParser4Scene	access:public	signature:()
+XMLParser4Scene::endDocument	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::endDocument()$/;"	f	class:XMLParser4Scene	signature:()
+XMLParser4Scene::endElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual  void endElement($/;"	p	class:XMLParser4Scene	access:public	signature:( const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname )
+XMLParser4Scene::endElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::endElement(  const   XMLCh* const    pURI,$/;"	f	class:XMLParser4Scene	signature:( const XMLCh* const pURI, const XMLCh* const pLocalName, const XMLCh* const pQName )
+XMLParser4Scene::error	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void error(const xercesc::SAXParseException &exc);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException &exc)
+XMLParser4Scene::error	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::error(const xercesc::SAXParseException&  Exception)$/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+XMLParser4Scene::fatalError	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void fatalError(const xercesc::SAXParseException&);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException&)
+XMLParser4Scene::fatalError	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::fatalError(const xercesc::SAXParseException&  Exception)$/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+XMLParser4Scene::startDocument	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void startDocument();$/;"	p	class:XMLParser4Scene	access:public	signature:()
+XMLParser4Scene::startDocument	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::startDocument()$/;"	f	class:XMLParser4Scene	signature:()
+XMLParser4Scene::startElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void startElement($/;"	p	class:XMLParser4Scene	access:public	signature:( const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname, const xercesc::Attributes& attrs )
+XMLParser4Scene::startElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::startElement(  const   XMLCh* const    pURI,$/;"	f	class:XMLParser4Scene	signature:( const XMLCh* const pURI, const XMLCh* const pLocalName, const XMLCh* const pQNname, const xercesc::Attributes& Attrs )
+XMLParser4Scene::warning	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void warning(const xercesc::SAXParseException &exc);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException &exc)
+XMLParser4Scene::warning	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::warning(const xercesc::SAXParseException&  Exception)  $/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+XMLSize_t	zad2/xml_parser/src/xmlparser4scene.cpp	8;"	d	file:
+Xmax	inc/lacze_do_gnuplota.hh	/^  float Xmax() const { return _Xmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Xmin	inc/lacze_do_gnuplota.hh	/^  float Xmin() const { return _Xmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Ymax	inc/lacze_do_gnuplota.hh	/^  float Ymax() const { return _Ymax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Ymin	inc/lacze_do_gnuplota.hh	/^  float Ymin() const { return _Ymin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+ZapiszUstawienieRotacjiISkali	inc/lacze_do_gnuplota.hh	/^  std::string ZapiszUstawienieRotacjiISkali() const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+ZapiszUstawienieRotacjiISkali	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+ZapiszUstawienieZakresu	inc/lacze_do_gnuplota.hh	/^  std::string ZapiszUstawienieZakresu(char Os) const;$/;"	p	class:PzG::LaczeDoGNUPlota	access:protected	signature:(char Os) const
+ZapiszUstawienieZakresu	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieZakresu(char Os) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(char Os) const
+Zmax	inc/lacze_do_gnuplota.hh	/^  float Zmax() const { return _Zmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+ZmienNazwePliku	inc/lacze_do_gnuplota.hh	/^      void ZmienNazwePliku(const std::string& NazwaPliku) { _NazwaPliku = NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const std::string& NazwaPliku)
+ZmienTrybRys	inc/lacze_do_gnuplota.hh	/^  void ZmienTrybRys(TrybRysowania  Tryb) { _TrybRys = Tryb; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(TrybRysowania Tryb)
+Zmin	inc/lacze_do_gnuplota.hh	/^  float Zmin() const { return _Zmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+_InfoPlikow	inc/lacze_do_gnuplota.hh	/^  static std::list<InfoPlikuDoRysowania>  _InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_InfoPlikow	src/lacze_do_gnuplota.cpp	/^ std::list<InfoPlikuDoRysowania>  LaczeDoGNUPlota::_InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	file:
+_NazwaPliku	inc/lacze_do_gnuplota.hh	/^      std::string  _NazwaPliku;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OX;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OY;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_RodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania  _RodzRys;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_Speed_Hor_mS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4fly.hh	/^  double  _Speed_Hor_mS;$/;"	m	class:Command4Fly	access:private
+_Speed_Hor_mS	zad2/biblioteki_dynamiczne/zalazek_podstawowy/plugin/inc/command4rotate.hh	/^  double  _Speed_Hor_mS;$/;"	m	class:Command4Fly	access:private
+_Szerokosc	inc/lacze_do_gnuplota.hh	/^      int  _Szerokosc;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_TrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania  _TrybRys;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Wejscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wejscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Wyjscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wyjscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_WyswietlajKomunikatyOBledach	inc/lacze_do_gnuplota.hh	/^  bool          _WyswietlajKomunikatyOBledach;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xmax	inc/lacze_do_gnuplota.hh	/^  float  _Xmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xmin	inc/lacze_do_gnuplota.hh	/^  float  _Xmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Xrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xskala	inc/lacze_do_gnuplota.hh	/^  float  _Xskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Ymax	inc/lacze_do_gnuplota.hh	/^  float  _Ymax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Ymin	inc/lacze_do_gnuplota.hh	/^  float  _Ymin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zmax	inc/lacze_do_gnuplota.hh	/^  float  _Zmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zmin	inc/lacze_do_gnuplota.hh	/^  float  _Zmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Zrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zskala	inc/lacze_do_gnuplota.hh	/^  float  _Zskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_angle	plugins/inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+_angle_speed	plugins/inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+_createCommand	inc/libinterface.hh	/^    Command  *(*_createCommand)(void);$/;"	m	class:LibInterface	access:private
+_getCmdName	inc/libinterface.hh	/^    const char* (*_getCmdName)(void);$/;"	m	class:LibInterface	access:private
+_input_file_name	inc/menu.hh	/^    std::string _input_file_name;$/;"	m	class:Menu	access:private
+_length	plugins/inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+_lib_handler	inc/libinterface.hh	/^    void  *_lib_handler; $/;"	m	class:LibInterface	access:private
+_libs_set	inc/parser.hh	/^  Set4LibInterfaces _libs_set;$/;"	m	class:CommandsParser	access:private
+_list	inc/menu.hh	/^    CommandsList _list;$/;"	m	class:Menu	access:private
+_list	src/menu.cpp	/^_parser(parser) , _list(list), _robot(robot), _output_file_name("output.dat"){$/;"	p	file:	signature:(list)
+_output_file_name	inc/menu.hh	/^    std::string _output_file_name;$/;"	m	class:Menu	access:private
+_pFun_GetCmdName	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    const char* (*_pFun_GetCmdName)();$/;"	m	class:LibInterface	access:private
+_pLibHandle	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    void  *_pLibHandle; $/;"	m	class:LibInterface	access:private
+_pScn	zad2/xml_parser/inc/xmlparser4scene.hh	/^   Scene  *_pScn;$/;"	m	class:XMLParser4Scene	access:private
+_parser	inc/menu.hh	/^    CommandsParser _parser;$/;"	m	class:Menu	access:private
+_robot	inc/menu.hh	/^    RobotPose _robot;$/;"	m	class:Menu	access:private
+_robot	src/menu.cpp	/^_parser(parser) , _list(list), _robot(robot), _output_file_name("output.dat"){$/;"	p	file:	signature:(robot)
+_speed_horizontal	plugins/inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+_speed_vertical	plugins/inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+alpha_deg	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+alpha_deg	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+convertToId	src/html/search/search.js	/^function convertToId(search)$/;"	f
+createResults	src/html/search/search.js	/^function createResults()$/;"	f
+decision	inc/menu.hh	/^    bool decision(char); $/;"	p	class:Menu	access:private	signature:(char)
+decision	src/menu.cpp	/^bool Menu::decision(char option){$/;"	f	class:Menu	signature:(char option)
+endDocument	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void endDocument();$/;"	p	class:XMLParser4Scene	access:public	signature:()
+endDocument	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::endDocument()$/;"	f	class:XMLParser4Scene	signature:()
+endElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual  void endElement($/;"	p	class:XMLParser4Scene	access:public	signature:( const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname )
+endElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::endElement(  const   XMLCh* const    pURI,$/;"	f	class:XMLParser4Scene	signature:( const XMLCh* const pURI, const XMLCh* const pLocalName, const XMLCh* const pQName )
+error	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void error(const xercesc::SAXParseException &exc);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException &exc)
+error	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::error(const xercesc::SAXParseException&  Exception)$/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+execCmdsList	inc/parser.hh	/^  void execCmdsList(ofstream & ,RobotPose&,CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(ofstream & ,RobotPose&,CommandsList &)
+execCmdsList	src/parser.cpp	/^  void CommandsParser::execCmdsList(ofstream & file,RobotPose &robot,CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(ofstream & file,RobotPose &robot,CommandsList &cmds_list)
+execCommands	inc/menu.hh	/^    void execCommands(); $/;"	p	class:Menu	access:private	signature:()
+execCommands	src/menu.cpp	/^void Menu::execCommands(){$/;"	f	class:Menu	signature:()
+fatalError	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void fatalError(const xercesc::SAXParseException&);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException&)
+fatalError	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::fatalError(const xercesc::SAXParseException&  Exception)$/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+find	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^   void find(const char*) {}$/;"	f	class:Set4LibInterfaces	access:private	signature:(const char*)
+getXPos	src/html/search/search.js	/^function getXPos(item)$/;"	f
+getYPos	src/html/search/search.js	/^function getYPos(item)$/;"	f
+help	inc/menu.hh	/^    void help(); $/;"	p	class:Menu	access:private	signature:()
+help	src/menu.cpp	/^void Menu::help(){$/;"	f	class:Menu	signature:()
+latex_count	src/latex/Makefile	/^	latex_count=5 ; \\$/;"	m
+loadFly	zad2/biblioteki_dynamiczne/zalazek_podstawowy/src/main.cpp	/^int loadFly(){$/;"	f	signature:()
+loadLib	inc/parser.hh	/^  bool loadLib(const char* lib_name);$/;"	p	class:CommandsParser	access:public	signature:(const char* lib_name)
+loadLib	src/parser.cpp	/^bool CommandsParser::loadLib(const char* lib_name){$/;"	f	class:CommandsParser	signature:(const char* lib_name)
+loadRotate	zad2/biblioteki_dynamiczne/zalazek_podstawowy/src/main.cpp	/^int loadRotate(){$/;"	f	signature:()
+main	src/main.cpp	/^ int main()$/;"	f	signature:()
+main	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/main.cpp	/^int main (int argc, char* args[]) $/;"	f	signature:(int argc, char* args[])
+main	zad2/biblioteki_dynamiczne/zalazek_podstawowy/src/main.cpp	/^int main()$/;"	f	signature:()
+main	zad2/xml_parser/src/main.cpp	/^int main (int argc, char* args[]) $/;"	f	signature:(int argc, char* args[])
+menu	inc/menu.hh	/^    void menu();$/;"	p	class:Menu	access:public	signature:()
+menu	src/menu.cpp	/^void Menu::menu(){$/;"	f	class:Menu	signature:()
+parser	src/menu.cpp	/^_parser(parser) , _list(list), _robot(robot), _output_file_name("output.dat"){$/;"	v
+printCmd	inc/command.hh	/^   virtual void printCmd() const = 0;$/;"	p	class:Command	access:public	signature:() const
+printCmd	plugins/inc/command4fly.hh	/^  virtual void printCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+printCmd	plugins/inc/command4rotate.hh	/^  virtual void printCmd() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+printCmd	plugins/src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const
+printCmd	plugins/src/command4rotate.cpp	/^void Command4Rotate::printCmd() const$/;"	f	class:Command4Rotate	signature:() const
+readCommands	inc/menu.hh	/^    void readCommands(); $/;"	p	class:Menu	access:private	signature:()
+readCommands	src/menu.cpp	/^void Menu::readCommands(){$/;"	f	class:Menu	signature:()
+setClassAttr	src/html/search/search.js	/^function setClassAttr(elem,attr)$/;"	f
+setInputFile	inc/menu.hh	/^    void setInputFile(std::string); $/;"	p	class:Menu	access:private	signature:(std::string)
+setInputFile	src/menu.cpp	/^void Menu::setInputFile(std::string file_name){$/;"	f	class:Menu	signature:(std::string file_name)
+setKeyActions	src/html/search/search.js	/^function setKeyActions(elem,action)$/;"	f
+setOutputFile	inc/menu.hh	/^    void setOutputFile(std::string); $/;"	p	class:Menu	access:private	signature:(std::string)
+setOutputFile	src/menu.cpp	/^void Menu::setOutputFile(std::string file_name){$/;"	f	class:Menu	signature:(std::string file_name)
+showCmdsList	inc/parser.hh	/^  void showCmdsList(CommandsList &);$/;"	p	class:CommandsParser	access:public	signature:(CommandsList &)
+showCmdsList	src/parser.cpp	/^  void CommandsParser::showCmdsList(CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(CommandsList &cmds_list)
+showCommands	inc/menu.hh	/^    void showCommands(); $/;"	p	class:Menu	access:private	signature:()
+showCommands	src/menu.cpp	/^void Menu::showCommands(){$/;"	f	class:Menu	signature:()
+startDocument	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void startDocument();$/;"	p	class:XMLParser4Scene	access:public	signature:()
+startDocument	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::startDocument()$/;"	f	class:XMLParser4Scene	signature:()
+startElement	zad2/xml_parser/inc/xmlparser4scene.hh	/^    virtual void startElement($/;"	p	class:XMLParser4Scene	access:public	signature:( const XMLCh *const pURI, const XMLCh *const pLocalName, const XMLCh *const pQNname, const xercesc::Attributes& attrs )
+startElement	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::startElement(  const   XMLCh* const    pURI,$/;"	f	class:XMLParser4Scene	signature:( const XMLCh* const pURI, const XMLCh* const pLocalName, const XMLCh* const pQNname, const xercesc::Attributes& Attrs )
+toggleFolder	src/html/dynsections.js	/^function toggleFolder(id)$/;"	f
+toggleInherit	src/html/dynsections.js	/^function toggleInherit(id)$/;"	f
+toggleLevel	src/html/dynsections.js	/^function toggleLevel(level)$/;"	f
+toggleVisibility	src/html/dynsections.js	/^function toggleVisibility(linkObj)$/;"	f
+unloadLib	inc/parser.hh	/^  bool unloadLib(const char* lib_name);$/;"	p	class:CommandsParser	access:public	signature:(const char* lib_name)
+unloadLib	src/parser.cpp	/^bool CommandsParser::unloadLib(const char* lib_name){$/;"	f	class:CommandsParser	signature:(const char* lib_name)
+updateStripes	src/html/dynsections.js	/^function updateStripes()$/;"	f
+warning	zad2/xml_parser/inc/xmlparser4scene.hh	/^    void warning(const xercesc::SAXParseException &exc);$/;"	p	class:XMLParser4Scene	access:public	signature:(const xercesc::SAXParseException &exc)
+warning	zad2/xml_parser/src/xmlparser4scene.cpp	/^void XMLParser4Scene::warning(const xercesc::SAXParseException&  Exception)  $/;"	f	class:XMLParser4Scene	signature:(const xercesc::SAXParseException& Exception)
+what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:CommandParamsError	access:private	signature:() const
+what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:FileOpenProblem	access:private	signature:() const
+what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:WrongLibraryName	access:private	signature:() const
+x_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+x_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+y_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+y_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+z_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+z_m	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+~Command	inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+~Command	zad2/biblioteki_dynamiczne/zalazek_podstawowy/inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+~CommandsList	inc/list.hh	/^   ~CommandsList();$/;"	p	class:CommandsList	access:public	signature:()
+~CommandsList	src/list.cpp	/^CommandsList::~CommandsList()$/;"	f	class:CommandsList	signature:()
+~LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^  virtual ~LaczeDoGNUPlota();$/;"	p	class:PzG::LaczeDoGNUPlota	access:public	signature:()
+~LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^  LaczeDoGNUPlota::~LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+~LibInterface	inc/libinterface.hh	/^    ~LibInterface() ;$/;"	p	class:LibInterface	access:public	signature:()
+~LibInterface	src/libinterface.cpp	/^LibInterface::~LibInterface() { $/;"	f	class:LibInterface	signature:()
+~LibInterface	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/libinterface.hh	/^    ~LibInterface() { if (_pLibHandle) dlclose(_pLibHandle); }$/;"	f	class:LibInterface	access:public	signature:()
+~Set4LibInterfaces	inc/set4libinterfaces.hh	/^  ~Set4LibInterfaces();$/;"	p	class:Set4LibInterfaces	access:public	signature:()
+~Set4LibInterfaces	src/set4libinterfaces.cpp	/^Set4LibInterfaces::~Set4LibInterfaces()$/;"	f	class:Set4LibInterfaces	signature:()
+~Set4LibInterfaces	zad2/biblioteki_dynamiczne/map-interface-wskaznik/inc/set4libinterfaces.hh	/^  ~Set4LibInterfaces();$/;"	p	class:Set4LibInterfaces	access:public	signature:()
+~Set4LibInterfaces	zad2/biblioteki_dynamiczne/map-interface-wskaznik/src/set4libinterfaces.cpp	/^Set4LibInterfaces::~Set4LibInterfaces()$/;"	f	class:Set4LibInterfaces	signature:()

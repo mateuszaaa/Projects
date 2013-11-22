@@ -1,0 +1,65 @@
+##########################################################
+# Slowa kluczowe dla svn
+#
+#  $HeadURL$
+#  $Author$
+#  $Date$
+#  $Revision$
+#
+###########################################################
+
+
+
+CPPFLAGS=-pedantic -Wall -iquote inc
+
+
+__start__: obj interpreter
+	rm -f core*; ./interpreter
+
+obj:
+	mkdir obj
+
+interpreter: obj/main.o obj/command4move.o obj/command4turn.o
+	g++ -o interpreter obj/main.o obj/command4move.o obj/command4turn.o
+
+obj/main.o: src/main.cpp inc/command4move.hh inc/command.hh\
+            inc/robotpose.hh
+	g++ -c ${CPPFLAGS} -o obj/main.o src/main.cpp
+
+
+obj/command4move.o: inc/command4move.hh src/command4move.cpp inc/command.hh\
+            inc/robotpose.hh
+	g++ -c ${CPPFLAGS} -o obj/command4move.o src/command4move.cpp
+
+
+obj/command4turn.o: inc/command4turn.hh src/command4turn.cpp inc/command.hh\
+            inc/robotpose.hh
+	g++ -c ${CPPFLAGS} -o obj/command4turn.o src/command4turn.cpp
+
+
+doc:
+	cd ./dox;  make
+	@echo
+	@echo  "  Dokumentacja zostala umieszczona w katalogu dox/doc/html"
+	@echo
+
+clean:
+	rm -f core* interpreter obj/*
+
+
+help:
+	@echo
+	@echo "  Lista podcelow dla polecenia make"
+	@echo 
+	@echo "        - (wywolanie bez specyfikacji celu) wymusza"
+	@echo "          kompilacje i uruchomienie programu."
+	@echo "  clean - usuwa produkty kompilacji oraz program"
+	@echo "  doc   - powoduje generowanie dokumentacji"
+	@echo "  help  - wyswietla niniejszy komunikat"
+	@echo
+	@echo " Przykladowe wywolania dla poszczegolnych wariantow. "
+	@echo "  make           # kompilacja i uruchomienie programu."
+	@echo "  make clean     # usuwa produkty kompilacji."
+	@echo "  make doc       # generuje dokumentacje w doc/html"
+	@echo
+ 

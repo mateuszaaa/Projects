@@ -1,0 +1,28 @@
+__start__: obj ../libs/libCommand4Fly.so 
+	@echo "  Tworzenie wtyczki zakonczone."
+	@echo
+
+obj:
+	mkdir obj
+
+CPPFLAGS=-Wall -fPIC -pedantic -Iinc -I../inc
+LDFLAGS=-Wall -shared
+
+
+../libs/libCommand4Fly.so: obj/command4fly.o
+	g++ ${LDFLAGS} -o ../libs/libCommand4Fly.so obj/command4fly.o
+	@echo
+	@echo "  Wtyczka dla polecenia 'Fly' zostala utworzona."
+	@echo
+
+
+obj/command4fly.o: src/command4fly.cpp ../inc/command.hh\
+                        inc/command4fly.hh 
+	g++ -c ${CPPFLAGS} -o obj/command4fly.o src/command4fly.cpp
+
+
+clean:
+	rm -f obj/*
+
+cleanall: clean
+	find . -name \*~ -print -exec rm {} \;

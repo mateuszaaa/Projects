@@ -1,0 +1,56 @@
+#ifndef  COMMAND4FLY_HH
+#define  COMMAND4FLY_HH
+
+/*+- SVN Keywords ----------------------------------------------------+
+ *|                                                                   |
+ *| $HeadURL::                                                      $:|
+ *|     $Rev::                                                      $:|
+ *|    $Date::                                                      $:|
+ *|  $Author::                                                      $:|
+ *|                                                                   |
+ *+-------------------------------------------------------------------+
+ */
+
+#ifndef __GNUG__
+# pragma interface
+# pragma implementation
+#endif
+
+#include <cassert>
+#include <cmath>
+#include <unistd.h>
+#include "command.hh"
+#include "exception.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy Command4Fly
+ *
+ * Plik zawiera definicję klasy Command4Fly ...
+ */
+
+/*!
+ * \brief Modeluje polecenie dla robota mobilnego, które wymusza jego
+ *        ruch do przodu
+ *
+ *  Klasa modeluje ...
+ */
+
+class Command4Fly: public Command {
+  double  _speed_horizontal;
+  double  _speed_vertical;
+  double  _length;
+
+ public:
+  Command4Fly();  
+  virtual void printCmd() const;
+  virtual int ExecCmd(   RobotPose      &pRobPose,  
+                         std::ostream   &Strm_Out
+                     ) const;
+  virtual bool ReadParams(std::istream& Strm_CmdsList);
+  static const char* GetCmdName() { return "Fly"; }
+  static Command* CreateCmd();
+  static void PrintSyntax();
+ };
+
+#endif

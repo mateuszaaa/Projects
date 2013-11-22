@@ -1,0 +1,171 @@
+/************************************************************
+ * Slowa kluczowe dla svn                         
+ *                                                      
+ *  $HeadURL$
+ *  $Author$
+ *  $Date$
+ *  $Revision$
+ *
+ ************************************************************/
+
+#include <iostream>
+#include <string>
+#include <list>
+#include "command4move.hh"
+#include "command4turn.hh"
+
+
+//using std::endl;
+//using std::cout;
+
+using namespace std;
+
+
+/*!
+ * \brief
+ */
+class CommandsList: public std::list<Command*> {
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+  public:
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+
+   /*!
+    *
+    */
+   void Add2List(Command *pCmd);
+   /*!
+    * \brief Usuwa całą listę
+    */
+   void Clear();
+
+   /*!
+    * \brief
+    */   
+   ~CommandsList();
+};
+
+
+/*!
+ *
+ */
+CommandsList::~CommandsList()
+{
+  /*
+   * Tu trzeba napisać odpowiedni kod
+   */
+}
+
+/*!
+ *
+ */
+void CommandsList::Add2List(Command *pCmd)
+{
+  /*
+   * Tu trzeba napisać odpowiedni kod
+   */  
+}
+
+/*!
+ *
+ */
+void CommandsList::Clear()
+{
+  /*
+   * Tu trzeba napisać odpowiedni kod
+   */  
+}
+
+
+/*!
+ *
+ */
+class CommandsParser {
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+  public:
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+
+  bool ReadCmdsList( istream &IStrm, CommandsList &CmdList);
+  /*!
+   *
+   */
+  bool ReadCmd_Move( istream &IStrm, CommandsList &CmdList);
+  /*!
+   *
+   */
+  bool ReadCmd_Turn( istream &IStrm, CommandsList &CmdList);
+};
+
+
+
+/*!
+ *
+ */
+bool CommandsParser::ReadCmd_Move( istream &IStrm, CommandsList &CmdList)
+{
+  Command *pCmd = Command4Move::CreateCmd();
+
+  if (!pCmd) { CmdList.Clear(); return false; }
+  if (!pCmd->ReadParams(IStrm)) { CmdList.Clear();  delete pCmd;  return false; }
+
+  return true;
+}
+
+
+/*!
+ *
+ */
+bool CommandsParser::ReadCmd_Turn( istream &IStrm, CommandsList &CmdList)
+{
+  Command *pCmd = Command4Turn::CreateCmd();
+
+  if (!pCmd) { CmdList.Clear(); return false; }
+  if (!pCmd->ReadParams(IStrm)) { CmdList.Clear();  delete pCmd;  return false; }
+
+  return true;
+}
+
+
+
+/*!
+ *
+ */
+bool CommandsParser::ReadCmdsList( istream &IStrm, CommandsList &CmdList)
+{
+  string CmdName;
+
+  while (IStrm >> CmdName) {
+    if (CmdName == "Move") {
+	  if (!ReadCmd_Move(IStrm,CmdList)) return false;
+          continue ;
+    }
+    if (CmdName == "Turn") {
+          if (!ReadCmd_Turn(IStrm,CmdList)) return false;
+          continue ;
+    }
+  }
+  return true;
+}
+
+
+
+
+ int main()
+ {
+   Command  *pCmd;
+
+
+   Command4Move::PrintSyntax();
+
+   pCmd = Command4Move::CreateCmd();
+
+   cout << pCmd->GetCmdName() << endl;
+   pCmd->PrintCmd();
+ }

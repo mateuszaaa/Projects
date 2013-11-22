@@ -1,0 +1,10 @@
+<map id="menu.hh" name="menu.hh">
+<area shape="rect" id="node3" href="$parser_8hh.html" title="parser.hh" alt="" coords="363,80,444,107"/>
+<area shape="rect" id="node7" href="$command_8hh.html" title="Definicja klasy Command. " alt="" coords="240,304,347,331"/>
+<area shape="rect" id="node8" href="$robotpose_8hh.html" title="Definicja klasy RobotPose. " alt="" coords="203,379,309,405"/>
+<area shape="rect" id="node19" href="$lacze__do__gnuplota_8hh.html" title="lacze_do_gnuplota.hh" alt="" coords="918,155,1079,181"/>
+<area shape="rect" id="node9" href="$list_8hh.html" title="list.hh" alt="" coords="374,155,433,181"/>
+<area shape="rect" id="node11" href="$libinterface_8hh.html" title="Zawiera definicję klasy LibInterface. " alt="" coords="535,229,645,256"/>
+<area shape="rect" id="node15" href="$set4libinterfaces_8hh.html" title="Zawiera ... " alt="" coords="744,155,891,181"/>
+<area shape="rect" id="node17" href="$exception_8hh.html" title="exception.hh" alt="" coords="745,229,849,256"/>
+</map>

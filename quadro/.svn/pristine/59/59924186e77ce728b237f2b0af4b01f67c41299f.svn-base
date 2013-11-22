@@ -1,0 +1,25 @@
+__start__: obj interp __plugin__
+	export LD_LIBRARY_PATH="./libs"; ./interp
+
+obj:
+	mkdir obj
+
+__plugin__:
+	cd plugin; make
+
+CPPFLAGS=-Wall -pedantic -Iinc
+LDFLAGS=-Wall
+
+interp: obj/main.o
+	g++ ${LDFLAGS} -o interp  obj/main.o -ldl
+
+obj/main.o: src/main.cpp inc/command.hh
+	g++ -c ${CPPFLAGS} -o obj/main.o src/main.cpp
+
+clean:
+	rm -f obj/* interp
+
+cleanall: clean
+	cd plugin; make cleanall
+	rm -f libs/*
+	find . -name \*~ -print -exec rm {} \;

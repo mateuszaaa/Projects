@@ -1,0 +1,30 @@
+Warning: Tag `SYMBOL_CACHE_SIZE' at line 300 of file Doxyfile has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `SHOW_DIRECTORIES' at line 500 of file Doxyfile has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: ignoring unknown tag `src' at line 594, file Doxyfile
+Warning: Tag `HTML_ALIGN_MEMBERS' at line 883 of file Doxyfile has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `USE_INLINE_TREES' at line 1068 of file Doxyfile has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/list.hh:15: warning: argument 'cmd' of command @param is not found in the argument list of CommandsList::Add2List(Command *pCmd)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/list.hh:15: warning: The following parameters of CommandsList::Add2List(Command *pCmd) are not documented:
+  parameter 'pCmd'
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:51: warning: argument 'output' of command @param is not found in the argument list of CommandsParser::execCmdsList(ofstream &, RobotPose &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:51: warning: argument 'robot' of command @param is not found in the argument list of CommandsParser::execCmdsList(ofstream &, RobotPose &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:51: warning: argument 'commands' of command @param is not found in the argument list of CommandsParser::execCmdsList(ofstream &, RobotPose &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:29: warning: argument 'input' of command @param is not found in the argument list of CommandsParser::ReadCmd(LibInterface *, istream &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:29: warning: argument 'command' of command @param is not found in the argument list of CommandsParser::ReadCmd(LibInterface *, istream &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:19: warning: argument 'file' of command @param is not found in the argument list of CommandsParser::ReadCmdsList(ifstream &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:19: warning: argument 'commands' of command @param is not found in the argument list of CommandsParser::ReadCmdsList(ifstream &, CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:40: warning: argument 'input' of command @param is not found in the argument list of CommandsParser::showCmdsList(CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/parser.hh:40: warning: argument 'command' of command @param is not found in the argument list of CommandsParser::showCmdsList(CommandsList &)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/menu.hh:40: warning: argument 'option' of command @param is not found in the argument list of Menu::decision(char)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/menu.hh:61: warning: argument 'file_name' of command @param is not found in the argument list of Menu::setInputFile(std::string)
+/media/Dane/Dokumenty/Politechnika/Semestr_VII/zmp/quadro/inc/menu.hh:67: warning: argument 'file_name' of command @param is not found in the argument list of Menu::setOutputFile(std::string)

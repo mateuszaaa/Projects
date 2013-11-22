@@ -1,0 +1,87 @@
+/************************************************************
+ * Slowa kluczowe dla svn                         
+ *                                                      
+ *  $HeadURL$
+ *  $Author$
+ *  $Date$
+ *  $Revision$
+ *
+ ************************************************************/
+
+#include <iostream>
+#include "command4turn.hh"
+
+using std::cout;
+using std::endl;
+
+/*!
+ *
+ */
+Command4Turn::Command4Turn(): _Speed_mmS(0)
+{}
+
+
+/*!
+ *
+ */
+void Command4Turn::PrintCmd() const
+{
+  /*
+   *  Tu trzeba napisać odpowiednio zmodyfikować kod poniżej.
+   */
+  cout << GetCmdName() << " " << _Speed_mmS  << ", 500, 400, 1200;" << endl;
+}
+
+
+/*!
+ *
+ */
+const char* Command4Turn::GetCmdName() const
+{
+  return "Turn";
+}
+
+
+/*!
+ *
+ */
+int Command4Turn::ExecCmd(    RobotPose      *pRobPose,
+                              double          time_step_sec, 
+                              std::ostream   &Strm_Out
+                         ) const
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return 0;
+}
+
+
+/*!
+ *
+ */
+bool Command4Turn::ReadParams(std::istream& Strm_CmdsList)
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return true;
+}
+
+
+/*!
+ *
+ */
+Command* Command4Turn::CreateCmd()
+{
+  return new Command4Turn();
+}
+
+
+/*!
+ *
+ */
+void Command4Turn::PrintSyntax()
+{
+  cout << "   Turn  speed[mm/s], dist[mm/s], safeZone[mm], radius[mm];" << endl;
+}

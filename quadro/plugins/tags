@@ -1,0 +1,78 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS  = -g -Wall -shared -fPIC$/;"	m
+COMMAND4FLY_HH	inc/command4fly.hh	2;"	d
+COMMAND4ROTATE_HH	inc/command4rotate.hh	3;"	d
+Command4Fly	inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly	inc/command4fly.hh	/^class Command4Fly: public Command {$/;"	c	inherits:Command
+Command4Fly	src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::Command4Fly	inc/command4fly.hh	/^  Command4Fly();  $/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::Command4Fly	src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::CreateCmd	inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+Command4Fly::CreateCmd	src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::ExecCmd	inc/command4fly.hh	/^  int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Fly::ExecCmd	src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+Command4Fly::GetCmdName	inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+Command4Fly::PrintSyntax	inc/command4fly.hh	/^  void PrintSyntax() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+Command4Fly::PrintSyntax	src/command4fly.cpp	/^void Command4Fly::PrintSyntax() const$/;"	f	class:Command4Fly	signature:() const
+Command4Fly::ReadParams	inc/command4fly.hh	/^  bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+Command4Fly::ReadParams	src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+Command4Fly::_length	inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_horizontal	inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_vertical	inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+Command4Fly::printCmd	inc/command4fly.hh	/^  void printCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+Command4Fly::printCmd	src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const
+Command4Rotate	inc/command4rotate.hh	/^  Command4Rotate();  $/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate	inc/command4rotate.hh	/^class Command4Rotate: public Command {$/;"	c	inherits:Command
+Command4Rotate	src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::Command4Rotate	inc/command4rotate.hh	/^  Command4Rotate();  $/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::Command4Rotate	src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::CreateCmd	inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::CreateCmd	src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::ExecCmd	inc/command4rotate.hh	/^  int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Rotate	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+Command4Rotate::ExecCmd	src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+Command4Rotate::GetCmdName	inc/command4rotate.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Rotate	access:public	signature:()
+Command4Rotate::GetCmdName	src/command4rotate.cpp	/^static const char* Command4Rotate::GetCmdName()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::PrintSyntax	inc/command4rotate.hh	/^  void PrintSyntax() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+Command4Rotate::PrintSyntax	src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax() const$/;"	f	class:Command4Rotate	signature:() const
+Command4Rotate::ReadParams	inc/command4rotate.hh	/^  bool ReadParams(std::istream& );$/;"	p	class:Command4Rotate	access:public	signature:(std::istream& )
+Command4Rotate::ReadParams	src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+Command4Rotate::_angle	inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::_angle_speed	inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::printCmd	inc/command4rotate.hh	/^  void printCmd() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+CreateCmd	inc/command4fly.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Fly	access:public	signature:()
+CreateCmd	inc/command4rotate.hh	/^  static Command* CreateCmd();$/;"	p	class:Command4Rotate	access:public	signature:()
+CreateCmd	src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+CreateCmd	src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+ExecCmd	inc/command4fly.hh	/^  int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Fly	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	inc/command4rotate.hh	/^  int ExecCmd(   RobotPose      &pRobPose,  $/;"	p	class:Command4Rotate	access:public	signature:( RobotPose &pRobPose, std::ostream &Strm_Out ) const
+ExecCmd	src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+ExecCmd	src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+GetCmdName	inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+GetCmdName	inc/command4rotate.hh	/^  static const char* GetCmdName();$/;"	p	class:Command4Rotate	access:public	signature:()
+GetCmdName	src/command4rotate.cpp	/^static const char* Command4Rotate::GetCmdName()$/;"	f	class:Command4Rotate	signature:()
+LDFLAGS	makefile	/^LDFLAGS = $/;"	m
+PI	src/command4fly.cpp	5;"	d	file:
+PROJ_NAME	makefile	/^PROJ_NAME = main$/;"	m
+PrintSyntax	inc/command4fly.hh	/^  void PrintSyntax() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+PrintSyntax	inc/command4rotate.hh	/^  void PrintSyntax() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+PrintSyntax	src/command4fly.cpp	/^void Command4Fly::PrintSyntax() const$/;"	f	class:Command4Fly	signature:() const
+PrintSyntax	src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax() const$/;"	f	class:Command4Rotate	signature:() const
+ReadParams	inc/command4fly.hh	/^  bool ReadParams(std::istream& Strm_CmdsList);$/;"	p	class:Command4Fly	access:public	signature:(std::istream& Strm_CmdsList)
+ReadParams	inc/command4rotate.hh	/^  bool ReadParams(std::istream& );$/;"	p	class:Command4Rotate	access:public	signature:(std::istream& )
+ReadParams	src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+ReadParams	src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+SRC	makefile	/^SRC = $(wildcard src\/*.cpp)$/;"	m
+_angle	inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+_angle_speed	inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+_length	inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+_speed_horizontal	inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+_speed_vertical	inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+printCmd	inc/command4fly.hh	/^  void printCmd() const;$/;"	p	class:Command4Fly	access:public	signature:() const
+printCmd	inc/command4rotate.hh	/^  void printCmd() const;$/;"	p	class:Command4Rotate	access:public	signature:() const
+printCmd	src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const

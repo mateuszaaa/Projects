@@ -1,0 +1,11 @@
+set title "Quadro"
+set terminal x11
+set xlabel "X"
+set ylabel "Y"
+set grid
+set xrange [-40:40]
+set yrange [-40:40]
+set zrange [0:5]
+set ticslevel 0
+splot "output.dat" using 1:2:3 with lines
+pause mouse key

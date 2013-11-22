@@ -1,0 +1,18 @@
+<Scene xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation='grammar/scene.xsd' >
+ <Object Name="A">
+  <Parameter Name="Coordinate_x" Value="5"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+ <Object Name="B">
+  <Parameter Name="Coordinate_x" Value="10"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+ <Object Name="A">
+  <Parameter Name="Coordinate_x" Value="15"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+</Scene>

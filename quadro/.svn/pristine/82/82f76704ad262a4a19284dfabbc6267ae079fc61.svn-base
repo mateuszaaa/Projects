@@ -1,0 +1,285 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Add2List	src/list.cpp	/^void CommandsList::Add2List(Command *cmd)$/;"	f	class:CommandsList	signature:(Command *cmd)
+BudujPreambulePoleceniaRysowania	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+BudujPreambule_2D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_2D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+BudujPreambule_3D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_3D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+CC	makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS  = -g -Wall $/;"	m
+COMMAND4FLY_HH	inc/command4fly.hh	2;"	d
+COMMAND4ROTATE_HH	inc/command4rotate.hh	3;"	d
+COMMAND_HH	inc/command.hh	2;"	d
+Clear	src/list.cpp	/^void CommandsList::Clear()$/;"	f	class:CommandsList	signature:()
+Command	inc/command.hh	/^ class Command {$/;"	c
+Command4Fly	inc/command4fly.hh	/^class Command4Fly: public Command {$/;"	c	inherits:Command
+Command4Fly	src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::Command4Fly	src/command4fly.cpp	/^Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)$/;"	f	class:Command4Fly	signature:()
+Command4Fly::CreateCmd	src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::ExecCmd	src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+Command4Fly::GetCmdName	inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+Command4Fly::PrintSyntax	src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+Command4Fly::ReadParams	src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+Command4Fly::_length	inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_horizontal	inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+Command4Fly::_speed_vertical	inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+Command4Fly::printCmd	src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const
+Command4Rotate	inc/command4rotate.hh	/^class Command4Rotate: public Command {$/;"	c	inherits:Command
+Command4Rotate	src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::Command4Rotate	src/command4rotate.cpp	/^Command4Rotate::Command4Rotate(): _angle_speed(0), _angle(0)$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::CreateCmd	src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::ExecCmd	src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+Command4Rotate::GetCmdName	inc/command4rotate.hh	/^  static const char* GetCmdName() { return "Rotate"; }$/;"	f	class:Command4Rotate	access:public	signature:()
+Command4Rotate::PrintSyntax	src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax()$/;"	f	class:Command4Rotate	signature:()
+Command4Rotate::ReadParams	src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+Command4Rotate::_angle	inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::_angle_speed	inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+Command4Rotate::printCmd	src/command4rotate.cpp	/^void Command4Rotate::printCmd() const$/;"	f	class:Command4Rotate	signature:() const
+Command::~Command	inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+CommandParamsError	inc/exception.hh	/^class CommandParamsError: public std::exception{$/;"	c	inherits:std::exception
+CommandParamsError::what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:CommandParamsError	access:private	signature:() const
+CommandsList	inc/list.hh	/^class CommandsList: public std::list<Command*> {$/;"	c	inherits:std::list
+CommandsList::Add2List	src/list.cpp	/^void CommandsList::Add2List(Command *cmd)$/;"	f	class:CommandsList	signature:(Command *cmd)
+CommandsList::Clear	src/list.cpp	/^void CommandsList::Clear()$/;"	f	class:CommandsList	signature:()
+CommandsList::~CommandsList	src/list.cpp	/^CommandsList::~CommandsList()$/;"	f	class:CommandsList	signature:()
+CommandsParser	inc/parser.hh	/^class CommandsParser {$/;"	c
+CommandsParser::ReadCmd_Fly	src/parser.cpp	/^bool CommandsParser::ReadCmd_Fly( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+CommandsParser::ReadCmd_Rotate	src/parser.cpp	/^bool CommandsParser::ReadCmd_Rotate( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+CommandsParser::ReadCmdsList	src/parser.cpp	/^bool CommandsParser::ReadCmdsList( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+CommandsParser::execCmdsList	src/parser.cpp	/^  void CommandsParser::execCmdsList(RobotPose &robot,CommandsList &cmds_list,char* file_name){$/;"	f	class:CommandsParser	signature:(RobotPose &robot,CommandsList &cmds_list,char* file_name)
+CommandsParser::showCmdsList	src/parser.cpp	/^  void CommandsParser::showCmdsList(CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(CommandsList &cmds_list)
+CreateCmd	src/command4fly.cpp	/^Command* Command4Fly::CreateCmd()$/;"	f	class:Command4Fly	signature:()
+CreateCmd	src/command4rotate.cpp	/^Command* Command4Rotate::CreateCmd()$/;"	f	class:Command4Rotate	signature:()
+CzyJestPlik	src/lacze_do_gnuplota.cpp	/^ bool CzyJestPlik(char const *NazwaPliku)$/;"	f	namespace:PzG	signature:(char const *NazwaPliku)
+CzyPolaczenieJestZainicjowane	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+CzyWyswietlacKomunikaty	inc/lacze_do_gnuplota.hh	/^  bool CzyWyswietlacKomunikaty() const { return _WyswietlajKomunikatyOBledach;}$/;"	f	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+DodajNazwePliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DodajNazwePliku( const char      * NazwaPliku,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( const char * NazwaPliku, RodzajRysowania RodzRys, int Szerokosc )
+DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  bool LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania( std::string &,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &, char const ** )
+DopiszRysowanieZPlikow	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie, $/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &Polecenie, char const **Sep )
+EXCEPTIONS_HH	inc/exception.hh	2;"	d
+ExecCmd	src/command4fly.cpp	/^int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const$/;"	f	class:Command4Fly	signature:(RobotPose &robot, std::ostream& out) const
+ExecCmd	src/command4rotate.cpp	/^int Command4Rotate::ExecCmd(RobotPose &robot, std::ostream& Strm_Out) const$/;"	f	class:Command4Rotate	signature:(RobotPose &robot, std::ostream& Strm_Out) const
+FileOpenProblem	inc/exception.hh	/^class FileOpenProblem: public std::exception{$/;"	c	inherits:std::exception
+FileOpenProblem::what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:FileOpenProblem	access:private	signature:() const
+GetCmdName	inc/command4fly.hh	/^  static const char* GetCmdName() { return "Fly"; }$/;"	f	class:Command4Fly	access:public	signature:()
+GetCmdName	inc/command4rotate.hh	/^  static const char* GetCmdName() { return "Rotate"; }$/;"	f	class:Command4Rotate	access:public	signature:()
+InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^      InfoPlikuDoRysowania(const char* NazwaPliku, RodzajRysowania  RodzRys, int Szerokosc)$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const char* NazwaPliku, RodzajRysowania RodzRys, int Szerokosc)
+InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^  class InfoPlikuDoRysowania {$/;"	c	namespace:PzG
+Inicjalizuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Inicjalizuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+KomunikatBledu	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::KomunikatBledu(const char *Komunikat) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat) const
+LACZE_DO_GNUPLOTA_HH	inc/lacze_do_gnuplota.hh	12;"	d
+LIST_HH	inc/list.hh	2;"	d
+LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^class LaczeDoGNUPlota {$/;"	c	namespace:PzG
+LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ LaczeDoGNUPlota::LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+MENU_HH	inc/menu.hh	2;"	d
+Menu	inc/menu.hh	/^class Menu{$/;"	c
+Menu	src/menu.cpp	/^Menu::Menu(CommandsParser & parser, CommandsList & list, RobotPose & robot){$/;"	f	class:Menu	signature:(CommandsParser & parser, CommandsList & list, RobotPose & robot)
+Menu::Menu	src/menu.cpp	/^Menu::Menu(CommandsParser & parser, CommandsList & list, RobotPose & robot){$/;"	f	class:Menu	signature:(CommandsParser & parser, CommandsList & list, RobotPose & robot)
+Menu::decision	src/menu.cpp	/^bool Menu::decision(char option){$/;"	f	class:Menu	signature:(char option)
+Menu::execCommands	src/menu.cpp	/^void Menu::execCommands(){$/;"	f	class:Menu	signature:()
+Menu::help	src/menu.cpp	/^void Menu::help(){$/;"	f	class:Menu	signature:()
+Menu::menu	src/menu.cpp	/^void Menu::menu(){$/;"	f	class:Menu	signature:()
+Menu::readCommands	src/menu.cpp	/^void Menu::readCommands(){$/;"	f	class:Menu	signature:()
+Menu::setInputFile	src/menu.cpp	/^void Menu::setInputFile(){$/;"	f	class:Menu	signature:()
+Menu::setOutputFile	src/menu.cpp	/^void Menu::setOutputFile(){$/;"	f	class:Menu	signature:()
+Menu::show2DVisualisation	src/menu.cpp	/^void Menu::show2DVisualisation(){$/;"	f	class:Menu	signature:()
+Menu::showCommands	src/menu.cpp	/^void Menu::showCommands(){$/;"	f	class:Menu	signature:()
+PARSER_HH	inc/parser.hh	2;"	d
+PI	inc/command.hh	16;"	d
+PROJ_NAME	makefile	/^PROJ_NAME = main$/;"	m
+PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OX() const { return _PokazOs_OX; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OX(bool Pokaz) { _PokazOs_OX = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OY() const { return _PokazOs_OY; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OY(bool Pokaz) { _PokazOs_OY = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PrintSyntax	src/command4fly.cpp	/^void Command4Fly::PrintSyntax()$/;"	f	class:Command4Fly	signature:()
+PrintSyntax	src/command4rotate.cpp	/^void Command4Rotate::PrintSyntax()$/;"	f	class:Command4Rotate	signature:()
+PrzeslijDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::PrzeslijDoGNUPlota(const char *Komunikat)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat)
+PzG	inc/lacze_do_gnuplota.hh	/^namespace PzG {$/;"	n
+PzG	src/lacze_do_gnuplota.cpp	/^namespace PzG {$/;"	n	file:
+PzG::CzyJestPlik	src/lacze_do_gnuplota.cpp	/^ bool CzyJestPlik(char const *NazwaPliku)$/;"	f	namespace:PzG	signature:(char const *NazwaPliku)
+PzG::InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^  class InfoPlikuDoRysowania {$/;"	c	namespace:PzG
+PzG::InfoPlikuDoRysowania::InfoPlikuDoRysowania	inc/lacze_do_gnuplota.hh	/^      InfoPlikuDoRysowania(const char* NazwaPliku, RodzajRysowania  RodzRys, int Szerokosc)$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const char* NazwaPliku, RodzajRysowania RodzRys, int Szerokosc)
+PzG::InfoPlikuDoRysowania::WezNazwePliku	inc/lacze_do_gnuplota.hh	/^      const std::string WezNazwePliku() const { return _NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::WezRodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania WezRodzRys() const { return _RodzRys; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::WezSzerokosc	inc/lacze_do_gnuplota.hh	/^      int WezSzerokosc() const { return _Szerokosc; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+PzG::InfoPlikuDoRysowania::ZmienNazwePliku	inc/lacze_do_gnuplota.hh	/^      void ZmienNazwePliku(const std::string& NazwaPliku) { _NazwaPliku = NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const std::string& NazwaPliku)
+PzG::InfoPlikuDoRysowania::_NazwaPliku	inc/lacze_do_gnuplota.hh	/^      std::string  _NazwaPliku;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::InfoPlikuDoRysowania::_RodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania  _RodzRys;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::InfoPlikuDoRysowania::_Szerokosc	inc/lacze_do_gnuplota.hh	/^      int  _Szerokosc;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+PzG::LaczeDoGNUPlota	inc/lacze_do_gnuplota.hh	/^class LaczeDoGNUPlota {$/;"	c	namespace:PzG
+PzG::LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambulePoleceniaRysowania(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_2D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_2D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::BudujPreambule_3D	src/lacze_do_gnuplota.cpp	/^ void  LaczeDoGNUPlota::BudujPreambule_3D(std::string &Preambula) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(std::string &Preambula) const
+PzG::LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+PzG::LaczeDoGNUPlota::CzyWyswietlacKomunikaty	inc/lacze_do_gnuplota.hh	/^  bool CzyWyswietlacKomunikaty() const { return _WyswietlajKomunikatyOBledach;}$/;"	f	class:PzG::LaczeDoGNUPlota	access:protected	signature:() const
+PzG::LaczeDoGNUPlota::DodajNazwePliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DodajNazwePliku( const char      * NazwaPliku,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( const char * NazwaPliku, RodzajRysowania RodzRys, int Szerokosc )
+PzG::LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania	inc/lacze_do_gnuplota.hh	/^  bool LaczeDoGNUPlota::DopiszPlikiDoPoleceniaRysowania( std::string &,$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &, char const ** )
+PzG::LaczeDoGNUPlota::DopiszRysowanieZPlikow	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie, $/;"	f	class:PzG::LaczeDoGNUPlota	signature:( std::string &Polecenie, char const **Sep )
+PzG::LaczeDoGNUPlota::Inicjalizuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Inicjalizuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::KomunikatBledu	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::KomunikatBledu(const char *Komunikat) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat) const
+PzG::LaczeDoGNUPlota::LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ LaczeDoGNUPlota::LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OX() const { return _PokazOs_OX; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OX(bool Pokaz) { _PokazOs_OX = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PzG::LaczeDoGNUPlota::PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool PokazOs_OY() const { return _PokazOs_OY; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  void PokazOs_OY(bool Pokaz) { _PokazOs_OY = Pokaz; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(bool Pokaz)
+PzG::LaczeDoGNUPlota::PrzeslijDoGNUPlota	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::PrzeslijDoGNUPlota(const char *Komunikat)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *Komunikat)
+PzG::LaczeDoGNUPlota::RotacjaX	inc/lacze_do_gnuplota.hh	/^  float RotacjaX() const { return _Xrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::RotacjaZ	inc/lacze_do_gnuplota.hh	/^  float RotacjaZ() const { return _Zrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Rysuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Rysuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::RysujDoPliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::RysujDoPliku(const char *NazwaPliku)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *NazwaPliku)
+PzG::LaczeDoGNUPlota::SkalaX	inc/lacze_do_gnuplota.hh	/^  float SkalaX() const { return _Xskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::SkalaZ	inc/lacze_do_gnuplota.hh	/^  float SkalaZ() const { return _Zskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::UstawRotacjeX	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeX( float kat_x ) { _Xrotacja = kat_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x )
+PzG::LaczeDoGNUPlota::UstawRotacjeXZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeXZ( float kat_x, float kat_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x, float kat_z )
+PzG::LaczeDoGNUPlota::UstawRotacjeZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeZ( float kat_z ) { _Zrotacja = kat_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_z )
+PzG::LaczeDoGNUPlota::UstawSkaleX	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleX( float skala_x ) { _Xskala = skala_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x )
+PzG::LaczeDoGNUPlota::UstawSkaleXZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleXZ( float skala_x, float skala_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x, float skala_z )
+PzG::LaczeDoGNUPlota::UstawSkaleZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleZ( float skala_z ) { _Zskala = skala_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_z )
+PzG::LaczeDoGNUPlota::UstawZakresX	inc/lacze_do_gnuplota.hh	/^  void UstawZakresX(float Xo, float Xn) { _Xmin = Xo;  _Xmax = Xn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Xo, float Xn)
+PzG::LaczeDoGNUPlota::UstawZakresY	inc/lacze_do_gnuplota.hh	/^  void UstawZakresY(float Yo, float Yn) { _Ymin = Yo;  _Ymax = Yn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Yo, float Yn)
+PzG::LaczeDoGNUPlota::UstawZakresZ	inc/lacze_do_gnuplota.hh	/^  void UstawZakresZ(float Zo, float Zn) { _Zmin = Zo;  _Zmax = Zn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Zo, float Zn)
+PzG::LaczeDoGNUPlota::UsunOstatniaNazwe	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunOstatniaNazwe()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::UsunWszystkieNazwyPlikow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunWszystkieNazwyPlikow()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::UtworzProcesPotomny	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::UtworzProcesPotomny()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::LaczeDoGNUPlota::WezTrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania WezTrybRys() const { return _TrybRys; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::WyswietlajKomunikatyBledow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::WyswietlajKomunikatyBledow( bool Tryb )$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( bool Tryb )
+PzG::LaczeDoGNUPlota::Xmax	inc/lacze_do_gnuplota.hh	/^  float Xmax() const { return _Xmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Xmin	inc/lacze_do_gnuplota.hh	/^  float Xmin() const { return _Xmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Ymax	inc/lacze_do_gnuplota.hh	/^  float Ymax() const { return _Ymax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::Ymin	inc/lacze_do_gnuplota.hh	/^  float Ymin() const { return _Ymin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+PzG::LaczeDoGNUPlota::ZapiszUstawienieZakresu	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieZakresu(char Os) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(char Os) const
+PzG::LaczeDoGNUPlota::Zmax	inc/lacze_do_gnuplota.hh	/^  float Zmax() const { return _Zmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::ZmienTrybRys	inc/lacze_do_gnuplota.hh	/^  void ZmienTrybRys(TrybRysowania  Tryb) { _TrybRys = Tryb; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(TrybRysowania Tryb)
+PzG::LaczeDoGNUPlota::Zmin	inc/lacze_do_gnuplota.hh	/^  float Zmin() const { return _Zmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+PzG::LaczeDoGNUPlota::_InfoPlikow	inc/lacze_do_gnuplota.hh	/^  static std::list<InfoPlikuDoRysowania>  _InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_InfoPlikow	src/lacze_do_gnuplota.cpp	/^ std::list<InfoPlikuDoRysowania>  LaczeDoGNUPlota::_InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	file:
+PzG::LaczeDoGNUPlota::_PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OX;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OY;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_TrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania  _TrybRys;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Wejscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wejscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Wyjscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wyjscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_WyswietlajKomunikatyOBledach	inc/lacze_do_gnuplota.hh	/^  bool          _WyswietlajKomunikatyOBledach;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xmax	inc/lacze_do_gnuplota.hh	/^  float  _Xmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xmin	inc/lacze_do_gnuplota.hh	/^  float  _Xmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Xrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Xskala	inc/lacze_do_gnuplota.hh	/^  float  _Xskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Ymax	inc/lacze_do_gnuplota.hh	/^  float  _Ymax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Ymin	inc/lacze_do_gnuplota.hh	/^  float  _Ymin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zmax	inc/lacze_do_gnuplota.hh	/^  float  _Zmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zmin	inc/lacze_do_gnuplota.hh	/^  float  _Zmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Zrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::_Zskala	inc/lacze_do_gnuplota.hh	/^  float  _Zskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+PzG::LaczeDoGNUPlota::~LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^  LaczeDoGNUPlota::~LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+PzG::RR_Ciagly	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	e	enum:PzG::RodzajRysowania
+PzG::RR_Punktowy	inc/lacze_do_gnuplota.hh	/^                         RR_Punktowy \/*! Linia ma być rysowana ciągłą kreską *\/$/;"	e	enum:PzG::RodzajRysowania
+PzG::RodzajRysowania	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	g	namespace:PzG
+PzG::TR_2D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+PzG::TR_3D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+PzG::TrybRysowania	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	g	namespace:PzG
+ROBOTPOSE_HH	inc/robotpose.hh	2;"	d
+ROZ_LINII	src/lacze_do_gnuplota.cpp	132;"	d	file:
+RR_Ciagly	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	e	enum:PzG::RodzajRysowania
+RR_Punktowy	inc/lacze_do_gnuplota.hh	/^                         RR_Punktowy \/*! Linia ma być rysowana ciągłą kreską *\/$/;"	e	enum:PzG::RodzajRysowania
+ReadCmd_Fly	src/parser.cpp	/^bool CommandsParser::ReadCmd_Fly( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+ReadCmd_Rotate	src/parser.cpp	/^bool CommandsParser::ReadCmd_Rotate( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+ReadCmdsList	src/parser.cpp	/^bool CommandsParser::ReadCmdsList( istream &IStrm, CommandsList &cmds_list)$/;"	f	class:CommandsParser	signature:( istream &IStrm, CommandsList &cmds_list)
+ReadParams	src/command4fly.cpp	/^bool Command4Fly::ReadParams(std::istream& stream)$/;"	f	class:Command4Fly	signature:(std::istream& stream)
+ReadParams	src/command4rotate.cpp	/^bool Command4Rotate::ReadParams(std::istream& stream)$/;"	f	class:Command4Rotate	signature:(std::istream& stream)
+RobotPose	inc/robotpose.hh	/^struct RobotPose {$/;"	s
+RobotPose::alpha_deg	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::x_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::y_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RobotPose::z_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+RodzajRysowania	inc/lacze_do_gnuplota.hh	/^  enum RodzajRysowania { RR_Ciagly \/*! Linia ma być rysowana jako $/;"	g	namespace:PzG
+RotacjaX	inc/lacze_do_gnuplota.hh	/^  float RotacjaX() const { return _Xrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+RotacjaZ	inc/lacze_do_gnuplota.hh	/^  float RotacjaZ() const { return _Zrotacja; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Rysuj	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::Rysuj()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+RysujDoPliku	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::RysujDoPliku(const char *NazwaPliku)$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(const char *NazwaPliku)
+SRC	makefile	/^SRC = $(wildcard src\/*.cpp)$/;"	m
+STDIN	src/lacze_do_gnuplota.cpp	29;"	d	file:
+STDOUT	src/lacze_do_gnuplota.cpp	30;"	d	file:
+SkalaX	inc/lacze_do_gnuplota.hh	/^  float SkalaX() const { return _Xskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+SkalaZ	inc/lacze_do_gnuplota.hh	/^  float SkalaZ() const { return _Zskala; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+TR_2D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+TR_3D	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	e	enum:PzG::TrybRysowania
+TrybRysowania	inc/lacze_do_gnuplota.hh	/^  enum TrybRysowania { TR_2D,  TR_3D };$/;"	g	namespace:PzG
+UstawRotacjeX	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeX( float kat_x ) { _Xrotacja = kat_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x )
+UstawRotacjeXZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeXZ( float kat_x, float kat_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_x, float kat_z )
+UstawRotacjeZ	inc/lacze_do_gnuplota.hh	/^  void UstawRotacjeZ( float kat_z ) { _Zrotacja = kat_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float kat_z )
+UstawSkaleX	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleX( float skala_x ) { _Xskala = skala_x; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x )
+UstawSkaleXZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleXZ( float skala_x, float skala_z ) $/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_x, float skala_z )
+UstawSkaleZ	inc/lacze_do_gnuplota.hh	/^  void UstawSkaleZ( float skala_z ) { _Zskala = skala_z; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:( float skala_z )
+UstawZakresX	inc/lacze_do_gnuplota.hh	/^  void UstawZakresX(float Xo, float Xn) { _Xmin = Xo;  _Xmax = Xn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Xo, float Xn)
+UstawZakresY	inc/lacze_do_gnuplota.hh	/^  void UstawZakresY(float Yo, float Yn) { _Ymin = Yo;  _Ymax = Yn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Yo, float Yn)
+UstawZakresZ	inc/lacze_do_gnuplota.hh	/^  void UstawZakresZ(float Zo, float Zn) { _Zmin = Zo;  _Zmax = Zn; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(float Zo, float Zn)
+UsunOstatniaNazwe	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunOstatniaNazwe()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+UsunWszystkieNazwyPlikow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::UsunWszystkieNazwyPlikow()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+UtworzProcesPotomny	src/lacze_do_gnuplota.cpp	/^ bool LaczeDoGNUPlota::UtworzProcesPotomny()$/;"	f	class:PzG::LaczeDoGNUPlota	signature:()
+WezNazwePliku	inc/lacze_do_gnuplota.hh	/^      const std::string WezNazwePliku() const { return _NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezRodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania WezRodzRys() const { return _RodzRys; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezSzerokosc	inc/lacze_do_gnuplota.hh	/^      int WezSzerokosc() const { return _Szerokosc; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:() const
+WezTrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania WezTrybRys() const { return _TrybRys; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+WyswietlajKomunikatyBledow	src/lacze_do_gnuplota.cpp	/^ void LaczeDoGNUPlota::WyswietlajKomunikatyBledow( bool Tryb )$/;"	f	class:PzG::LaczeDoGNUPlota	signature:( bool Tryb )
+Xmax	inc/lacze_do_gnuplota.hh	/^  float Xmax() const { return _Xmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Xmin	inc/lacze_do_gnuplota.hh	/^  float Xmin() const { return _Xmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Ymax	inc/lacze_do_gnuplota.hh	/^  float Ymax() const { return _Ymax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+Ymin	inc/lacze_do_gnuplota.hh	/^  float Ymin() const { return _Ymin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+ZapiszUstawienieRotacjiISkali	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali() const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:() const
+ZapiszUstawienieZakresu	src/lacze_do_gnuplota.cpp	/^std::string LaczeDoGNUPlota::ZapiszUstawienieZakresu(char Os) const$/;"	f	class:PzG::LaczeDoGNUPlota	signature:(char Os) const
+Zmax	inc/lacze_do_gnuplota.hh	/^  float Zmax() const { return _Zmax; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+ZmienNazwePliku	inc/lacze_do_gnuplota.hh	/^      void ZmienNazwePliku(const std::string& NazwaPliku) { _NazwaPliku = NazwaPliku; }$/;"	f	class:PzG::InfoPlikuDoRysowania	access:public	signature:(const std::string& NazwaPliku)
+ZmienTrybRys	inc/lacze_do_gnuplota.hh	/^  void ZmienTrybRys(TrybRysowania  Tryb) { _TrybRys = Tryb; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:(TrybRysowania Tryb)
+Zmin	inc/lacze_do_gnuplota.hh	/^  float Zmin() const { return _Zmin; }$/;"	f	class:PzG::LaczeDoGNUPlota	access:public	signature:() const
+_InfoPlikow	inc/lacze_do_gnuplota.hh	/^  static std::list<InfoPlikuDoRysowania>  _InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_InfoPlikow	src/lacze_do_gnuplota.cpp	/^ std::list<InfoPlikuDoRysowania>  LaczeDoGNUPlota::_InfoPlikow;$/;"	m	class:PzG::LaczeDoGNUPlota	file:
+_NazwaPliku	inc/lacze_do_gnuplota.hh	/^      std::string  _NazwaPliku;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_PokazOs_OX	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OX;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_PokazOs_OY	inc/lacze_do_gnuplota.hh	/^  bool _PokazOs_OY;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_RodzRys	inc/lacze_do_gnuplota.hh	/^      RodzajRysowania  _RodzRys;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_Szerokosc	inc/lacze_do_gnuplota.hh	/^      int  _Szerokosc;$/;"	m	class:PzG::InfoPlikuDoRysowania	access:private
+_TrybRys	inc/lacze_do_gnuplota.hh	/^  TrybRysowania  _TrybRys;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Wejscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wejscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Wyjscie_GNUPlota	inc/lacze_do_gnuplota.hh	/^  int           _Wyjscie_GNUPlota;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_WyswietlajKomunikatyOBledach	inc/lacze_do_gnuplota.hh	/^  bool          _WyswietlajKomunikatyOBledach;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xmax	inc/lacze_do_gnuplota.hh	/^  float  _Xmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xmin	inc/lacze_do_gnuplota.hh	/^  float  _Xmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Xrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Xskala	inc/lacze_do_gnuplota.hh	/^  float  _Xskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Ymax	inc/lacze_do_gnuplota.hh	/^  float  _Ymax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Ymin	inc/lacze_do_gnuplota.hh	/^  float  _Ymin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zmax	inc/lacze_do_gnuplota.hh	/^  float  _Zmax;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zmin	inc/lacze_do_gnuplota.hh	/^  float  _Zmin;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zrotacja	inc/lacze_do_gnuplota.hh	/^  float  _Zrotacja;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_Zskala	inc/lacze_do_gnuplota.hh	/^  float  _Zskala;$/;"	m	class:PzG::LaczeDoGNUPlota	access:protected
+_angle	inc/command4rotate.hh	/^  double  _angle;$/;"	m	class:Command4Rotate	access:private
+_angle_speed	inc/command4rotate.hh	/^  double  _angle_speed;$/;"	m	class:Command4Rotate	access:private
+_length	inc/command4fly.hh	/^  double  _length;$/;"	m	class:Command4Fly	access:private
+_speed_horizontal	inc/command4fly.hh	/^  double  _speed_horizontal;$/;"	m	class:Command4Fly	access:private
+_speed_vertical	inc/command4fly.hh	/^  double  _speed_vertical;$/;"	m	class:Command4Fly	access:private
+alpha_deg	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+decision	src/menu.cpp	/^bool Menu::decision(char option){$/;"	f	class:Menu	signature:(char option)
+execCmdsList	src/parser.cpp	/^  void CommandsParser::execCmdsList(RobotPose &robot,CommandsList &cmds_list,char* file_name){$/;"	f	class:CommandsParser	signature:(RobotPose &robot,CommandsList &cmds_list,char* file_name)
+execCommands	src/menu.cpp	/^void Menu::execCommands(){$/;"	f	class:Menu	signature:()
+help	src/menu.cpp	/^void Menu::help(){$/;"	f	class:Menu	signature:()
+main	src/main.cpp	/^ int main()$/;"	f	signature:()
+menu	src/menu.cpp	/^void Menu::menu(){$/;"	f	class:Menu	signature:()
+printCmd	src/command4fly.cpp	/^void Command4Fly::printCmd() const$/;"	f	class:Command4Fly	signature:() const
+printCmd	src/command4rotate.cpp	/^void Command4Rotate::printCmd() const$/;"	f	class:Command4Rotate	signature:() const
+readCommands	src/menu.cpp	/^void Menu::readCommands(){$/;"	f	class:Menu	signature:()
+setInputFile	src/menu.cpp	/^void Menu::setInputFile(){$/;"	f	class:Menu	signature:()
+setOutputFile	src/menu.cpp	/^void Menu::setOutputFile(){$/;"	f	class:Menu	signature:()
+show2DVisualisation	src/menu.cpp	/^void Menu::show2DVisualisation(){$/;"	f	class:Menu	signature:()
+showCmdsList	src/parser.cpp	/^  void CommandsParser::showCmdsList(CommandsList &cmds_list){$/;"	f	class:CommandsParser	signature:(CommandsList &cmds_list)
+showCommands	src/menu.cpp	/^void Menu::showCommands(){$/;"	f	class:Menu	signature:()
+what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:CommandParamsError	access:private	signature:() const
+what	inc/exception.hh	/^    virtual const char* what() const throw()$/;"	f	class:FileOpenProblem	access:private	signature:() const
+x_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+y_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+z_m	inc/robotpose.hh	/^  double   x_m, y_m, z_m, alpha_deg;$/;"	m	struct:RobotPose	access:public
+~Command	inc/command.hh	/^   virtual ~Command() {}$/;"	f	class:Command	access:public	signature:()
+~CommandsList	src/list.cpp	/^CommandsList::~CommandsList()$/;"	f	class:CommandsList	signature:()
+~LaczeDoGNUPlota	src/lacze_do_gnuplota.cpp	/^  LaczeDoGNUPlota::~LaczeDoGNUPlota() $/;"	f	class:PzG::LaczeDoGNUPlota	signature:()

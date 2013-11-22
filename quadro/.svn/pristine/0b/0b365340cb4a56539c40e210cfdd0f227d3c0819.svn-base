@@ -1,0 +1,76 @@
+
+#ifndef  COMMAND4ROTATE_HH
+#define  COMMAND4ROTATE_HH
+
+
+#ifndef __GNUG__
+# pragma interface
+# pragma implementation
+#endif
+
+#include <cassert>
+#include "command.hh"
+#include "exception.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy Command4Rotate
+ *
+ * Plik zawiera definicję klasy Command4Rotate ...
+ */
+
+
+class Command4Rotate: public Command {
+
+  /**
+  * @brief desire angle speed
+  */
+  double  _angle_speed;
+  /**
+  * @brief desire angle 
+  */
+  double  _angle;
+
+ public:
+  Command4Rotate();  
+/**
+* @brief Prints command using actual fields values
+*/
+  virtual void printCmd() const;
+/**
+* @brief Runs commands which makes robot move 
+*
+* @param robot objects to rotate
+* @param out file to save robot position
+*
+* @return 
+*/
+  virtual int ExecCmd(   RobotPose      &pRobPose,  
+                         std::ostream   &Strm_Out
+                     ) const;
+  /**
+  * @brief returns command name
+  *
+  * @return  command name
+  */
+  static const char* GetCmdName() { return "Rotate"; }
+/** * @brief returns objects instance 
+*
+* @return returns objects instance 
+*/
+  static Command* CreateCmd();
+/**
+* @brief Prints command syntax 
+*/
+  static void PrintSyntax();
+/**
+* @brief Reeds params from string
+*
+* @param stream input stream with data
+*
+* @return return True if everything went ok
+*/
+  bool ReadParams(std::istream& );
+ };
+
+#endif

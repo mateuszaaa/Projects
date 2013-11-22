@@ -1,0 +1,84 @@
+/************************************************************
+ * Slowa kluczowe dla svn                         
+ *                                                      
+ *  $HeadURL$
+ *  $Author$
+ *  $Date$
+ *  $Revision$
+ *
+ ************************************************************/
+
+#include <iostream>
+#include "command4move.hh"
+
+using std::cout;
+using std::endl;
+
+/*!
+ *
+ */
+Command4Move::Command4Move(): _Speed_mmS(0)
+{}
+
+
+/*!
+ *
+ */
+void Command4Move::PrintCmd() const
+{
+  /*
+   *  Tu trzeba napisać odpowiednio zmodyfikować kod poniżej.
+   */
+  cout << GetCmdName() << " " << _Speed_mmS  << ", 300, 400;" << endl;
+}
+
+
+/*!
+ *
+ */
+const char* Command4Move::GetCmdName() const
+{
+  return "Move";
+}
+
+
+/*!
+ *
+ */
+int Command4Move::ExecCmd(RobotPose *pRobPose, double time_step_sec, std::ostream& Strm_Out) const
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return 0;
+}
+
+
+/*!
+ *
+ */
+bool Command4Move::ReadParams(std::istream& Strm_CmdsList)
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return true;
+}
+
+
+/*!
+ *
+ */
+Command* Command4Move::CreateCmd()
+{
+  return new Command4Move();
+}
+
+
+/*!
+ *
+ */
+void Command4Move::PrintSyntax()
+{
+  cout << "   Move speed[mm/s], dist[mm/s], safeZone[mm];" << endl;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Interpreter: Plik źródłowy command.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('command_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">command.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="command_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef  COMMAND_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define  COMMAND_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*+- SVN Keywords ----------------------------------------------------+</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *|                                                                   |</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *| $HeadURL:: svn+ssh://diablo/home/mnowakow/ZMP/QUADRO/branches/s#$:|</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *|     $Rev:: 21                                                   $:|</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *|    $Date:: 2013-11-13 18:21:57 +0100 (śro)                     $:|</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *|  $Author:: mnowakow                                             $:|</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *|                                                                   |</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *+-------------------------------------------------------------------+</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="robotpose_8hh.html">robotpose.hh</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_command.html">   29</a></span>&#160; <span class="keyword">class </span><a class="code" href="class_command.html">Command</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_command.html#a641c23ef533dd6f77d0a4ef0311598b2">   36</a></span>&#160;   <span class="keyword">virtual</span> <a class="code" href="class_command.html#a641c23ef533dd6f77d0a4ef0311598b2">~Command</a>() {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_command.html#a255e9c2f78dfca06f29a49df7a57d4a2">PrintSyntax</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_command.html#af66a469e8e10875ae21b152585ffaa28">   41</a></span>&#160;   <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_command.html#af66a469e8e10875ae21b152585ffaa28">GetCmdName</a> () {<span class="keywordflow">return</span> <span class="stringliteral">&quot;Command&quot;</span>;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_command.html#ac23d2662bdac3716016b492b318c545b">ExecCmd</a>(   <a class="code" href="struct_robot_pose.html">RobotPose</a>       &amp;RobPose, </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                          std::ostream    &amp;Strm_Out</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                      ) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_command.html#aa6eba6aa3eff491dd57749373fbf4a57">ReadParams</a>(std::istream&amp; Strm_CmdsList) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_command_html_a255e9c2f78dfca06f29a49df7a57d4a2"><div class="ttname"><a href="class_command.html#a255e9c2f78dfca06f29a49df7a57d4a2">Command::PrintSyntax</a></div><div class="ttdeci">virtual void PrintSyntax() const =0</div></div>
+<div class="ttc" id="class_command_html_ac23d2662bdac3716016b492b318c545b"><div class="ttname"><a href="class_command.html#ac23d2662bdac3716016b492b318c545b">Command::ExecCmd</a></div><div class="ttdeci">virtual int ExecCmd(RobotPose &amp;RobPose, std::ostream &amp;Strm_Out) const =0</div></div>
+<div class="ttc" id="struct_robot_pose_html"><div class="ttname"><a href="struct_robot_pose.html">RobotPose</a></div><div class="ttdoc">class used to stroe info about robot position </div><div class="ttdef"><b>Definition:</b> <a href="robotpose_8hh_source.html#l00019">robotpose.hh:19</a></div></div>
+<div class="ttc" id="class_command_html_a641c23ef533dd6f77d0a4ef0311598b2"><div class="ttname"><a href="class_command.html#a641c23ef533dd6f77d0a4ef0311598b2">Command::~Command</a></div><div class="ttdeci">virtual ~Command()</div><div class="ttdoc">Destruktor wirtualny ze wzgledu na klasy pochodne. </div><div class="ttdef"><b>Definition:</b> <a href="command_8hh_source.html#l00036">command.hh:36</a></div></div>
+<div class="ttc" id="class_command_html"><div class="ttname"><a href="class_command.html">Command</a></div><div class="ttdoc">Modeluje abstrakcyjne polecenie dla robota mobilnego. </div><div class="ttdef"><b>Definition:</b> <a href="command_8hh_source.html#l00029">command.hh:29</a></div></div>
+<div class="ttc" id="class_command_html_aa6eba6aa3eff491dd57749373fbf4a57"><div class="ttname"><a href="class_command.html#aa6eba6aa3eff491dd57749373fbf4a57">Command::ReadParams</a></div><div class="ttdeci">virtual bool ReadParams(std::istream &amp;Strm_CmdsList)=0</div></div>
+<div class="ttc" id="class_command_html_af66a469e8e10875ae21b152585ffaa28"><div class="ttname"><a href="class_command.html#af66a469e8e10875ae21b152585ffaa28">Command::GetCmdName</a></div><div class="ttdeci">static const char * GetCmdName()</div><div class="ttdef"><b>Definition:</b> <a href="command_8hh_source.html#l00041">command.hh:41</a></div></div>
+<div class="ttc" id="robotpose_8hh_html"><div class="ttname"><a href="robotpose_8hh.html">robotpose.hh</a></div><div class="ttdoc">Definicja klasy RobotPose. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="command_8hh.html">command.hh</a></li>
+    <li class="footer">Wygenerowano Pt, 15 lis 2013 14:51:48 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

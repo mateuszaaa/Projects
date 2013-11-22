@@ -1,0 +1,122 @@
+/*+- SVN Keywords ----------------------------------------------------+
+ *|                                                                   |
+ *| $HeadURL::                                                      $:|
+ *|     $Rev::                                                      $:|
+ *|    $Date::                                                      $:|
+ *|  $Author::                                                      $:|
+ *|                                                                   |
+ *+-------------------------------------------------------------------+
+ */
+
+
+#include <iostream>
+#include "command4fly.hh"
+
+using std::cout;
+using std::endl;
+
+
+extern "C" {
+  const char* GetCmdName(void);
+  void PrintSyntax(void);
+  Command* CreateCmd(void);
+}
+
+
+/*!
+ *
+ */
+const char* GetCmdName(void)
+{
+  return Command4Fly::GetCmdName();
+}
+
+
+/*!
+ *
+ */
+void PrintSyntax(void)
+{
+  Command4Fly::PrintSyntax();
+}
+
+
+/*!
+ *
+ */
+Command* CreateCmd()
+{
+  return Command4Fly::CreateCmd();
+}
+
+
+
+/*!
+ *
+ */
+Command4Fly::Command4Fly(): _Speed_Hor_mS(0)
+{}
+
+
+
+/*!
+ *
+ */
+const char* Command4Fly::GetCmdName() 
+{ 
+  return "Fly"; 
+}
+
+
+/*!
+ *
+ */
+void Command4Fly::PrintCmd() const
+{
+  /*
+   *  Tu trzeba napisać odpowiednio zmodyfikować kod poniżej.
+   */
+  cout << GetCmdName() << " " << _Speed_Hor_mS  << ", 2, 40;" << endl;
+}
+
+
+/*!
+ *
+ */
+int Command4Fly::ExecCmd(RobotPose &RobPose, std::ostream& Strm_Out) const
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return 0;
+}
+
+
+/*!
+ *
+ */
+bool Command4Fly::ReadParams(std::istream& Strm_CmdsList)
+{
+  /*
+   *  Tu trzeba napisać odpowiedni kod.
+   */
+  return true;
+}
+
+
+/*!
+ *
+ */
+Command* Command4Fly::CreateCmd()
+{
+  return new Command4Fly();
+}
+
+
+/*!
+ *
+ */
+void Command4Fly::PrintSyntax()
+{
+  cout << "   Rotate  speed_angle[m/s], angle[deg]" << endl;
+}

@@ -1,0 +1,17 @@
+Fly 2, 0.2, 10;
+Rotate 30, 90;
+Fly 3, 0, 10;
+Rotate 30, 90;
+Fly 1, -0.2, 5;
+Fly 2, 0, 7;
+Rotate 30, 45;
+Fly 2, 0, 7;
+Fly 2, 0.2, 10;
+Rotate 30, 90;
+Fly 3, 0, 10;
+Rotate 30, 90;
+Fly 1, -0.2, 5;
+Fly 2, 0, 7;
+Rotate 30, 45;
+Fly 2, 0, 7;
+

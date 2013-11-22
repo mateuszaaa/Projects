@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node2" href="$class_command_params_error.html" title="class used to throw excepion when file is not open " alt="" coords="139,5,307,32"/>
+<area shape="rect" id="node3" href="$class_file_open_problem.html" title="class used to throw excepion when file is not open " alt="" coords="158,56,287,83"/>
+<area shape="rect" id="node4" href="$class_wrong_library_name.html" title="WrongLibraryName" alt="" coords="151,107,294,133"/>
+</map>

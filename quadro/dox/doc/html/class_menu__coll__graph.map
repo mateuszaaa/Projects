@@ -1,0 +1,6 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$class_commands_parser.html" title="class used to parse commands " alt="" coords="20,321,159,471"/>
+<area shape="rect" id="node3" href="$class_set4_lib_interfaces.html" title="Zbiór bibliotek odpowiadających poszczególnym poleceniem. " alt="" coords="5,149,173,256"/>
+<area shape="rect" id="node5" href="$struct_robot_pose.html" title="class used to stroe info about robot position " alt="" coords="183,335,285,457"/>
+<area shape="rect" id="node6" href="$class_commands_list.html" title="class used to store commands list " alt="" coords="311,343,464,449"/>
+</map>

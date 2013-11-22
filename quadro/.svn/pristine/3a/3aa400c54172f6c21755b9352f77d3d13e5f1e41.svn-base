@@ -1,0 +1,34 @@
+#ifndef LIST_HH
+#define LIST_HH
+#include "command.hh"
+#include <boost/foreach.hpp>
+#include <list> 
+#include <iostream>
+using namespace std;
+/*!
+ * \brief
+ */
+class CommandsList: public std::list<Command*> {
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+  public:
+   /*
+    *  Tę klasę należy odpowiednio rozbudować i uzupełnić
+    */
+
+   /*!
+    *
+    */
+   void Add2List(Command *pCmd);
+   /*!
+    * \brief Usuwa całą listę
+    */
+   void Clear();
+
+   /*!
+    * \brief
+    */   
+   ~CommandsList();
+};
+#endif

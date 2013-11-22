@@ -1,0 +1,78 @@
+#ifndef  COMMAND4TURN_HH
+#define  COMMAND4TURN_HH
+
+/************************************************************
+ * Slowa kluczowe dla svn                         
+ *                                                      
+ *  $HeadURL$
+ *  $Author$
+ *  $Date$
+ *  $Revision$
+ *
+ ************************************************************/
+
+#ifndef __GNUG__
+# pragma interface
+# pragma implementation
+#endif
+
+#include "command.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy Command4Turn
+ *
+ * Plik zawiera definicję klasy Command4Turn ...
+ */
+
+/*!
+ * \brief Modeluje polecenie dla robota mobilnego, które wymusza jego ruch do przodu
+ *
+ *  Klasa modeluje ...
+ */
+class Command4Turn: public Command {
+  /*
+   *  Tu należy zdefiniować pola, które są niezbędne
+   *  do przechowywania wartości parametrów danego polecenia.
+   *  Ponieżej zdefiniowane jest tylko jedno pole jako przykład.
+   */
+  double  _Speed_mmS;
+ public:
+  /*!
+   * \brief
+   */
+  Command4Turn();  
+  /*!
+   * \brief
+   */
+  virtual void PrintCmd() const;
+  /*!
+   * \brief
+   */
+  virtual const char* GetCmdName() const;
+  /*!
+   * \brief
+   */
+  virtual int ExecCmd(   RobotPose      *pRobPose,  
+                         double          time_step_sec, 
+                         std::ostream   &Strm_Out
+                     ) const;
+  /*!
+   * \brief
+   */
+  virtual bool ReadParams(std::istream& Strm_CmdsList);
+  /*!
+   * \brief
+   *
+   *  Ta metoda nie musi być zdefiniowna w klasie bazowej.
+   */
+  static Command* CreateCmd();
+  /*!
+   * \brief 
+   * 
+   * Ta metoda nie musi być zdefiniowna w klasie bazowej.
+   */
+  static void PrintSyntax();
+ };
+
+#endif

@@ -1,0 +1,36 @@
+#ifndef  ROBOTPOSE_HH
+#define  ROBOTPOSE_HH
+
+/************************************************************
+ * Slowa kluczowe dla svn                         
+ *                                                      
+ *  $HeadURL$
+ *  $Author$
+ *  $Date$
+ *  $Revision$
+ *
+ ************************************************************/
+
+#include <iostream>
+#include "robotpose.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy RobotPose
+ *
+ * Plik zawiera definicję klasy RobotPose
+ */
+
+/*!
+ * \brief Modeluje zestaw informacji określający pozę robota
+ *
+ *  Klasa modeluje ...
+ */
+struct RobotPose {
+   double   x_mm, y_mm, alpha_deg;
+};
+
+
+
+
+#endif

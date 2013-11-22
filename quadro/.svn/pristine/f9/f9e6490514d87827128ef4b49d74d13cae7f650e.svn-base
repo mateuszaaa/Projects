@@ -1,0 +1,54 @@
+#ifndef  COMMAND_HH
+#define  COMMAND_HH
+
+/*+- SVN Keywords ----------------------------------------------------+
+ *|                                                                   |
+ *| $HeadURL::                                                      $:|
+ *|     $Rev::                                                      $:|
+ *|    $Date::                                                      $:|
+ *|  $Author::                                                      $:|
+ *|                                                                   |
+ *+-------------------------------------------------------------------+
+ */
+
+#include <iostream>
+#include "robotpose.hh"
+#define PI 3.14
+
+/*!
+ * \file
+ * \brief Definicja klasy Command
+ *
+ * Plik zawiera definicję klasy Command ...
+ */
+
+
+ /**
+ * @brief base class used to provide common interface for all commands
+ */
+ class Command {
+  public:
+   /*!
+    * \brief Destruktor wirtualny ze wzgledu na klasy pochodne
+    *
+    *  
+    */
+   virtual ~Command() {}
+   /*!
+    * \brief prints command
+    */
+   virtual void printCmd() const = 0;
+   /*!
+    * \execute command
+    * reads data and saves robot position to files
+    */
+   virtual int ExecCmd(   RobotPose       &RobPose, 
+                          std::ostream    &Strm_Out
+                      ) const = 0;
+   /*!
+    * \brief read commands from file and add them to list
+    */
+   virtual bool ReadParams(std::istream& Strm_CmdsList) = 0;
+ };
+
+#endif

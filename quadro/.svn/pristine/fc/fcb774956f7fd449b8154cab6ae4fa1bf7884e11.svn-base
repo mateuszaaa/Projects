@@ -1,0 +1,30 @@
+# USED TOOLS #
+PROJ_NAME = main
+CC = g++
+CFLAGS  = -g -Wall -fPIC
+LDFLAGS = -Wall -shared 
+INC += -Iinc -I./../inc/
+
+# SOURCES #
+SRC = $(wildcard src/*.cpp)
+OBJ += $(addprefix obj/,$(notdir $(SRC:.cpp=.o)))
+LIB += $(addprefix ./../lib/lib,$(notdir $(SRC:.cpp=.a)))
+
+
+__start__: $(LIB)
+
+./../lib/lib%.a : ./obj/%.o
+	@echo 
+	@echo -e "\033[35mGENERATE DYNAMIC LIB \033[32;5;148m$@\033[39m"
+	$(CC) $(INC) $(LDFLAGS) $< -o $@ $(LDFLAGS)
+
+./obj/%.o : ./src/%.cpp
+	@echo 
+	@echo -e "\033[35mCOMPILING LIB \033[32;5;148m$@\033[39m"
+	$(CC) -c $(INC) $(CFLAGS) $< -o $@ $(LDFLAGS)
+
+clean :
+	rm -rf ../lib/* ./obj/*
+hello:
+	@echo "test"
+

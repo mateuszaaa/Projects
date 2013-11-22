@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Interpreter: Plik źródłowy set4libinterfaces.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Interpreter
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.5 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('set4libinterfaces_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">set4libinterfaces.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="set4libinterfaces_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SET4LIBINTERFACES_HH</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SET4LIBINTERFACES_HH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="exception_8hh.html">exception.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="libinterface_8hh.html">libinterface.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_set4_lib_interfaces.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_set4_lib_interfaces.html">Set4LibInterfaces</a>: <span class="keyword">public</span> std::map&lt;std::string,LibInterface*&gt; {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="class_set4_lib_interfaces.html#a2f09342ebcf4ed9375406930e9dc898c">~Set4LibInterfaces</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_set4_lib_interfaces.html#a2abb609121c9f5e6a0a96305d7f2b4d9">AddLib</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* sLibName);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> <a class="code" href="class_lib_interface.html">LibInterface</a>* <a class="code" href="class_set4_lib_interfaces.html#a8bb368b9b5482f5aec6aa952afd01f32">FindLib4Cmd</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>*  sCmdName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_lib_interface_html"><div class="ttname"><a href="class_lib_interface.html">LibInterface</a></div><div class="ttdoc">Klasa modeluje interfejs wtyczki. </div><div class="ttdef"><b>Definition:</b> <a href="libinterface_8hh_source.html#l00030">libinterface.hh:30</a></div></div>
+<div class="ttc" id="class_set4_lib_interfaces_html_a2abb609121c9f5e6a0a96305d7f2b4d9"><div class="ttname"><a href="class_set4_lib_interfaces.html#a2abb609121c9f5e6a0a96305d7f2b4d9">Set4LibInterfaces::AddLib</a></div><div class="ttdeci">bool AddLib(const char *sLibName)</div><div class="ttdoc">Dodaje nowa bibliotekę </div></div>
+<div class="ttc" id="libinterface_8hh_html"><div class="ttname"><a href="libinterface_8hh.html">libinterface.hh</a></div><div class="ttdoc">Zawiera definicję klasy LibInterface. </div></div>
+<div class="ttc" id="exception_8hh_html"><div class="ttname"><a href="exception_8hh.html">exception.hh</a></div></div>
+<div class="ttc" id="class_set4_lib_interfaces_html_a2f09342ebcf4ed9375406930e9dc898c"><div class="ttname"><a href="class_set4_lib_interfaces.html#a2f09342ebcf4ed9375406930e9dc898c">Set4LibInterfaces::~Set4LibInterfaces</a></div><div class="ttdeci">~Set4LibInterfaces()</div></div>
+<div class="ttc" id="class_set4_lib_interfaces_html"><div class="ttname"><a href="class_set4_lib_interfaces.html">Set4LibInterfaces</a></div><div class="ttdoc">Zbiór bibliotek odpowiadających poszczególnym poleceniem. </div><div class="ttdef"><b>Definition:</b> <a href="set4libinterfaces_8hh_source.html#l00025">set4libinterfaces.hh:25</a></div></div>
+<div class="ttc" id="class_set4_lib_interfaces_html_a8bb368b9b5482f5aec6aa952afd01f32"><div class="ttname"><a href="class_set4_lib_interfaces.html#a8bb368b9b5482f5aec6aa952afd01f32">Set4LibInterfaces::FindLib4Cmd</a></div><div class="ttdeci">const LibInterface * FindLib4Cmd(const char *sCmdName) const </div><div class="ttdoc">Szuka interfejsu biblioteki odpowiadającej danemu poleceniu. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="set4libinterfaces_8hh.html">set4libinterfaces.hh</a></li>
+    <li class="footer">Wygenerowano Pt, 15 lis 2013 14:51:48 dla Interpreter programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
+</body>
+</html>

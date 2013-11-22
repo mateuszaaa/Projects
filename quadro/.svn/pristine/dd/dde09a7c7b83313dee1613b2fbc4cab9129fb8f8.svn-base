@@ -1,0 +1,54 @@
+#include "libinterface.hh"
+#include <string>
+#include <iostream>
+
+using std::string;
+using std::cerr;
+using std::endl;
+
+
+/*
+ * Uwaga: Ta jest tylko na potrzeby tego przykładu.
+ *        W finalnym programie nie powinno jej być
+ *        w tym miejscu.
+ */
+const char* GetName_FlyCmd() 
+  { return "Fly"; }
+
+/*
+ * Uwaga: Ta jest tylko na potrzeby tego przykładu.
+ *        W finalnym programie nie powinno jej być
+ *        w tym miejscu.
+ */
+const char* GetName_RotateCmd() 
+  { return "Rotate"; }
+
+
+/*!
+ *
+ * \warning [Uwaga!!!] Ta metoda powinna otwierać bibliotekę
+ * dynamicznie konsolidowaną
+ * i odnaleźć wskaźniki na funkcje stanowiące interfejs biblioteki.
+ * Jednak dla uproszenia przykładu definicja tej metody jest nieco
+ * oszukana.
+ */
+bool LibInterface::Init4Lib(const char* sLibName)
+{
+  /*
+   * Uwaga!!! Poniższa definicja metody jest uproszczona i nie
+   * należy się na niej wzorować.
+   */
+  string Name4Lib(sLibName);
+
+  if (Name4Lib == "libRotate.so") {
+    _pFun_GetCmdName = GetName_RotateCmd;
+    return true;
+  }
+  if (Name4Lib == "libFly.so") {
+    _pFun_GetCmdName = GetName_FlyCmd;
+    return true;
+  }
+  cerr << ":( Inicjalizacja biblioteki \"" << sLibName << "\"" << endl
+       << ":( nie powiodla sie." << endl;
+  return false;
+}

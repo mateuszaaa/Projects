@@ -1,0 +1,54 @@
+
+#ifndef  COMMAND4ROTATE_HH
+#define  COMMAND4ROTATE_HH
+
+/*+- SVN Keywords ----------------------------------------------------+
+ *|                                                                   |
+ *| $HeadURL::                                                      $:|
+ *|     $Rev::                                                      $:|
+ *|    $Date::                                                      $:|
+ *|  $Author::                                                      $:|
+ *|                                                                   |
+ *+-------------------------------------------------------------------+
+ */
+
+#ifndef __GNUG__
+# pragma interface
+# pragma implementation
+#endif
+
+#include <cassert>
+#include "command.hh"
+#include "exception.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy Command4Rotate
+ *
+ * Plik zawiera definicję klasy Command4Rotate ...
+ */
+
+/*!
+ * \brief Modeluje polecenie dla robota mobilnego, które wymusza jego
+ *        ruch do przodu
+ *
+ *  Klasa modeluje ...
+ */
+
+class Command4Rotate: public Command {
+  double  _angle_speed;
+  double  _angle;
+
+ public:
+  Command4Rotate();  
+  virtual void printCmd() const;
+  virtual int ExecCmd(   RobotPose      &pRobPose,  
+                         std::ostream   &Strm_Out
+                     ) const;
+  static const char* GetCmdName() { return "Rotate"; }
+  static Command* CreateCmd();
+  static void PrintSyntax();
+  bool ReadParams(std::istream& );
+ };
+
+#endif

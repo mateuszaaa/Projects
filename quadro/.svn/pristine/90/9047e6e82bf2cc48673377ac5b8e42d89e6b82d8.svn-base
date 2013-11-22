@@ -1,0 +1,149 @@
+
+
+#include <iostream>
+#include "command4fly.hh"
+#define PI 3.14
+using std::cout;
+using std::endl;
+
+extern "C"{
+    const char* GetCmdName(void);
+    void PrintSyntax(void);
+    Command* CreateCmd(void);
+}
+
+const char* GetCmdName(void) {
+    return "siemaaa";
+    } 
+void PrintSyntax(void)
+{
+    std::cout<<"siemka"<<std::endl;
+}
+ Command* CreateCmd()
+ {
+     return NULL;
+ }
+
+/**
+* @brief initialize objects and ints fileds
+*
+*/
+Command4Fly::Command4Fly(): _speed_horizontal(0), _speed_vertical(0), _length(0)
+{}
+
+
+/**
+* @brief Prints command using actual fields values
+*/
+void Command4Fly::printCmd() const
+{
+  cout << GetCmdName() << " " << 
+  _speed_horizontal  << " " << 
+  _speed_vertical  << " " <<
+  _length  << " ;" << endl;
+}
+
+
+/**
+* @brief Runs commands which makes robot move 
+*
+* @param robot objects to move
+* @param out file to save robot position
+*
+* @return 
+*/
+int Command4Fly::ExecCmd(RobotPose &robot, std::ostream& out) const
+{
+    double time = 0.01;
+    double actual_distance = 0;
+    double x_axis_step = 0;
+    double y_axis_step = 0;
+    double z_axis_step = 0;
+    double x_axis_route = 0;
+    double y_axis_route = 0;
+    double z_axis_route = 0;
+
+    while (actual_distance < _length){
+            usleep(300);
+            x_axis_step = _speed_horizontal * time * cos(robot.alpha_deg*PI/180);
+            y_axis_step = _speed_horizontal * time * sin(robot.alpha_deg*PI/180);
+            z_axis_step = _speed_vertical * time;
+
+            x_axis_route += x_axis_step;
+            y_axis_route += y_axis_step;
+            z_axis_route += z_axis_step;
+
+            robot.x_m += x_axis_step;
+            robot.y_m += y_axis_step;
+            robot.z_m += z_axis_step;
+
+            actual_distance = cbrt( x_axis_route*x_axis_route + y_axis_route*y_axis_route + z_axis_route*z_axis_route );
+            out<<robot.x_m<<" "<<robot.y_m<<" "<<robot.z_m<<endl;
+    }
+
+
+
+  return 0;
+}
+
+
+
+bool Command4Fly::ReadParams(std::istream& stream)
+{
+    char comma;
+    double speed_hor;
+    double speed_ver;
+    double length;
+    stream>>speed_hor;
+    stream>>comma;
+    
+
+    if (comma != ','){
+        throw CommandParamsError();        
+    }
+
+    stream>>speed_ver;
+    stream>>comma;
+
+    if (comma != ','){
+        throw CommandParamsError();        
+    }
+
+    stream>>length;
+    assert (length >= 0);
+    if ( (speed_hor == 0) && ( speed_ver ==0) ){
+        assert ( length != 0 ) ;
+    }
+
+    stream>>comma;
+
+    if (comma != ';'){
+        throw CommandParamsError();        
+    }
+
+    _speed_horizontal = speed_hor;
+    _speed_vertical = speed_ver;    
+    _length = length;    
+    
+  return true;
+}
+
+
+/** 
+* @brief returns objects instance 
+*
+* @return returns objects instance 
+*/
+Command* Command4Fly::CreateCmd()
+{
+  return new Command4Fly();
+}
+
+
+/**
+* @brief Prints command syntax 
+*/
+void Command4Fly::PrintSyntax() const
+{
+  cout << "   Fly  speed_hor[m/s], speed_ver[m/s], dist[m];" << endl;
+}

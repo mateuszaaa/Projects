@@ -1,0 +1,33 @@
+#ifndef MENU_HH
+#define MENU_HH
+#include <iostream>
+#include "parser.hh"
+#include "command.hh"
+#include "robotpose.hh"
+#include "lacze_do_gnuplota.hh"
+
+/**
+* @brief menu class used to createinterface between user and application
+*/
+class Menu{
+public :
+    Menu(CommandsParser &,CommandsList &,RobotPose &); 
+    void menu();
+//private:
+    CommandsParser _parser;
+    CommandsList _list;
+    RobotPose _robot;
+    std::string _input_file_name;
+    std::string _output_file_name;
+    PzG::LaczeDoGNUPlota  _gnuplot;
+
+    bool decision(char); 
+    void readCommands(); 
+    void showCommands(); 
+    void execCommands(); 
+    void setInputFile(std::string); 
+    void setOutputFile(std::string); 
+    void show2DVisualisation(); 
+    void help(); 
+};
+#endif

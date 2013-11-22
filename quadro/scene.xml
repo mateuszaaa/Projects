@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene version="1.0" type="example">
+ <Object Name="A">
+  <Parameter Name="Coordinate_x" Value="5"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+ <Object Name="B">
+  <Parameter Name="Coordinate_x" Value="10"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+ <Object Name="C">
+  <Parameter Name="Coordinate_x" Value="15"/>
+  <Parameter Name="Coordinate_y" Value="5"/>
+  <Parameter Name="Coordinate_z" Value="0"/>
+ </Object>
+</Scene>

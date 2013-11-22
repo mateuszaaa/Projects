@@ -1,0 +1,71 @@
+#ifndef  COMMAND4FLY_HH
+#define  COMMAND4FLY_HH
+
+
+#ifndef __GNUG__
+# pragma interface
+# pragma implementation
+#endif
+
+#include <cassert>
+#include <cmath>
+#include <unistd.h>
+#include "command.hh"
+#include "exception.hh"
+
+/*!
+ * \file
+ * \brief Definicja klasy Command4Fly
+ *
+ * Plik zawiera definicję klasy Command4Fly ...
+ */
+
+/*!
+ * \brief Defines class which handles command used to fly
+ *  Defines class 
+ */
+
+class Command4Fly: public Command {
+  /* --------------------------------------------------------------------------*/
+  /**
+  * \brief  desire robot`s horizontal speed brief
+  */
+  /* ----------------------------------------------------------------------------*/
+  double  _speed_horizontal;
+  /* --------------------------------------------------------------------------*/
+  /**
+  * \brief  desire robot`s vertical  speed brief
+  */
+  /* ----------------------------------------------------------------------------*/
+  double  _speed_vertical;
+  /* --------------------------------------------------------------------------*/
+  /**
+  * \brief  desire robot`s vertical  speed brief
+  i*/
+  /* ----------------------------------------------------------------------------*/
+  double  _length;
+
+ public:
+  Command4Fly();  
+  /**
+  * @brief prints command
+  */
+  virtual void printCmd() const;
+  virtual int ExecCmd(   RobotPose      &pRobPose,  
+                         std::ostream   &Strm_Out
+                     ) const;
+
+/**
+* @brief Reeds params from string
+*
+* @param stream input stream with data
+*
+* @return return True if everything went ok
+*/
+  virtual bool ReadParams(std::istream& Strm_CmdsList);
+  static const char* GetCmdName() { return "Fly"; }
+  static Command* CreateCmd();
+  static void PrintSyntax();
+ };
+
+#endif

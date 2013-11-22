@@ -1,0 +1,38 @@
+__start__: obj ../libs/libCommand4Fly.so 
+	@echo "  Tworzenie wtyczki zakonczone."
+	@echo
+
+obj:
+	mkdir obj
+
+CPPFLAGS=-Wall -fPIC -pedantic -Iinc -I../inc
+LDFLAGS=-Wall -shared
+
+__start__: ../libs/libCommand4Fly.so ../libs/libCommand4Rotate.so
+
+../libs/libCommand4Fly.so: obj/command4fly.o
+	g++ ${LDFLAGS} -o ../libs/libCommand4Fly.so obj/command4fly.o
+	@echo
+	@echo "  Wtyczka dla polecenia 'Fly' zostala utworzona."
+	@echo
+
+../libs/libCommand4Rotate.so: obj/command4rotate.o
+	g++ ${LDFLAGS} -o ../libs/libCommand4Rotate.so obj/command4rotate.o
+	@echo
+	@echo "  Wtyczka dla polecenia 'Rotate' zostala utworzona."
+	@echo
+
+
+obj/command4fly.o: src/command4fly.cpp ../inc/command.hh\
+                        inc/command4fly.hh 
+	g++ -c ${CPPFLAGS} -o obj/command4fly.o src/command4fly.cpp
+
+obj/command4rotate.o: src/command4rotate.cpp ../inc/command.hh\
+                        inc/command4fly.hh 
+	g++ -c ${CPPFLAGS} -o obj/command4rotate.o src/command4rotate.cpp
+
+clean:
+	rm -f obj/*
+
+cleanall: clean
+	find . -name \*~ -print -exec rm {} \;

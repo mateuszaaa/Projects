@@ -1,0 +1,65 @@
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "parser.hh"
+#include "exception.hh"
+#include "list.hh"
+#include "lacze_do_gnuplota.hh"
+#include "menu.hh"
+
+
+using namespace std;
+
+
+ int main()
+ {
+
+    CommandsList list;
+    CommandsParser parser;
+    RobotPose robot;
+
+    void  *_lib_handler; 
+    const char* (*_getCmdName)(void);
+    Command  *(*_createCommand)(void);
+  _lib_handler = dlopen("./lib/libcommand4rotate.a",RTLD_LAZY);
+
+  void *function_ptr;
+
+  if (!_lib_handler) {
+    cerr << "!!! Brak biblioteki: "<<"Rotate" << endl;
+    return 1;
+  }
+
+
+  function_ptr = dlsym(_lib_handler,"GetCmdName"); 
+  if (!function_ptr) {
+    cerr << dlerror() << endl;
+    return 1;
+  }
+  _getCmdName = *reinterpret_cast<const char* (**)()>(&function_ptr);
+  std::cout<<_getCmdName()<<std::endl;;
+
+  function_ptr = dlsym(_lib_handler,"CreateCmd");
+  if (!function_ptr) {
+    cerr << dlerror() << endl;
+    return 1;
+  }
+  _createCommand = *reinterpret_cast<Command* (**)(void)>(&function_ptr);
+//    if (! parser.loadLib("Rotate") ) {
+//       std::cout<<"loding Rotate failed"<<std::endl; 
+//    }
+//    if (! parser.loadLib("Fly") ) {
+//       std::cout<<"loding Fly failed"<<std::endl; 
+//    }
+
+    Menu menu(parser,list,robot);
+#ifdef FAST
+    menu.setInputFile("c");
+    menu.readCommands();
+    menu.execCommands();
+#else
+   menu.menu();
+#endif
+ }

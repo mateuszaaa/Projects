@@ -1,0 +1,124 @@
+#include "parser.hh"
+
+/**
+* @brief Reads fly command
+*
+* @param IStrm input string with data (params etc)
+* @param cmds_list commands list
+*
+* @return 
+*/
+bool CommandsParser::ReadCmd_Fly( istream &IStrm, CommandsList &cmds_list)
+{
+    Command *pCmd = Command4Fly::CreateCmd();
+
+    try{
+        pCmd->ReadParams(IStrm);
+        cmds_list.Add2List(pCmd);
+    }catch(std::exception &exc){
+        cmds_list.Clear();
+        delete pCmd;
+        throw;
+    }
+
+return true;
+}
+
+/**
+* @brief reads rotate command
+*
+* @param IStrm inputstring with data
+* @param cmds_list commands list
+*
+* @return 
+*/
+bool CommandsParser::ReadCmd_Rotate( istream &IStrm, CommandsList &cmds_list)
+{
+    Command *pCmd = Command4Rotate::CreateCmd();
+    try{
+        pCmd->ReadParams(IStrm);
+        cmds_list.Add2List(pCmd);
+    }catch(std::exception &exc){
+        cmds_list.Clear();
+        delete pCmd;
+        throw;
+    }
+  return true;
+}
+
+
+/**
+* @brief reads commands list from stream
+*
+* @param IStrm input string with commands 
+* @param cmds_list commands list
+*
+* @return 
+*/
+bool CommandsParser::ReadCmdsList( ifstream &IStrm, CommandsList &cmds_list)
+{
+    int line_nr = 0;
+    string cmd_name;
+
+    while (IStrm >> cmd_name) {
+        line_nr++;
+        try{
+            if (cmd_name == "Fly") {
+                ReadCmd_Fly(IStrm,cmds_list);
+            }
+
+            if (cmd_name == "Rotate") {
+                ReadCmd_Rotate(IStrm,cmds_list);
+            }
+        }catch(std::exception &exc){
+            cout<<exc.what()<<"at line : "<<line_nr<<endl; 
+            break;
+        }
+    }
+
+    return true;
+}
+
+  /**
+  * @brief executes  commands list
+  *
+  * @param file output stream where robot params will be written
+  * @param robot robot object
+  * @param cmds_list list of commands
+  */
+  void CommandsParser::execCmdsList(ofstream & file,RobotPose &robot,CommandsList &cmds_list){
+     list<Command*>::iterator it; 
+     //file<<robot.x_m<<" "<<robot.y_m<<" "<<robot.z_m<<endl;
+     //
+     it=cmds_list.begin();
+
+//     BOOST_FOREACH(Command *cmd,cmds_list){
+//         (*it)->printCmd();
+//         cmd->printCmd();
+//         (*it)->ExecCmd(robot,file);
+//         //cmd->ExecCmd(robot,file);
+//         it++;
+//         }
+    while (it != cmds_list.end()) {
+        (*it)->ExecCmd(robot,file);
+        it++;
+    }
+  }
+
+  /**
+  * @brief show commands list
+  *
+  * @param cmds_list list of commands
+  */
+  void CommandsParser::showCmdsList(CommandsList &cmds_list){
+      list<Command*>::iterator it; 
+      it=cmds_list.begin();
+      while(it!=cmds_list.end()) {
+          (*it)->printCmd();
+          it++;
+      }
+  }
+
+
+
+

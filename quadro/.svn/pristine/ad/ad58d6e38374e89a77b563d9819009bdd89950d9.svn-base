@@ -1,0 +1,138 @@
+#include "menu.hh"
+Menu::Menu(CommandsParser & parser, CommandsList & list, RobotPose & robot): \
+_parser(parser) , _list(list), _robot(robot), _output_file_name("output.dat"){
+
+}
+
+/**
+* @brief starts menu
+*/
+void Menu::menu(){
+    char character = '?';
+    while( (character != 'q') and decision(character)  ){
+        cout<<">>";
+        cin>>character;
+    }
+   
+}
+
+/**
+* @brief choose decision
+*
+* @param option
+*
+* @return 1 if everything is ok 
+*/
+bool Menu::decision(char option){
+   if ( option == '?' ){
+       help();
+       return 1;
+   }
+
+   if ( option == 'r' ){
+       readCommands();
+       return 1;
+   }
+
+   if ( option == 's' ){
+       showCommands();
+       return 1;
+   }
+
+   if ( option == 'e' ){
+       execCommands();
+       return 1;
+   }
+
+   if ( option == 'v' ){
+       show2DVisualisation();
+       return 1;
+   }
+
+   cout<<"nie rozpoznano opcji "<<option<<" "<<endl;
+   help();  
+   return 1;
+
+}
+
+/**
+* @brief  reads commands from file_name defined in class filed
+*/
+void Menu::readCommands(){
+#ifndef FAST
+    std::string name;
+    cout<<"input file name : [default = commands.txt]";
+    cin>>name; 
+    setInputFile(name);
+#endif
+    ifstream file( _input_file_name.c_str() );
+    _parser.ReadCmdsList(file ,_list);
+}
+
+/**
+* @brief exec commands
+*/
+void Menu::execCommands(){
+    ofstream file( _output_file_name.c_str() );
+    _parser.execCmdsList(file,_robot,_list);
+} 
+
+/**
+* @brief sets input file
+*
+* @param file_name
+*/
+void Menu::setInputFile(std::string file_name){
+    _input_file_name =   file_name ;
+
+}
+
+/**
+* @brief sets output file
+*
+* @param file_name
+*/
+void Menu::setOutputFile(std::string file_name){
+    _output_file_name =  file_name ;
+}
+
+/**
+* @brief shows commands
+*/
+void Menu::showCommands(){
+    cout<<"INSTRUKCJE : " <<endl;
+    BOOST_FOREACH(Command *cmd,_list){
+         cmd->printCmd();
+  }
+
+}
+
+/**
+* @brief shows 2d visualization
+*/
+void Menu::show2DVisualisation(){
+    if ( _output_file_name.empty() ){
+        cout<<"no file read or commands were not executed"<<endl;
+    }else{
+        _gnuplot.DodajNazwePliku( _output_file_name.c_str() ,PzG::RR_Ciagly,6);
+        _gnuplot.DodajNazwePliku( _output_file_name.c_str() ,PzG::RR_Punktowy,2);
+        _gnuplot.Inicjalizuj();  // Tutaj startuje gnuplot.
+        _gnuplot.ZmienTrybRys(PzG::TR_2D);
+        _gnuplot.UstawZakresY(-5,35);
+        _gnuplot.UstawZakresX(-35,35);
+        _gnuplot.Rysuj(); 
+    }
+}
+
+/**
+* @brief shows help
+*/
+void Menu::help(){
+    cout<<"r - read commands from file"<<endl;
+    cout<<"s - show commands list"<<endl;
+    cout<<"e - execute commands"<<endl;
+    cout<<"v - visualize 2d"<<endl;
+    cout<<"q - quit app "<<endl;
+    cout<<"? - wyswietl ponownie menu"<<endl;
+}
+
